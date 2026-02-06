@@ -1,0 +1,100 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+:root {
+  --color-primary: #3b82f6;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --color-bg: #ffffff;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-header nav {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.site-header .logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-header .logo:hover {
+  color: var(--color-primary);
+}
+
+/* Main */
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--color-muted);
+}
+
+/* Error page */
+.error-page {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.error-page h1 {
+  font-size: 4rem;
+  color: var(--color-muted);
+}
+
+.error-page p {
+  margin: 1rem 0;
+  color: var(--color-muted);
+}
+
+.error-page a {
+  color: var(--color-primary);
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  border-top: 1px solid #e5e7eb;
+}

@@ -1,0 +1,41 @@
+# Decap CMS Configuration
+# https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+  # Uncomment and configure for OAuth:
+  # base_url: https://your-site.web.app
+  # auth_endpoint: api/auth
+
+# Media files storage
+media_folder: "assets/images"
+public_folder: "/images"
+
+# Site URL
+site_url: https://your-site.web.app
+display_url: https://your-site.web.app
+
+# Slug configuration
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+# Collections define the structure for editable content
+collections:
+  # Editable Pages
+  - name: "pages"
+    label: "Pages"
+    files:
+      # Homepage
+      - label: "Homepage"
+        name: "home"
+        file: "content/pages/home.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string", default: "Welcome" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
