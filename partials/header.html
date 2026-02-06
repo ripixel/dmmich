@@ -1,5 +1,19 @@
 <header class="site-header">
-    <nav>
-        <a href="/" class="logo">Site Name</a>
-    </nav>
+    <div class="container">
+        <a href="/" class="logo">DMMich<span style="color: var(--color-accent);">The</span>Coach</a>
+        <button class="nav-toggle" aria-label="Toggle navigation"
+            onclick="document.querySelector('.nav-links').classList.toggle('open'); this.classList.toggle('active');">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="/" {{#if isHome}}class="active" {{/if}}>Home</a></li>
+            <li><a href="/about" {{#if isAbout}}class="active" {{/if}}>About</a></li>
+            <li><a href="/services" {{#if isServices}}class="active" {{/if}}>Services</a></li>
+            <li><a href="/running-club" {{#if isRunningClub}}class="active" {{/if}}>Running Club</a></li>
+            <li><a href="/locations" {{#if isLocations}}class="active" {{/if}}>Locations</a></li>
+            <li><a href="/contact" {{#if isContact}}class="active" {{/if}}>Contact</a></li>
+        </ul>
+    </div>
 </header>

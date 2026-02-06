@@ -5,9 +5,217 @@
 <body>
     {{> header}}
     <main>
-        <section class="hero">
-            <h1>Welcome</h1>
-            <p>This is a simple Skier-powered website.</p>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
+            <div class="hero__bg" style="background-image: url('/images/hero-bg.png');"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    TRAIN. PROGRESS.<br><span class="accent">SUCCEED.</span>
+                </h1>
+                <p class="hero__subtitle">Functional Fitness Coach 🤘</p>
+                <a href="/contact" class="btn btn--primary">Start Your Journey</a>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section__heading">About <span>Dean M Michniew</span></h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="/images/dean-portrait.png" alt="Dean M Michniew — Personal Trainer" loading="lazy" />
+                    </div>
+                    <div class="about-text">
+                        <p>Dean is a Level 3 qualified Personal Trainer with a passion for functional fitness,
+                            real-world strength, and — above all — helping people feel genuinely better in their
+                            day-to-day lives.</p>
+                        <p>Based in Bingham, Nottinghamshire, Dean works with clients of all backgrounds and abilities.
+                            Whether you're picking up a barbell for the first time or looking to take your training to
+                            the next level, Dean's approachable, no-nonsense coaching style will help you get there.</p>
+                        <blockquote class="pullquote">"Not chasing aesthetics, but health."</blockquote>
+                        <p>Dean also founded the <strong>Bingham Sunday Running Club</strong> — a social running and
+                            walking group open to everyone, because fitness should be fun and community-driven.</p>
+                        <a href="/about" class="btn btn--outline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="section section--alt" id="testimonials">
+            <div class="container">
+                <h2 class="section__heading">What <span>Clients Say</span></h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__quote">I've never felt stronger or more confident. Dean makes every
+                            session challenging but achievable — and actually enjoyable.</p>
+                        <p class="testimonial-card__name">Sarah T.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__quote">After years of dreading the gym, I finally look forward to
+                            training. Dean's focus on health over aesthetics changed my whole mindset.</p>
+                        <p class="testimonial-card__name">Mark R.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__quote">The Hevy app tracking is brilliant — I can see my progress
+                            week by week. Dean's programming is smart and sustainable.</p>
+                        <p class="testimonial-card__name">Jess P.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICES ===== -->
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="section__heading"><span>Services</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3 class="service-card__title">Personal Training</h3>
+                        <p class="service-card__desc">One-to-one or small group sessions at your chosen location.
+                            Tailored programming focused on functional movement, strength, and sustainable progress.</p>
+                        <p class="service-card__price">From £30 / session</p>
+                        <ul class="service-card__features">
+                            <li>Bespoke training plan</li>
+                            <li>Hevy Pro app included</li>
+                            <li>Flexible locations</li>
+                            <li>All abilities welcome</li>
+                        </ul>
+                        <a href="/services" class="btn btn--outline">Find Out More</a>
+                    </div>
+                    <div class="service-card">
+                        <h3 class="service-card__title">Online Coaching</h3>
+                        <p class="service-card__desc">Remote programming and regular check-ins, wherever you are. Get a
+                            structured plan, video demos, and ongoing support — all through the Hevy app.</p>
+                        <p class="service-card__price">From £60 / month</p>
+                        <ul class="service-card__features">
+                            <li>Custom programming</li>
+                            <li>Hevy Pro app included</li>
+                            <li>Weekly check-ins</li>
+                            <li>Video exercise demos</li>
+                        </ul>
+                        <a href="/services" class="btn btn--outline">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RUNNING CLUB ===== -->
+        <section class="section section--alt" id="running-club">
+            <div class="container">
+                <h2 class="section__heading">Bingham <span>Sunday Running Club</span></h2>
+                <div class="running-club">
+                    <div class="running-club__image">
+                        <img src="/images/running-club.png" alt="Bingham Sunday Running Club" loading="lazy" />
+                    </div>
+                    <div class="running-club__info">
+                        <h3>Run Together, Grow Together</h3>
+                        <p>Dean founded the Bingham Sunday Running Club — a social running and walking group open to all
+                            abilities. Whether you're training for your first 5K or just fancy a sociable jog, you're
+                            welcome.</p>
+                        <div class="running-club__detail">
+                            <div class="running-club__detail-item">
+                                <strong>Sunday 7AM</strong>
+                                Every week
+                            </div>
+                            <div class="running-club__detail-item">
+                                <strong>Bingham</strong>
+                                Nottinghamshire
+                            </div>
+                        </div>
+                        <a href="/running-club" class="btn btn--primary">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRANSFORMATIONS ===== -->
+        <section class="section" id="transformations">
+            <div class="container">
+                <h2 class="section__heading">Client <span>Transformations</span></h2>
+                <div class="transformations-grid">
+                    <div class="transformation-card">
+                        <div class="transformation-card__body">
+                            <h3 class="transformation-card__name">Claire D.</h3>
+                            <p class="transformation-card__story">Went from zero exercise to completing her first
+                                parkrun in under 30 minutes. "Dean showed me that fitness isn't about punishment — it's
+                                about progress."</p>
+                        </div>
+                    </div>
+                    <div class="transformation-card">
+                        <div class="transformation-card__body">
+                            <h3 class="transformation-card__name">Tom W.</h3>
+                            <p class="transformation-card__story">Struggled with back pain for years. After 12 weeks of
+                                functional training with Dean, Tom is pain-free and deadlifting more than he ever
+                                thought possible.</p>
+                        </div>
+                    </div>
+                    <div class="transformation-card">
+                        <div class="transformation-card__body">
+                            <h3 class="transformation-card__name">Rachel M.</h3>
+                            <p class="transformation-card__story">Lost 2 stone over 6 months — but more importantly,
+                                gained confidence, energy, and a love for training she never expected to find.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: var(--space-lg);">
+                    <a href="/transformations" class="btn btn--outline">See All Transformations</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LOCATIONS ===== -->
+        <section class="section section--alt" id="locations">
+            <div class="container">
+                <h2 class="section__heading"><span>Locations</span></h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <iframe class="location-card__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.9528!3d52.9513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBingham!5e0!3m2!1sen!2suk!4v1234567890"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Iron HQ Bingham Map"></iframe>
+                        <div class="location-card__info">
+                            <h3 class="location-card__name">Iron HQ — Bingham</h3>
+                            <p class="location-card__address">123 Bingham Street<br>Bingham, NG13</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <iframe class="location-card__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.6411!3d52.9118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGrantham!5e0!3m2!1sen!2suk!4v1234567890"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Frontline Fitness Grantham Map"></iframe>
+                        <div class="location-card__info">
+                            <h3 class="location-card__name">Frontline Fitness — Grantham</h3>
+                            <p class="location-card__address">1075 Rougement Street<br>Grantham, NG31</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY ===== -->
+        <section class="section" id="gallery">
+            <div class="container">
+                <h2 class="section__heading"><span>Gallery</span></h2>
+                <div class="gallery-grid">
+                    <img src="/images/training-session.png" alt="Personal training session" loading="lazy" />
+                    <img src="/images/gallery-group.png" alt="Group training session" loading="lazy" />
+                    <img src="/images/gallery-weights.png" alt="Strength training" loading="lazy" />
+                    <img src="/images/running-club.png" alt="Bingham Sunday Running Club" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA BANNER ===== -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Get in touch today and take the first step towards a healthier, stronger you.</p>
+                <a href="/contact" class="btn">Contact Me</a>
+            </div>
         </section>
     </main>
     {{> footer}}

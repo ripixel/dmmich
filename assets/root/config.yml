@@ -3,19 +3,18 @@
 
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  repo: ripixel/dmmich
   branch: main
-  # Uncomment and configure for OAuth:
-  # base_url: https://your-site.web.app
-  # auth_endpoint: api/auth
+  base_url: https://dmmich-6824e.web.app
+  auth_endpoint: api/auth
 
 # Media files storage
 media_folder: "assets/images"
 public_folder: "/images"
 
 # Site URL
-site_url: https://your-site.web.app
-display_url: https://your-site.web.app
+site_url: https://dmmich-6824e.web.app
+display_url: https://dmmich-6824e.web.app
 
 # Slug configuration
 slug:

@@ -1,9 +1,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{pageTitle}}</title>
-  <meta name="description" content="A simple Skier-powered website" />
-  
+  <title>{{metaTitle}}</title>
+  <meta name="description" content="{{metaDescription}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{metaTitle}}" />
+  <meta property="og:description" content="{{metaDescription}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/hero-bg.png" />
+
   <!-- Styles -->
   <link rel="stylesheet" href="/styles.min.css" />
 </head>
