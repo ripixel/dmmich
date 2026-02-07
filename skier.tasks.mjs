@@ -136,5 +136,6 @@ export const tasks = [
         siteUrl: 'https://dmmichthecoach.co.uk',
         outDir: './public',
         scanDir: './public',
+        excludes: ['admin/**'],
     }),
 ];
