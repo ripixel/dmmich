@@ -59,8 +59,22 @@ The CMS config lives at `assets/root/config.yml`.
 └── firebase.json       Firebase Hosting config
 ```
 
+## CI/CD
+
+Pushes to `main` automatically build and deploy via CircleCI.
+
+**Setup** — add `FIREBASE_TOKEN` as a CircleCI environment variable:
+
+```bash
+npx firebase-tools login:ci
+# Copy the token into CircleCI → Project Settings → Environment Variables
+```
+
+Decap CMS commits content changes directly to the `main` branch, which triggers a build + deploy automatically.
+
 ## Deployment
 
 ```bash
-npm run deploy        # Deploy to Firebase Hosting
+npm run deploy        # Manual deploy to Firebase Hosting
 ```
+
