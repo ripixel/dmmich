@@ -265,6 +265,76 @@ h6 {
   width: 100%;
 }
 
+/* Dropdown */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.nav-dropdown__chevron {
+  transition: transform var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.nav-dropdown:hover .nav-dropdown__chevron,
+.nav-dropdown.open .nav-dropdown__chevron {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  list-style: none;
+  background: rgba(34, 34, 34, 0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--space-xs) 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-fast), visibility var(--transition-fast);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  margin-top: var(--space-xs);
+}
+
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown:focus-within .nav-dropdown__menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-dropdown__menu li {
+  margin: 0;
+}
+
+.nav-dropdown__menu a {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: var(--color-text-muted);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.nav-dropdown__menu a::after {
+  display: none;
+}
+
+.nav-dropdown__menu a:hover,
+.nav-dropdown__menu a.active {
+  background: rgba(192, 57, 43, 0.15);
+  color: var(--color-accent);
+}
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -1024,6 +1094,51 @@ h6 {
 
   .nav-links a {
     font-size: 1.1rem;
+  }
+
+  /* Mobile dropdown — inline, no absolute */
+  .nav-dropdown {
+    position: static;
+  }
+
+  .nav-dropdown__menu {
+    position: static;
+    transform: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height var(--transition-base);
+  }
+
+  .nav-dropdown.open .nav-dropdown__menu {
+    max-height: 200px;
+    padding: var(--space-xs) 0;
+  }
+
+  .nav-dropdown__menu a {
+    padding-left: var(--space-lg);
+    font-size: 0.95rem;
+  }
+
+  .nav-dropdown:hover .nav-dropdown__menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 0;
+    padding: 0;
+  }
+
+  .nav-dropdown:hover.open .nav-dropdown__menu {
+    max-height: 200px;
+    padding: var(--space-xs) 0;
   }
 
   /* Grids */

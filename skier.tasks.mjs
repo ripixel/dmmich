@@ -120,6 +120,7 @@ export const tasks = [
                 isLocations: currentPage === 'locations',
                 isContact: currentPage === 'contact',
                 isTransformations: currentPage === 'transformations',
+                isTraining: ['services', 'transformations', 'locations'].includes(currentPage),
                 is404: currentPage === '404',
                 year: new Date().getFullYear(),
             };
