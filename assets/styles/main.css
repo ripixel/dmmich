@@ -274,6 +274,24 @@ h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
+  cursor: pointer;
+}
+
+.nav-links__item {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  padding: var(--space-xs) 0;
+}
+
+.nav-links__item:hover,
+.nav-links__item.active {
+  color: var(--color-accent);
 }
 
 .nav-dropdown__chevron {
@@ -1099,6 +1117,11 @@ h6 {
   /* Mobile dropdown — inline, no absolute */
   .nav-dropdown {
     position: static;
+    text-align: center;
+  }
+
+  .nav-links__item {
+    font-size: 1.1rem;
   }
 
   .nav-dropdown__menu {
