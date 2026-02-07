@@ -41,7 +41,8 @@
         <section class="section section--alt" id="testimonials">
             <div class="container">
                 <h2 class="section__heading">{{content.testimonials.heading}}
-                    <span>{{content.testimonials.heading_accent}}</span></h2>
+                    <span>{{content.testimonials.heading_accent}}</span>
+                </h2>
                 <div class="testimonials-grid">
                     {{#each content.testimonials.items}}
                     <div class="testimonial-card">
@@ -58,7 +59,8 @@
         <section class="section" id="services">
             <div class="container">
                 <h2 class="section__heading">{{content.services.heading}}
-                    <span>{{content.services.heading_accent}}</span></h2>
+                    <span>{{content.services.heading_accent}}</span>
+                </h2>
                 <div class="services-grid">
                     {{#each content.services.cards}}
                     <div class="service-card">
@@ -81,7 +83,8 @@
         <section class="section section--alt" id="running-club">
             <div class="container">
                 <h2 class="section__heading">{{content.running_club.heading}}
-                    <span>{{content.running_club.heading_accent}}</span></h2>
+                    <span>{{content.running_club.heading_accent}}</span>
+                </h2>
                 <div class="running-club">
                     <div class="running-club__image">
                         <img src="/images/running-club.png" alt="Bingham Sunday Running Club" loading="lazy" />
@@ -109,7 +112,8 @@
         <section class="section" id="transformations">
             <div class="container">
                 <h2 class="section__heading">{{content.transformations.heading}}
-                    <span>{{content.transformations.heading_accent}}</span></h2>
+                    <span>{{content.transformations.heading_accent}}</span>
+                </h2>
                 <div class="transformations-grid">
                     {{#each content.transformations.items}}
                     <div class="transformation-card">
@@ -130,7 +134,8 @@
         <section class="section section--alt" id="locations">
             <div class="container">
                 <h2 class="section__heading">{{content.locations.heading}}
-                    <span>{{content.locations.heading_accent}}</span></h2>
+                    <span>{{content.locations.heading_accent}}</span>
+                </h2>
                 <div class="locations-grid">
                     <div class="location-card">
                         <iframe class="location-card__map" src="{{site.location_1_map_embed}}" allowfullscreen=""
@@ -177,6 +182,7 @@
         </section>
     </main>
     {{> footer}}
+    {{> structured-data}}
 </body>
 
 </html>

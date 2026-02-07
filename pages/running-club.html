@@ -57,9 +57,9 @@
                 <h2>{{content.social.heading}}</h2>
                 <p>{{content.social.body}}</p>
                 <div style="margin-top: var(--space-md);">
-                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener"
+                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer"
                         class="btn btn--primary">{{content.social.instagram_text}}</a>
-                    <a href="{{site.facebook_url}}" target="_blank" rel="noopener" class="btn btn--outline"
+                    <a href="{{site.facebook_url}}" target="_blank" rel="noopener noreferrer" class="btn btn--outline"
                         style="margin-left: var(--space-sm);">{{content.social.facebook_text}}</a>
                 </div>
             </div>
@@ -74,6 +74,7 @@
         </section>
     </main>
     {{> footer}}
+    {{> structured-data}}
 </body>
 
 </html>

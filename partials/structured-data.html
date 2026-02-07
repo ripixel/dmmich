@@ -1,0 +1,79 @@
+<!-- LocalBusiness Schema (all pages) -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{site.name}}",
+    "description": "{{metaDescription}}",
+    "url": "https://dmmichthecoach.co.uk",
+    "email": "{{site.email}}",
+    "image": "https://dmmichthecoach.co.uk/images/hero-bg.png",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bingham",
+        "addressRegion": "Nottinghamshire",
+        "addressCountry": "GB"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.9513,
+        "longitude": -0.9528
+    },
+    "priceRange": "£30-£60",
+    "sameAs": [
+        "{{site.instagram_url}}",
+        "{{site.facebook_url}}"
+    ],
+    "founder": {
+        "@type": "Person",
+        "name": "Dean M Michniew",
+        "jobTitle": "{{site.qualification}}"
+    }
+}
+</script>
+
+{{#unless isHome}}
+<!-- BreadcrumbList Schema (sub-pages only) -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dmmichthecoach.co.uk/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{metaTitle}}",
+            "item": "{{canonicalUrl}}"
+        }
+    ]
+}
+</script>
+{{/unless}}
+
+{{#if isServices}}
+<!-- FAQPage Schema (services page only) -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {{#each content.faq.items}}
+        {
+            "@type": "Question",
+            "name": "{{this.question}}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{this.answer}}"
+            }
+        }{{#unless @last}},{{/unless}}
+        {{/each}}
+    ]
+}
+</script>
+{{/if}}

@@ -102,12 +102,16 @@ export const tasks = [
             const meta = pageMeta[currentPage] || pageMeta['404'];
             const pageKey = currentPage === 'index' ? 'home' : currentPage;
             const pageContent = pages[pageKey] || {};
+            const slug = currentPage === 'index' ? '' : currentPage;
 
             return {
                 // SEO
                 metaTitle: meta.title,
                 metaDescription: meta.description,
                 pageTitle: meta.title,
+                canonicalUrl: `https://dmmichthecoach.co.uk/${slug}`,
+                pageSlug: slug,
+                noindex: currentPage === '404',
                 // Site-wide shared values
                 site,
                 // Page-specific content
@@ -129,7 +133,7 @@ export const tasks = [
 
     // Generate sitemap
     generateSitemapTask({
-        siteUrl: 'https://dmmichthecoach.com',
+        siteUrl: 'https://dmmichthecoach.co.uk',
         outDir: './public',
         scanDir: './public',
     }),
