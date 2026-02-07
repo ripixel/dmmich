@@ -1,40 +1,382 @@
-# Decap CMS Configuration
-# https://decapcms.org/docs/configuration-options/
-
 backend:
   name: github
   repo: ripixel/dmmich
   branch: main
-  base_url: https://dmmich-6824e.web.app
-  auth_endpoint: api/auth
 
-# Media files storage
 media_folder: "assets/images"
 public_folder: "/images"
 
-# Site URL
-site_url: https://dmmich-6824e.web.app
-display_url: https://dmmich-6824e.web.app
-
-# Slug configuration
-slug:
-  encoding: "ascii"
-  clean_accents: true
-
-# Collections define the structure for editable content
 collections:
-  # Editable Pages
+  # ── Global Settings (set once, used everywhere) ──
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "site"
+        label: "Site Settings"
+        file: "content/settings/site.json"
+        fields:
+          - { label: "Site Name", name: "name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Instagram URL", name: "instagram_url", widget: "string" }
+          - { label: "Instagram Handle", name: "instagram_handle", widget: "string" }
+          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+          - { label: "Facebook Name", name: "facebook_name", widget: "string" }
+          - { label: "Qualification", name: "qualification", widget: "string" }
+          - { label: "Specialty", name: "specialty", widget: "string" }
+          - { label: "Location Base", name: "location_base", widget: "string" }
+          - { label: "Location 1 Name", name: "location_1_name", widget: "string" }
+          - { label: "Location 1 Address", name: "location_1_address", widget: "text" }
+          - { label: "Location 1 Map Embed URL", name: "location_1_map_embed", widget: "string" }
+          - { label: "Location 2 Name", name: "location_2_name", widget: "string" }
+          - { label: "Location 2 Address", name: "location_2_address", widget: "text" }
+          - { label: "Location 2 Map Embed URL", name: "location_2_map_embed", widget: "string" }
+
+  # ── Page Content ──
   - name: "pages"
     label: "Pages"
     files:
-      # Homepage
-      - label: "Homepage"
-        name: "home"
+
+      # ── Homepage ──
+      - name: "home"
+        label: "Homepage"
         file: "content/pages/home.json"
         fields:
-          - label: "Hero Section"
+          - label: "Hero"
             name: "hero"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "string", default: "Welcome" }
+              - { label: "Title Line 1", name: "title_line1", widget: "string" }
+              - { label: "Title Line 2", name: "title_line2", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Pullquote", name: "pullquote", widget: "string" }
+              - { label: "Running Club Note (HTML)", name: "running_club_note", widget: "text" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Stars", name: "stars", widget: "string" }
+                  - { label: "Quote", name: "quote", widget: "text" }
+                  - { label: "Name", name: "name", widget: "string" }
+          - label: "Services Section"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Features", name: "features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
+                  - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - label: "Running Club Section"
+            name: "running_club"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Time", name: "time", widget: "string" }
+              - { label: "Time Detail", name: "time_detail", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Location Detail", name: "location_detail", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - label: "Transformations Section"
+            name: "transformations"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Story", name: "story", widget: "text" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - label: "Locations Section"
+            name: "locations"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+          - label: "Gallery Section"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+          - label: "CTA Banner"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+
+      # ── About Page ──
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Pullquote", name: "pullquote", widget: "string" }
+              - { label: "Body 2 (HTML)", name: "body_2", widget: "text" }
+          - label: "Functional Fitness"
+            name: "functional_fitness"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Body 2", name: "body_2", widget: "text" }
+          - label: "Qualifications"
+            name: "qualifications"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "Philosophy"
+            name: "philosophy"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Hevy Note (HTML)", name: "hevy_note", widget: "text" }
+          - label: "Highlight"
+            name: "highlight"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+
+      # ── Services Page ──
+      - name: "services"
+        label: "Services Page"
+        file: "content/pages/services.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Service Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Features", name: "features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
+          - label: "What to Expect"
+            name: "what_to_expect"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - label: "Hevy"
+            name: "hevy"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Highlight Heading", name: "highlight_heading", widget: "string" }
+              - { label: "Highlight Body", name: "highlight_body", widget: "text" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "text" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+
+      # ── Running Club Page ──
+      - name: "running-club"
+        label: "Running Club Page"
+        file: "content/pages/running-club.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Subheading", name: "subheading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Body 2", name: "body_2", widget: "text" }
+              - { label: "Time", name: "time", widget: "string" }
+              - { label: "Time Detail", name: "time_detail", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Location Detail", name: "location_detail", widget: "string" }
+              - { label: "Cost", name: "cost", widget: "string" }
+              - { label: "Cost Detail", name: "cost_detail", widget: "string" }
+          - label: "What to Expect"
+            name: "what_to_expect"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Body 2", name: "body_2", widget: "text" }
+          - label: "Abilities"
+            name: "abilities"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "Social"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Instagram Text", name: "instagram_text", widget: "string" }
+              - { label: "Facebook Text", name: "facebook_text", widget: "string" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+
+      # ── Locations Page ──
+      - name: "locations"
+        label: "Locations Page"
+        file: "content/pages/locations.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Flexible Section"
+            name: "flexible"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Body 2", name: "body_2", widget: "text" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+
+      # ── Transformations Page ──
+      - name: "transformations"
+        label: "Transformations Page"
+        file: "content/pages/transformations.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Stories"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Story", name: "story", widget: "text" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+
+      # ── Contact Page ──
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/pages/contact.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Get In Touch"
+            name: "get_in_touch"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Locations Heading", name: "locations_heading", widget: "string" }
+          - label: "Ready Section"
+            name: "ready"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+              - { label: "Footnote", name: "footnote", widget: "string" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "string" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }

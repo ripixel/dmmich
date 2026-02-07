@@ -1,0 +1,22 @@
+{
+    "header": {
+        "heading_accent": "Contact",
+        "heading": "Me",
+        "subtitle": "Ready to start, or just have a question? I'd love to hear from you."
+    },
+    "get_in_touch": {
+        "heading": "Get In Touch"
+    },
+    "locations_heading": "Where I Train",
+    "ready": {
+        "heading": "Ready to Start?",
+        "body": "Hit the button below to send me an email. I'll get back to you within 24 hours.",
+        "cta_text": "📧 Email Me",
+        "footnote": "Or DM me on Instagram — whatever's easiest for you."
+    },
+    "cta": {
+        "heading": "No Commitment, No Pressure",
+        "body": "Just a friendly chat about your goals and how I can help.",
+        "cta_text": "Send an Email"
+    }
+}

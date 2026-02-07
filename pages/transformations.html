@@ -7,75 +7,49 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Client <span>Transformations</span></h1>
-                <p>Real results from real people. Health, strength, and confidence — that's what we're building.</p>
+                <h1>{{content.header.heading}} <span>{{content.header.heading_accent}}</span></h1>
+                <p>{{content.header.subtitle}}</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
                 <div class="transformations-grid">
+                    {{#each content.items}}
                     <div class="transformation-card">
+                        <div class="transformation-card__images">
+                            <div class="transformation-card__image-col">
+                                <img src="{{this.before_image}}" alt="{{this.name}} — before" loading="lazy">
+                                <span class="transformation-card__label">Before</span>
+                            </div>
+                            <div class="transformation-card__image-col">
+                                <img src="{{this.after_image}}" alt="{{this.name}} — after" loading="lazy">
+                                <span class="transformation-card__label">After</span>
+                            </div>
+                        </div>
                         <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">Claire D.</h3>
-                            <p class="transformation-card__story">Claire came to Dean having never set foot in a gym.
-                                Within 16 weeks, she completed her first parkrun in under 30 minutes — and hasn't looked
-                                back since. "Dean showed me that fitness isn't about punishment — it's about progress. I
-                                actually enjoy it now."</p>
+                            <h3 class="transformation-card__name">{{this.name}}</h3>
+                            <ul class="transformation-card__stats">
+                                {{#each this.stats}}
+                                <li>
+                                    <span class="transformation-card__stat-value">{{this.value}}</span>
+                                    <span class="transformation-card__stat-label">{{this.label}}</span>
+                                </li>
+                                {{/each}}
+                            </ul>
+                            <p class="transformation-card__story">{{this.story}}</p>
                         </div>
                     </div>
-                    <div class="transformation-card">
-                        <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">Tom W.</h3>
-                            <p class="transformation-card__story">Tom had struggled with chronic lower back pain for
-                                years. After 12 weeks of targeted functional training with Dean, he's not only pain-free
-                                but deadlifting more than he ever thought possible. "I wish I'd started sooner. Dean
-                                understood exactly what I needed."</p>
-                        </div>
-                    </div>
-                    <div class="transformation-card">
-                        <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">Rachel M.</h3>
-                            <p class="transformation-card__story">Rachel lost 2 stone over 6 months — but more
-                                importantly, she gained confidence, energy, and a genuine love for training. "It's not a
-                                diet and it's not a punishment. Dean made it sustainable and I've never felt better."
-                            </p>
-                        </div>
-                    </div>
-                    <div class="transformation-card">
-                        <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">James K.</h3>
-                            <p class="transformation-card__story">As a desk worker, James was stiff, tired, and out of
-                                shape. After 6 months of online coaching with Dean, he's completed a half-marathon and
-                                feels 10 years younger. "The online programming through Hevy was perfect for my
-                                schedule."</p>
-                        </div>
-                    </div>
-                    <div class="transformation-card">
-                        <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">Linda & Steve H.</h3>
-                            <p class="transformation-card__story">This couple started training together as a way to stay
-                                active in their 50s. "We train with Dean twice a week and it's the highlight of our
-                                routine. We're fitter than we were in our 30s — and we do it together."</p>
-                        </div>
-                    </div>
-                    <div class="transformation-card">
-                        <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">Dan B.</h3>
-                            <p class="transformation-card__story">Dan joined the Bingham Sunday Running Club as a
-                                complete novice. Six months later, he ran his first 10K. "The running club got me
-                                started, and personal training with Dean kept me going. Best decision I've made."</p>
-                        </div>
-                    </div>
+                    {{/each}}
                 </div>
             </div>
         </section>
 
         <section class="cta-banner">
             <div class="container">
-                <h2>Your Transformation Starts Here</h2>
-                <p>Every journey begins with a single step. Get in touch today.</p>
-                <a href="/contact" class="btn">Start Your Journey</a>
+                <h2>{{content.cta.heading}}</h2>
+                <p>{{content.cta.body}}</p>
+                <a href="/contact" class="btn">{{content.cta.cta_text}}</a>
             </div>
         </section>
     </main>

@@ -7,8 +7,8 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Training <span>Locations</span></h1>
-                <p>Train with Dean at these gyms, or discuss a location that works for you.</p>
+                <h1>{{content.header.heading}} <span>{{content.header.heading_accent}}</span></h1>
+                <p>{{content.header.subtitle}}</p>
             </div>
         </section>
 
@@ -16,23 +16,21 @@
             <div class="container">
                 <div class="locations-grid">
                     <div class="location-card">
-                        <iframe class="location-card__map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.9528!3d52.9513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBingham!5e0!3m2!1sen!2suk!4v1234567890"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Iron HQ Bingham Map"></iframe>
+                        <iframe class="location-card__map" src="{{site.location_1_map_embed}}" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="{{site.location_1_name}} Map"></iframe>
                         <div class="location-card__info">
-                            <h3 class="location-card__name">Iron HQ — Bingham</h3>
-                            <p class="location-card__address">123 Bingham Street<br>Bingham, NG13</p>
+                            <h3 class="location-card__name">{{site.location_1_name}}</h3>
+                            <p class="location-card__address">{{{site.location_1_address}}}</p>
                         </div>
                     </div>
                     <div class="location-card">
-                        <iframe class="location-card__map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.6411!3d52.9118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGrantham!5e0!3m2!1sen!2suk!4v1234567890"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Frontline Fitness Grantham Map"></iframe>
+                        <iframe class="location-card__map" src="{{site.location_2_map_embed}}" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="{{site.location_2_name}} Map"></iframe>
                         <div class="location-card__info">
-                            <h3 class="location-card__name">Frontline Fitness — Grantham</h3>
-                            <p class="location-card__address">1075 Rougement Street<br>Grantham, NG31</p>
+                            <h3 class="location-card__name">{{site.location_2_name}}</h3>
+                            <p class="location-card__address">{{{site.location_2_address}}}</p>
                         </div>
                     </div>
                 </div>
@@ -41,22 +39,20 @@
 
         <section class="section section--alt">
             <div class="container content-block">
-                <h2>Flexible Training</h2>
-                <p>While Dean primarily operates from the two locations above, he's flexible and happy to discuss
-                    alternative arrangements. Whether it's outdoor training, a local park, or your home gym — just ask.
-                </p>
-                <p>Dean also offers full online coaching if you can't make it to a gym in person.</p>
+                <h2>{{content.flexible.heading}}</h2>
+                <p>{{content.flexible.body}}</p>
+                <p>{{content.flexible.body_2}}</p>
                 <div style="margin-top: var(--space-md);">
-                    <a href="/services" class="btn btn--outline">View Services</a>
+                    <a href="/services" class="btn btn--outline">{{content.flexible.cta_text}}</a>
                 </div>
             </div>
         </section>
 
         <section class="cta-banner">
             <div class="container">
-                <h2>Want to Train at One of These Locations?</h2>
-                <p>Get in touch and Dean will sort out the rest.</p>
-                <a href="/contact" class="btn">Contact Me</a>
+                <h2>{{content.cta.heading}}</h2>
+                <p>{{content.cta.body}}</p>
+                <a href="/contact" class="btn">{{content.cta.cta_text}}</a>
             </div>
         </section>
     </main>

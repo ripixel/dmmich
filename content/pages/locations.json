@@ -1,0 +1,18 @@
+{
+    "header": {
+        "heading": "Where",
+        "heading_accent": "I Train",
+        "subtitle": "I operate from these gyms, but I'm flexible — let's find what works for you."
+    },
+    "flexible": {
+        "heading": "I'm Flexible",
+        "body": "While I primarily train from the two locations above, I'm happy to discuss alternative arrangements. Whether it's outdoor training, a local park, or your home gym — just ask.",
+        "body_2": "I also offer full online coaching if you can't make it to a gym in person.",
+        "cta_text": "View My Services"
+    },
+    "cta": {
+        "heading": "Want to Train at One of These Locations?",
+        "body": "Get in touch and I'll sort out the rest.",
+        "cta_text": "Contact Me"
+    }
+}

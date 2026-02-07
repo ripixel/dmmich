@@ -5,13 +5,12 @@
                 <a href="/" class="logo" style="display:inline-block; margin-bottom: var(--space-md);">DMMich<span
                         style="color: var(--color-accent);">The</span>Coach</a>
                 <ul class="social-links">
-                    <li><a href="https://www.instagram.com/dmmichthecoach/" target="_blank" rel="noopener"
-                            aria-label="Instagram">📷</a></li>
-                    <li><a href="https://www.facebook.com/DMMichTheCoach" target="_blank" rel="noopener"
-                            aria-label="Facebook">📘</a></li>
+                    <li><a href="{{site.instagram_url}}" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                    </li>
+                    <li><a href="{{site.facebook_url}}" target="_blank" rel="noopener" aria-label="Facebook">📘</a></li>
                 </ul>
-                <p class="text-muted" style="font-size:0.85rem;">Level 3 Personal Trainer<br>Functional Fitness Coach 🤘
-                </p>
+                <p class="text-muted" style="font-size:0.85rem;">{{site.qualification}}<br>{{site.specialty}}
+                    🤘<br>Based in {{site.location_base}}</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
@@ -27,15 +26,15 @@
             <div class="footer-col">
                 <h4>Get In Touch</h4>
                 <div class="footer-contact">
-                    <p>📧 <a href="mailto:dean@dmmichthecoach.com">dean@dmmichthecoach.com</a></p>
-                    <p>📷 <a href="https://www.instagram.com/dmmichthecoach/" target="_blank"
-                            rel="noopener">@DMMichTheCoach</a></p>
+                    <p>📧 <a href="mailto:{{site.email}}">{{site.email}}</a></p>
+                    <p>📷 <a href="{{site.instagram_url}}" target="_blank" rel="noopener">{{site.instagram_handle}}</a>
+                    </p>
                 </div>
                 <a href="/contact" class="btn btn--primary" style="margin-top: var(--space-sm);">Contact Me</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; {{year}} DMMich The Coach. All rights reserved.</p>
+            <p>&copy; {{year}} {{site.name}}. All rights reserved.</p>
         </div>
     </div>
 </footer>

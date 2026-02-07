@@ -1,0 +1,40 @@
+{
+    "header": {
+        "heading": "About",
+        "heading_accent": "Me",
+        "subtitle": "Level 3 Personal Trainer. Functional Fitness Coach. Founder of Bingham Sunday Running Club."
+    },
+    "intro": {
+        "body": "I'm Dean M Michniew — a Level 3 qualified Personal Trainer with a genuine passion for helping people move better, feel stronger, and live healthier lives. I'm based in Bingham, Nottinghamshire, and I've built my coaching practice around one simple belief:",
+        "pullquote": "Not chasing aesthetics, but health.",
+        "body_2": "That means no crash diets, no unsustainable routines, and no pressure to look a certain way. My approach is rooted in <strong>functional fitness</strong> — training that helps you in real life, whether that's carrying the shopping, playing with your kids, or running your first 5K."
+    },
+    "functional_fitness": {
+        "heading": "What is Functional Fitness?",
+        "body": "Functional fitness focuses on exercises that train your muscles to work together, simulating movements you do in everyday life. Think squats, carries, presses, and pulls — patterns your body was designed for.",
+        "body_2": "Rather than isolating individual muscles for the sake of aesthetics, functional training builds real-world strength, improves mobility, and reduces the risk of injury. It's training with a purpose — and it's the foundation of everything I do."
+    },
+    "qualifications": {
+        "heading": "My Qualifications",
+        "items": [
+            "Level 3 Personal Trainer (Active IQ)",
+            "Functional Fitness Specialist",
+            "Founder — Bingham Sunday Running Club",
+            "First Aid Qualified"
+        ]
+    },
+    "philosophy": {
+        "heading": "My Philosophy",
+        "body": "I believe fitness should be accessible, enjoyable, and sustainable. Every client is different, and every programme I write reflects that. Whether you're brand new to exercise or an experienced athlete, I'll meet you where you are and help you progress at your own pace.",
+        "hevy_note": "All my clients receive <strong>Hevy Pro</strong> — a workout tracking app that lets you log sessions, track progress, and stay accountable between sessions. It's like having a coach in your pocket."
+    },
+    "highlight": {
+        "heading": "🤘 Train. Progress. Succeed.",
+        "body": "That's not just a tagline — it's the framework for every programme I write. Start where you are, build consistently, and celebrate every milestone along the way."
+    },
+    "cta": {
+        "heading": "Ready to Work with Me?",
+        "body": "Get in touch to book your first session or find out more about personal training and online coaching.",
+        "cta_text": "Get In Touch"
+    }
+}

@@ -7,8 +7,8 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Bingham <span>Sunday Running Club</span></h1>
-                <p>A social running and walking group for all abilities. Every Sunday morning in Bingham.</p>
+                <h1>{{content.header.heading}} <span>{{content.header.heading_accent}}</span></h1>
+                <p>{{content.header.subtitle}}</p>
             </div>
         </section>
 
@@ -19,24 +19,21 @@
                         <img src="/images/running-club.png" alt="Bingham Sunday Running Club" />
                     </div>
                     <div class="running-club__info">
-                        <h3>Everyone's Welcome</h3>
-                        <p>The Bingham Sunday Running Club was founded by Dean to get more people moving, socialising,
-                            and enjoying the outdoors. Whether you're a seasoned runner or just starting your first
-                            Couch to 5K, you'll fit right in.</p>
-                        <p>It's not a race — it's a community. We run (and walk!) together, support each other, and
-                            finish with a smile.</p>
+                        <h3>{{content.intro.subheading}}</h3>
+                        <p>{{content.intro.body}}</p>
+                        <p>{{content.intro.body_2}}</p>
                         <div class="running-club__detail">
                             <div class="running-club__detail-item">
-                                <strong>Sunday 7AM</strong>
-                                Every week, rain or shine
+                                <strong>{{content.intro.time}}</strong>
+                                {{content.intro.time_detail}}
                             </div>
                             <div class="running-club__detail-item">
-                                <strong>Bingham</strong>
-                                Nottinghamshire
+                                <strong>{{content.intro.location}}</strong>
+                                {{content.intro.location_detail}}
                             </div>
                             <div class="running-club__detail-item">
-                                <strong>Free</strong>
-                                Always
+                                <strong>{{content.intro.cost}}</strong>
+                                {{content.intro.cost_detail}}
                             </div>
                         </div>
                     </div>
@@ -46,37 +43,33 @@
 
         <section class="section section--alt">
             <div class="container content-block">
-                <h2>What to Expect</h2>
-                <p>We meet every Sunday morning at 7am in Bingham. Routes vary week to week, typically covering 3-8km
-                    depending on the group. There's usually a mix of paces, so nobody gets left behind.</p>
-                <p>No sign-up needed — just turn up, say hello, and join in. We're a friendly bunch.</p>
+                <h2>{{content.what_to_expect.heading}}</h2>
+                <p>{{content.what_to_expect.body}}</p>
+                <p>{{content.what_to_expect.body_2}}</p>
 
-                <h2>For All Abilities</h2>
+                <h2>{{content.abilities.heading}}</h2>
                 <ul>
-                    <li>Complete beginners and walkers welcome</li>
-                    <li>Mixed pace groups — nobody left behind</li>
-                    <li>Social, supportive atmosphere</li>
-                    <li>No pressure, no judgement</li>
-                    <li>Kids and dogs welcome (on leads)</li>
+                    {{#each content.abilities.items}}
+                    <li>{{this}}</li>
+                    {{/each}}
                 </ul>
 
-                <h2>Stay Connected</h2>
-                <p>Follow us on social media for route updates, photos, and weekly recaps. We also share tips for new
-                    runners and celebrate milestones together.</p>
+                <h2>{{content.social.heading}}</h2>
+                <p>{{content.social.body}}</p>
                 <div style="margin-top: var(--space-md);">
-                    <a href="https://www.instagram.com/dmmichthecoach/" target="_blank" rel="noopener"
-                        class="btn btn--primary">Follow on Instagram</a>
-                    <a href="https://www.facebook.com/DMMichTheCoach" target="_blank" rel="noopener"
-                        class="btn btn--outline" style="margin-left: var(--space-sm);">Facebook Group</a>
+                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener"
+                        class="btn btn--primary">{{content.social.instagram_text}}</a>
+                    <a href="{{site.facebook_url}}" target="_blank" rel="noopener" class="btn btn--outline"
+                        style="margin-left: var(--space-sm);">{{content.social.facebook_text}}</a>
                 </div>
             </div>
         </section>
 
         <section class="cta-banner">
             <div class="container">
-                <h2>See You Sunday!</h2>
-                <p>Just turn up and say hello. No sign-up, no fees — just good company and fresh air.</p>
-                <a href="/contact" class="btn">Ask Dean a Question</a>
+                <h2>{{content.cta.heading}}</h2>
+                <p>{{content.cta.body}}</p>
+                <a href="/contact" class="btn">{{content.cta.cta_text}}</a>
             </div>
         </section>
     </main>

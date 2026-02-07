@@ -1,0 +1,134 @@
+{
+    "header": {
+        "heading": "Client",
+        "heading_accent": "Transformations",
+        "subtitle": "Real results from real people. Health, strength, and confidence — that's what we're building together."
+    },
+    "items": [
+        {
+            "name": "Claire D.",
+            "before_image": "/images/transformations/claire-before.png",
+            "after_image": "/images/transformations/claire-after.png",
+            "stats": [
+                {
+                    "label": "Duration",
+                    "value": "16 weeks"
+                },
+                {
+                    "label": "Goal",
+                    "value": "First parkrun"
+                },
+                {
+                    "label": "Result",
+                    "value": "Sub-30 min"
+                }
+            ],
+            "story": "Claire came to me having never set foot in a gym. Within 16 weeks, she completed her first parkrun in under 30 minutes — and hasn't looked back since. \"Dean showed me that fitness isn't about punishment — it's about progress. I actually enjoy it now.\""
+        },
+        {
+            "name": "Tom W.",
+            "before_image": "/images/transformations/tom-before.png",
+            "after_image": "/images/transformations/tom-after.png",
+            "stats": [
+                {
+                    "label": "Duration",
+                    "value": "12 weeks"
+                },
+                {
+                    "label": "Focus",
+                    "value": "Back pain"
+                },
+                {
+                    "label": "Result",
+                    "value": "Pain-free"
+                }
+            ],
+            "story": "Tom had struggled with chronic lower back pain for years. After 12 weeks of targeted functional training with me, he's not only pain-free but deadlifting more than he ever thought possible. \"I wish I'd started sooner. Dean understood exactly what I needed.\""
+        },
+        {
+            "name": "Rachel M.",
+            "before_image": "/images/transformations/rachel-before.png",
+            "after_image": "/images/transformations/rachel-after.png",
+            "stats": [
+                {
+                    "label": "Duration",
+                    "value": "6 months"
+                },
+                {
+                    "label": "Weight lost",
+                    "value": "2 stone"
+                },
+                {
+                    "label": "Result",
+                    "value": "Sustainable"
+                }
+            ],
+            "story": "Rachel lost 2 stone over 6 months — but more importantly, she gained confidence, energy, and a genuine love for training. \"It's not a diet and it's not a punishment. Dean made it sustainable and I've never felt better.\""
+        },
+        {
+            "name": "James K.",
+            "before_image": "/images/transformations/james-before.png",
+            "after_image": "/images/transformations/james-after.png",
+            "stats": [
+                {
+                    "label": "Duration",
+                    "value": "6 months"
+                },
+                {
+                    "label": "Type",
+                    "value": "Online coaching"
+                },
+                {
+                    "label": "Result",
+                    "value": "Half-marathon"
+                }
+            ],
+            "story": "As a desk worker, James was stiff, tired, and out of shape. After 6 months of online coaching with me, he's completed a half-marathon and says he feels 10 years younger. \"The online programming through Hevy was perfect for my schedule.\""
+        },
+        {
+            "name": "Linda & Steve H.",
+            "before_image": "/images/transformations/linda-steve-before.png",
+            "after_image": "/images/transformations/linda-steve-after.png",
+            "stats": [
+                {
+                    "label": "Ages",
+                    "value": "50s"
+                },
+                {
+                    "label": "Sessions",
+                    "value": "2x per week"
+                },
+                {
+                    "label": "Result",
+                    "value": "Fitter than ever"
+                }
+            ],
+            "story": "This couple started training with me as a way to stay active in their 50s. \"We train with Dean twice a week and it's the highlight of our routine. We're fitter than we were in our 30s — and we do it together.\""
+        },
+        {
+            "name": "Dan B.",
+            "before_image": "/images/transformations/dan-before.png",
+            "after_image": "/images/transformations/dan-after.png",
+            "stats": [
+                {
+                    "label": "Duration",
+                    "value": "6 months"
+                },
+                {
+                    "label": "Started as",
+                    "value": "Novice"
+                },
+                {
+                    "label": "Result",
+                    "value": "First 10K"
+                }
+            ],
+            "story": "Dan joined the Bingham Sunday Running Club as a complete novice. Six months later, he ran his first 10K. \"The running club got me started, and personal training with Dean kept me going. Best decision I've made.\""
+        }
+    ],
+    "cta": {
+        "heading": "Your Transformation Starts Here",
+        "body": "Every journey begins with a single step. Get in touch and let's get started.",
+        "cta_text": "Start Your Journey"
+    }
+}

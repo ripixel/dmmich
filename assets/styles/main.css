@@ -554,8 +554,8 @@ h6 {
    ---------------------------------------- */
 .transformations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--space-lg);
 }
 
 .transformation-card {
@@ -563,6 +563,13 @@ h6 {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+}
+
+.transformation-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .transformation-card__images {
@@ -570,7 +577,12 @@ h6 {
   grid-template-columns: 1fr 1fr;
 }
 
-.transformation-card__images img {
+.transformation-card__image-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.transformation-card__image-col img {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
@@ -584,6 +596,7 @@ h6 {
   text-align: center;
   padding: var(--space-xs) 0;
   background: var(--color-bg);
+  color: var(--color-text-muted);
 }
 
 .transformation-card__body {
@@ -592,14 +605,45 @@ h6 {
 
 .transformation-card__name {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.transformation-card__stats {
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.transformation-card__stats li {
+  display: flex;
+  flex-direction: column;
+}
+
+.transformation-card__stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.transformation-card__stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .transformation-card__story {
   color: var(--color-text-muted);
   font-size: 0.95rem;
+  line-height: 1.8;
 }
 
 /* ----------------------------------------

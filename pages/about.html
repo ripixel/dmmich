@@ -7,8 +7,8 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>About <span>Dean M Michniew</span></h1>
-                <p>Level 3 Personal Trainer. Functional Fitness Coach. Founder of Bingham Sunday Running Club.</p>
+                <h1>{{content.header.heading}} <span>{{content.header.heading_accent}}</span></h1>
+                <p>{{content.header.subtitle}}</p>
             </div>
         </section>
 
@@ -19,54 +19,39 @@
                         <img src="/images/dean-portrait.png" alt="Dean M Michniew — Personal Trainer" />
                     </div>
                     <div class="about-text">
-                        <p>Dean is a Level 3 qualified Personal Trainer with a genuine passion for helping people move
-                            better, feel stronger, and live healthier lives. Based in Bingham, Nottinghamshire, Dean has
-                            built his coaching practice around one simple belief:</p>
-                        <blockquote class="pullquote">"Not chasing aesthetics, but health."</blockquote>
-                        <p>That means no crash diets, no unsustainable routines, and no pressure to look a certain way.
-                            Dean's approach is rooted in <strong>functional fitness</strong> — training that helps you
-                            in real life, whether that's carrying the shopping, playing with your kids, or running your
-                            first 5K.</p>
+                        <p>{{content.intro.body}}</p>
+                        <blockquote class="pullquote">"{{content.intro.pullquote}}"</blockquote>
+                        <p>{{{content.intro.body_2}}}</p>
                     </div>
                 </div>
 
-                <h2>What is Functional Fitness?</h2>
-                <p>Functional fitness focuses on exercises that train your muscles to work together, simulating
-                    movements you do in everyday life. Think squats, carries, presses, and pulls — patterns your body
-                    was designed for.</p>
-                <p>Rather than isolating individual muscles for the sake of aesthetics, functional training builds
-                    real-world strength, improves mobility, and reduces the risk of injury. It's training with a
-                    purpose.</p>
+                <h2>{{content.functional_fitness.heading}}</h2>
+                <p>{{content.functional_fitness.body}}</p>
+                <p>{{content.functional_fitness.body_2}}</p>
 
-                <h2>Qualifications & Experience</h2>
+                <h2>{{content.qualifications.heading}}</h2>
                 <ul>
-                    <li>Level 3 Personal Trainer (Active IQ)</li>
-                    <li>Functional Fitness Specialist</li>
-                    <li>Founder — Bingham Sunday Running Club</li>
-                    <li>First Aid Qualified</li>
+                    {{#each content.qualifications.items}}
+                    <li>{{this}}</li>
+                    {{/each}}
                 </ul>
 
-                <h2>Dean's Philosophy</h2>
-                <p>Dean believes that fitness should be accessible, enjoyable, and sustainable. Every client is
-                    different, and every programme reflects that. Whether you're brand new to exercise or an experienced
-                    athlete, Dean meets you where you are and helps you progress at your own pace.</p>
-                <p>All clients receive <strong>Hevy Pro</strong> — a workout tracking app that lets you log sessions,
-                    track progress, and stay accountable between sessions. It's like having a coach in your pocket.</p>
+                <h2>{{content.philosophy.heading}}</h2>
+                <p>{{content.philosophy.body}}</p>
+                <p>{{{content.philosophy.hevy_note}}}</p>
 
                 <div class="feature-highlight">
-                    <h3>🤘 Train. Progress. Succeed.</h3>
-                    <p>That's not just a tagline — it's the framework for every programme Dean writes. Start where you
-                        are, build consistently, and celebrate every milestone along the way.</p>
+                    <h3>{{content.highlight.heading}}</h3>
+                    <p>{{content.highlight.body}}</p>
                 </div>
             </div>
         </section>
 
         <section class="cta-banner">
             <div class="container">
-                <h2>Ready to Work with Dean?</h2>
-                <p>Get in touch to book your first session or find out more about personal training and online coaching.
-                </p>
-                <a href="/contact" class="btn">Get In Touch</a>
+                <h2>{{content.cta.heading}}</h2>
+                <p>{{content.cta.body}}</p>
+                <a href="/contact" class="btn">{{content.cta.cta_text}}</a>
             </div>
         </section>
     </main>
