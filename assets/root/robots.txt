@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /
+Disallow: /admin/
 
 Sitemap: https://dmmichthecoach.co.uk/sitemap.xml
