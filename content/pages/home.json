@@ -11,7 +11,7 @@
         "intro": "I'm Dean — a Level 3 qualified Personal Trainer with a passion for functional fitness, real-world strength, and helping people feel genuinely better in their day-to-day lives.",
         "body": "I'm based in Bingham, Nottinghamshire, and I work with clients of all backgrounds and abilities. Whether you're picking up a barbell for the first time or looking to take your training to the next level, I'll help you get there with an approachable, no-nonsense coaching style.",
         "pullquote": "Not chasing aesthetics, but health.",
-        "running_club_note": "I also founded the <strong>Bingham Sunday Running Club</strong> — a social running and walking group open to everyone, because I believe fitness should be fun and community-driven.",
+        "running_club_note": "I also founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Bingham Sunday Running Club</strong></a> — a free, super relaxed running and walking group that meets every Sunday at 9am. All paces welcome, and we always finish with coffee and a full English.",
         "cta_text": "Read More"
     },
     "testimonials": {
@@ -68,13 +68,13 @@
     "running_club": {
         "heading": "Bingham",
         "heading_accent": "Sunday Running Club",
-        "subheading": "Run Together, Grow Together",
-        "body": "I founded the Bingham Sunday Running Club — a social running and walking group open to all abilities. Whether you're training for your first 5K or just fancy a sociable jog, you're welcome.",
-        "time": "Sunday 7AM",
-        "time_detail": "Every week",
-        "location": "Bingham",
+        "subheading": "Run Together, Eat Together",
+        "body": "I founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club</a> — a free, super relaxed running and walking group open to all abilities. We meet every Sunday at 9am at Bingham Market Place, run a lap-based route at whatever pace suits you, then head to Gilt for coffee and a full English. No sign-up, no fees — just good vibes.",
+        "time": "Sunday 9AM",
+        "time_detail": "Every week, rain or shine",
+        "location": "Bingham Market Place",
         "location_detail": "Nottinghamshire",
-        "cta_text": "Join Us"
+        "cta_text": "Find Out More"
     },
     "transformations": {
         "heading": "Client",
@@ -100,7 +100,26 @@
         "heading_accent": "I Train"
     },
     "gallery": {
-        "heading_accent": "Gallery"
+        "heading_accent": "Gallery",
+        "instagram_cta": "Follow Me on Instagram",
+        "items": [
+            {
+                "src": "/images/training-session.png",
+                "alt": "Personal training session"
+            },
+            {
+                "src": "/images/gallery-group.png",
+                "alt": "Group training session"
+            },
+            {
+                "src": "/images/gallery-weights.png",
+                "alt": "Strength training"
+            },
+            {
+                "src": "/images/running-club.png",
+                "alt": "Bingham Sunday Running Club"
+            }
+        ]
     },
     "cta": {
         "heading": "Ready to Start Your Journey?",

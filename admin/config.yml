@@ -1,11 +1,36 @@
+# Decap CMS Configuration
+# https://decapcms.org/docs/configuration-options/
+
 backend:
+  # GitHub Backend with Custom Authentication (Firebase Functions)
   name: github
   repo: ripixel/dmmich
   branch: main
+  base_url: https://binghamsundayrunningclub.co.uk
+  auth_endpoint: api/auth
+  api_root: https://api.github.com
+  commit_messages:
+    create: 'feat(content): Create {{collection}} "{{slug}}"'
+    update: 'feat(content): Update {{collection}} "{{slug}}"'
+    delete: 'feat(content): Delete {{collection}} "{{slug}}"'
+    uploadMedia: 'feat(media): Upload "{{path}}"'
+    deleteMedia: 'feat(media): Delete "{{path}}"'
+    openAuthoring: '{{message}}'
 
+# Media files storage
 media_folder: "assets/images"
 public_folder: "/images"
 
+# Site URL for local development preview
+site_url: https://dmmichthecoach.co.uk
+display_url: https://dmmichthecoach.co.uk
+
+# Slug configuration
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+# Collections define the structure for editable content
 collections:
   # ── Global Settings (set once, used everywhere) ──
   - name: "settings"
@@ -25,12 +50,16 @@ collections:
           - { label: "Qualification", name: "qualification", widget: "string" }
           - { label: "Specialty", name: "specialty", widget: "string" }
           - { label: "Location Base", name: "location_base", widget: "string" }
-          - { label: "Location 1 Name", name: "location_1_name", widget: "string" }
-          - { label: "Location 1 Address", name: "location_1_address", widget: "text" }
-          - { label: "Location 1 Map Embed URL", name: "location_1_map_embed", widget: "string" }
-          - { label: "Location 2 Name", name: "location_2_name", widget: "string" }
-          - { label: "Location 2 Address", name: "location_2_address", widget: "text" }
-          - { label: "Location 2 Map Embed URL", name: "location_2_map_embed", widget: "string" }
+          - label: "Locations"
+            name: "locations"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Map Embed URL", name: "map_embed", widget: "string" }
 
   # ── Page Content ──
   - name: "pages"

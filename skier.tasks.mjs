@@ -45,7 +45,7 @@ const pageMeta = {
     },
     locations: {
         title: `Where I Train | ${site.name}`,
-        description: `I train at ${site.location_1_name} and ${site.location_2_name}. Flexible locations across Nottinghamshire — let's find what works for you.`,
+        description: `I train at ${site.locations.map(l => l.name).join(' and ')}. Flexible locations across Nottinghamshire — let's find what works for you.`,
     },
     contact: {
         title: `Contact Me | ${site.name}`,

@@ -55,12 +55,12 @@
                 </ul>
 
                 <h2>{{content.social.heading}}</h2>
-                <p>{{content.social.body}}</p>
-                <div style="margin-top: var(--space-md);">
-                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer"
-                        class="btn btn--primary">{{content.social.instagram_text}}</a>
-                    <a href="{{site.facebook_url}}" target="_blank" rel="noopener noreferrer" class="btn btn--outline"
-                        style="margin-left: var(--space-sm);">{{content.social.facebook_text}}</a>
+                <p>{{{content.social.body}}}</p>
+                <div style="margin-top: var(--space-md); display: flex; flex-wrap: wrap; gap: var(--space-sm);">
+                    <a href="{{content.social.website_url}}" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--primary">{{content.social.website_text}}</a>
+                    <a href="{{content.social.instagram_url}}" target="_blank" rel="noopener noreferrer"
+                        class="btn btn--outline">{{content.social.instagram_text}}</a>
                 </div>
             </div>
         </section>

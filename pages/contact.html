@@ -40,14 +40,11 @@
                             style="font-family: var(--font-heading); text-transform: uppercase; font-size: 1.5rem; margin-top: var(--space-xl); margin-bottom: var(--space-md);">
                             {{content.locations_heading}}</h2>
                         <ul class="contact-methods">
+                            {{#each site.locations}}
                             <li>
-                                <strong>Bingham</strong>
-                                {{site.location_1_name}}
+                                <strong>{{this.name}}</strong>
                             </li>
-                            <li>
-                                <strong>Grantham</strong>
-                                {{site.location_2_name}}
-                            </li>
+                            {{/each}}
                         </ul>
                     </div>
 

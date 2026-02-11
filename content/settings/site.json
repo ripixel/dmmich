@@ -9,10 +9,22 @@
     "qualification": "Level 3 Personal Trainer",
     "specialty": "Functional Fitness Coach",
     "location_base": "Bingham, Nottinghamshire",
-    "location_1_name": "Iron HQ — Bingham",
-    "location_1_address": "123 Bingham Street\nBingham, NG13",
-    "location_1_map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.9528!3d52.9513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBingham!5e0!3m2!1sen!2suk!4v1234567890",
-    "location_2_name": "Frontline Fitness — Grantham",
-    "location_2_address": "1075 Rougement Street\nGrantham, NG31",
-    "location_2_map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.6411!3d52.9118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGrantham!5e0!3m2!1sen!2suk!4v1234567890"
+    "locations": [
+        {
+            "name": "Iron HQ — Bingham",
+            "address": "123 Bingham Street\nBingham, NG13",
+            "image": "/images/locations/iron-hq.png",
+            "image_alt": "Iron HQ gym — Bingham",
+            "description": "A big, brand-new lifting and weights facility. Purpose-built for serious strength training with top-of-the-line equipment and plenty of space to move.",
+            "map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.9528!3d52.9513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBingham!5e0!3m2!1sen!2suk!4v1234567890"
+        },
+        {
+            "name": "Frontline Fitness — Grantham",
+            "address": "1075 Rougement Street\nGrantham, NG31",
+            "image": "/images/locations/frontline-fitness.png",
+            "image_alt": "Frontline Fitness gym — Grantham",
+            "description": "The home of functional fitness — built for Hyrox, ATHX, and everything in between. If you want to push your limits with real-world movement and competition-ready training, this is the place.",
+            "map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-0.6411!3d52.9118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGrantham!5e0!3m2!1sen!2suk!4v1234567890"
+        }
+    ]
 }

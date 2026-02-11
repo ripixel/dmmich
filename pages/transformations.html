@@ -55,6 +55,41 @@
     </main>
     {{> footer}}
     {{> structured-data}}
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-overlay__close" id="lightbox-close" aria-label="Close">&times;</button>
+        <div class="lightbox-overlay__content" id="lightbox-content"></div>
+    </div>
+
+    <script>
+        (function () {
+            var overlay = document.getElementById('lightbox');
+            var content = document.getElementById('lightbox-content');
+            var closeBtn = document.getElementById('lightbox-close');
+
+            document.querySelectorAll('.transformations-grid .transformation-card').forEach(function (card) {
+                card.addEventListener('click', function () {
+                    content.innerHTML = card.innerHTML;
+                    overlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            function closeLightbox() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            closeBtn.addEventListener('click', closeLightbox);
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) closeLightbox();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeLightbox();
+            });
+        })();
+    </script>
 </body>
 
 </html>

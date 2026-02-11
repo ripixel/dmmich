@@ -24,7 +24,7 @@
                 </h2>
                 <div class="about-grid">
                     <div class="about-image">
-                        <img src="/images/dean-portrait.png" alt="Dean M Michniew — Personal Trainer" loading="lazy" />
+                        <img src="/images/dean-portrait.jpg" alt="Dean M Michniew — Personal Trainer" loading="lazy" />
                     </div>
                     <div class="about-text">
                         <p>{{content.about.intro}}</p>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="running-club__info">
                         <h3>{{content.running_club.subheading}}</h3>
-                        <p>{{content.running_club.body}}</p>
+                        <p>{{{content.running_club.body}}}</p>
                         <div class="running-club__detail">
                             <div class="running-club__detail-item">
                                 <strong>{{content.running_club.time}}</strong>
@@ -114,7 +114,7 @@
                 <h2 class="section__heading">{{content.transformations.heading}}
                     <span>{{content.transformations.heading_accent}}</span>
                 </h2>
-                <div class="transformations-grid">
+                <div class="transformations-grid transformations-grid--stories">
                     {{#each content.transformations.items}}
                     <div class="transformation-card">
                         <div class="transformation-card__body">
@@ -137,24 +137,20 @@
                     <span>{{content.locations.heading_accent}}</span>
                 </h2>
                 <div class="locations-grid">
+                    {{#each site.locations}}
                     <div class="location-card">
-                        <iframe class="location-card__map" src="{{site.location_1_map_embed}}" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="{{site.location_1_name}} Map"></iframe>
-                        <div class="location-card__info">
-                            <h3 class="location-card__name">{{site.location_1_name}}</h3>
-                            <p class="location-card__address">{{{site.location_1_address}}}</p>
+                        <div class="location-card__image">
+                            <img src="{{this.image}}" alt="{{this.image_alt}}" loading="lazy" />
                         </div>
-                    </div>
-                    <div class="location-card">
-                        <iframe class="location-card__map" src="{{site.location_2_map_embed}}" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="{{site.location_2_name}} Map"></iframe>
                         <div class="location-card__info">
-                            <h3 class="location-card__name">{{site.location_2_name}}</h3>
-                            <p class="location-card__address">{{{site.location_2_address}}}</p>
+                            <h3 class="location-card__name">{{this.name}}</h3>
+                            <p class="location-card__desc">{{this.description}}</p>
+                            <p class="location-card__address">{{this.address}}</p>
                         </div>
+                        <iframe class="location-card__map" src="{{this.map_embed}}" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="{{this.name}} Map"></iframe>
                     </div>
+                    {{/each}}
                 </div>
             </div>
         </section>
@@ -164,13 +160,53 @@
             <div class="container">
                 <h2 class="section__heading"><span>{{content.gallery.heading_accent}}</span></h2>
                 <div class="gallery-grid">
-                    <img src="/images/training-session.png" alt="Personal training session" loading="lazy" />
-                    <img src="/images/gallery-group.png" alt="Group training session" loading="lazy" />
-                    <img src="/images/gallery-weights.png" alt="Strength training" loading="lazy" />
-                    <img src="/images/running-club.png" alt="Bingham Sunday Running Club" loading="lazy" />
+                    {{#each content.gallery.items}}
+                    <div class="gallery-item" onclick="openLightbox('{{this.src}}', '{{this.alt}}')">
+                        <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
+                        <div class="gallery-item__overlay">
+                            <span class="gallery-item__icon">&#x1F50D;</span>
+                        </div>
+                    </div>
+                    {{/each}}
+                    <a class="gallery-instagram" href="{{site.instagram_url}}" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg class="gallery-instagram__icon" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.08 4.08 0 011.47.958c.458.458.78.92.957 1.47.164.46.35 1.26.404 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.404 2.43a4.08 4.08 0 01-.957 1.47 4.08 4.08 0 01-1.47.957c-.46.164-1.26.35-2.43.404-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.404a4.08 4.08 0 01-1.47-.957 4.08 4.08 0 01-.957-1.47c-.164-.46-.35-1.26-.404-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.404-2.43a4.08 4.08 0 01.957-1.47A4.08 4.08 0 015.064 2.293c.46-.164 1.26-.35 2.43-.404C8.76 1.83 9.14 1.818 12 1.818V2.163zM12 0C8.741 0 8.333.014 7.053.072 5.775.131 4.902.333 4.14.63a5.88 5.88 0 00-2.126 1.384A5.88 5.88 0 00.63 4.14C.333 4.902.131 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.059 1.278.261 2.15.558 2.913a5.88 5.88 0 001.384 2.126A5.88 5.88 0 004.14 23.37c.763.297 1.635.5 2.913.558C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.059 2.15-.261 2.913-.558a5.88 5.88 0 002.126-1.384 5.88 5.88 0 001.384-2.126c.297-.763.5-1.635.558-2.913C23.986 15.667 24 15.259 24 12s-.014-3.667-.072-4.947c-.059-1.278-.261-2.15-.558-2.913a5.88 5.88 0 00-1.384-2.126A5.88 5.88 0 0019.86.63C19.097.333 18.225.131 16.947.072 15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+                        </svg>
+                        <span class="gallery-instagram__label">{{content.gallery.instagram_cta}}</span>
+                        <span class="gallery-instagram__handle">{{site.instagram_handle}}</span>
+                    </a>
                 </div>
             </div>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="galleryLightbox" onclick="closeLightbox(event)">
+                <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+                <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+            </div>
         </section>
+
+        <script>
+            function openLightbox(src, alt) {
+                var lb = document.getElementById('galleryLightbox');
+                var img = document.getElementById('lightboxImg');
+                img.src = src;
+                img.alt = alt;
+                lb.classList.add('lightbox--open');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeLightbox(e) {
+                if (e && e.target !== e.currentTarget && !e.target.classList.contains('lightbox__close')) return;
+                var lb = document.getElementById('galleryLightbox');
+                lb.classList.remove('lightbox--open');
+                document.body.style.overflow = '';
+            }
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeLightbox();
+            });
+        </script>
 
         <!-- ===== CTA BANNER ===== -->
         <section class="cta-banner">

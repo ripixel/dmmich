@@ -2,43 +2,47 @@
     "header": {
         "heading": "Bingham",
         "heading_accent": "Sunday Running Club",
-        "subtitle": "A social running and walking group I founded for all abilities. Every Sunday morning in Bingham."
+        "subtitle": "A free, friendly running and walking group I founded for all abilities. Every Sunday morning at 9am from Bingham Market Place."
     },
     "intro": {
         "subheading": "Everyone's Welcome",
-        "body": "I founded the Bingham Sunday Running Club to get more people moving, socialising, and enjoying the outdoors. Whether you're a seasoned runner or just starting your first Couch to 5K, you'll fit right in.",
-        "body_2": "It's not a race — it's a community. We run (and walk!) together, support each other, and finish with a smile.",
-        "time": "Sunday 7AM",
+        "body": "I founded the Bingham Sunday Running Club to get more people moving, socialising, and enjoying the outdoors. Whether you're a seasoned runner or just starting out, you'll fit right in. We're a group of friends who just happen to run together — no memberships, no bib numbers, just good vibes.",
+        "body_2": "Our route is lap-based, so you can do as many or as few laps as you like — there's absolutely no minimum distance. After the run, we head to Gilt for coffee and a full English breakfast. Honestly, it's the real reason most of us turn up.",
+        "time": "Sunday 9AM",
         "time_detail": "Every week, rain or shine",
-        "location": "Bingham",
+        "location": "Bingham Market Place",
         "location_detail": "Nottinghamshire",
         "cost": "Free",
-        "cost_detail": "Always"
+        "cost_detail": "Always",
+        "website_url": "https://binghamsundayrunningclub.co.uk"
     },
     "what_to_expect": {
         "heading": "What to Expect",
-        "body": "We meet every Sunday morning at 7am in Bingham. Routes vary week to week, typically covering 3-8km depending on the group. There's usually a mix of paces, so nobody gets left behind.",
-        "body_2": "No sign-up needed — just turn up, say hello, and join in. We're a friendly bunch."
+        "body": "We meet every Sunday morning at 9am at Bingham Market Place. We do a gentle warm-up jog to the start of the loops, and then you pick your distance — small, medium, or long loop. There's always a mix of paces, so nobody gets left behind.",
+        "body_2": "No sign-up needed — just turn up, say hello, and join in. After the run, we walk back together and head to Gilt café for coffee, breakfast, and a good natter. It's super relaxed."
     },
     "abilities": {
         "heading": "For All Abilities",
         "items": [
             "Complete beginners and walkers welcome",
-            "Mixed pace groups — nobody left behind",
-            "Social, supportive atmosphere",
-            "No pressure, no judgement",
-            "Kids and dogs welcome (on leads)"
+            "Mixed pace groups — nobody gets left behind",
+            "Super relaxed, social atmosphere",
+            "No pressure, no judgement, no sign-up required",
+            "Kids, dogs (on leads), and prams all welcome",
+            "Post-run coffee and breakfast at Gilt"
         ]
     },
     "social": {
         "heading": "Stay Connected",
-        "body": "Follow us on social media for route updates, photos, and weekly recaps. I also share tips for new runners and we celebrate milestones together.",
-        "instagram_text": "Follow on Instagram",
-        "facebook_text": "Facebook Group"
+        "body": "Follow us on Instagram for route updates, photos, and weekly recaps. We also share tips for new runners and celebrate milestones together. Check out the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club website</a> for full results, runner stats, upcoming events, and more.",
+        "instagram_text": "Follow @sundayrunclub_bingham",
+        "instagram_url": "https://www.instagram.com/sundayrunclub_bingham/",
+        "website_text": "Visit Our Website",
+        "website_url": "https://binghamsundayrunningclub.co.uk"
     },
     "cta": {
         "heading": "See You Sunday!",
-        "body": "Just turn up and say hello. No sign-up, no fees — just good company and fresh air.",
+        "body": "9am, Bingham Market Place. Just turn up and say hello — no sign-up, no fees, just good company and fresh air. And breakfast afterwards.",
         "cta_text": "Ask Me a Question"
     }
 }
