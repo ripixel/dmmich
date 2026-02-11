@@ -6,8 +6,7 @@
  * The site stylesheet is registered separately in admin/index.html.
  */
 
-/* eslint-disable no-undef */
-var h = createClass ? undefined : undefined; // Decap CMS exposes createClass globally
+/* global CMS, createClass, h */
 
 // ── Helpers ──────────────────────────────────────────────────────
 
