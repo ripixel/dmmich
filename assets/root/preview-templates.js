@@ -59,7 +59,7 @@ var HomePreview = createClass({
         return h('main', {},
             // Hero
             h('section', { className: 'hero', style: { minHeight: '60vh' } },
-                h('div', { className: 'hero__bg', style: { backgroundImage: "url('/images/hero-bg.png')" } }),
+                h('div', { className: 'hero__bg', style: { backgroundImage: "url('" + f(entry, 'hero.background_image', '/images/hero-bg.png') + "')" } }),
                 h('div', { className: 'hero__content' },
                     h('h1', { className: 'hero__title' },
                         f(entry, 'hero.title_line1'), h('br'), h('span', { className: 'accent' }, f(entry, 'hero.title_line2'))
@@ -173,13 +173,26 @@ var HomePreview = createClass({
                 )
             ),
 
-            // Gallery heading only (images are static)
+            // Gallery
             h('section', { className: 'section', id: 'gallery' },
                 h('div', { className: 'container' },
                     h('h2', { className: 'section__heading' },
                         h('span', {}, f(entry, 'gallery.heading_accent'))
                     ),
-                    h('p', { className: 'text-center text-muted' }, '(Gallery images shown on live site)')
+                    h('div', { className: 'gallery-grid' },
+                        fList(entry, 'gallery.items').map(function (item, i) {
+                            return h('div', { className: 'gallery-item', key: i },
+                                h('img', { src: item.src, alt: item.alt }),
+                                h('div', { className: 'gallery-item__overlay' },
+                                    h('span', { className: 'gallery-item__icon' }, '🔍')
+                                )
+                            );
+                        }),
+                        h('a', { className: 'gallery-instagram', href: '#' },
+                            h('span', { className: 'gallery-instagram__label' }, f(entry, 'gallery.instagram_cta')),
+                            h('span', { className: 'gallery-instagram__handle' }, '@DMMichTheCoach')
+                        )
+                    )
                 )
             ),
 
@@ -425,8 +438,26 @@ var TransformationsPreview = createClass({
                     h('div', { className: 'transformations-grid' },
                         fList(entry, 'items').map(function (item, i) {
                             return h('div', { className: 'transformation-card', key: i },
+                                h('div', { className: 'transformation-card__images' },
+                                    h('div', { className: 'transformation-card__image-col' },
+                                        item.before_image ? h('img', { src: item.before_image, alt: item.name + ' — before' }) : null,
+                                        h('span', { className: 'transformation-card__label' }, 'Before')
+                                    ),
+                                    h('div', { className: 'transformation-card__image-col' },
+                                        item.after_image ? h('img', { src: item.after_image, alt: item.name + ' — after' }) : null,
+                                        h('span', { className: 'transformation-card__label' }, 'After')
+                                    )
+                                ),
                                 h('div', { className: 'transformation-card__body' },
                                     h('h3', { className: 'transformation-card__name' }, item.name),
+                                    (item.stats && item.stats.length) ? h('ul', { className: 'transformation-card__stats' },
+                                        item.stats.map(function (stat, j) {
+                                            return h('li', { key: j },
+                                                h('span', { className: 'transformation-card__stat-value' }, stat.value),
+                                                h('span', { className: 'transformation-card__stat-label' }, stat.label)
+                                            );
+                                        })
+                                    ) : null,
                                     h('p', { className: 'transformation-card__story' }, item.story)
                                 )
                             );

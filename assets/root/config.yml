@@ -79,6 +79,7 @@ collections:
               - { label: "Title Line 2", name: "title_line2", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
               - { label: "CTA Text", name: "cta_text", widget: "string" }
+              - { label: "Background Image", name: "background_image", widget: "image" }
           - label: "About Section"
             name: "about"
             widget: "object"
@@ -155,6 +156,13 @@ collections:
             widget: "object"
             fields:
               - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Instagram CTA Text", name: "instagram_cta", widget: "string" }
+              - label: "Images"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
           - label: "CTA Banner"
             name: "cta"
             widget: "object"
@@ -311,9 +319,11 @@ collections:
             widget: "object"
             fields:
               - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Body (HTML)", name: "body", widget: "text" }
+              - { label: "Website Text", name: "website_text", widget: "string" }
+              - { label: "Website URL", name: "website_url", widget: "string" }
               - { label: "Instagram Text", name: "instagram_text", widget: "string" }
-              - { label: "Facebook Text", name: "facebook_text", widget: "string" }
+              - { label: "Instagram URL", name: "instagram_url", widget: "string" }
           - label: "CTA"
             name: "cta"
             widget: "object"
@@ -367,6 +377,14 @@ collections:
             widget: "list"
             fields:
               - { label: "Name", name: "name", widget: "string" }
+              - { label: "Before Image", name: "before_image", widget: "image" }
+              - { label: "After Image", name: "after_image", widget: "image" }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value", name: "value", widget: "string" }
               - { label: "Story", name: "story", widget: "text" }
           - label: "CTA"
             name: "cta"

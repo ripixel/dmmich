@@ -3,7 +3,8 @@
         "title_line1": "TRAIN. PROGRESS.",
         "title_line2": "SUCCEED.",
         "subtitle": "Functional Fitness Coach 🤘",
-        "cta_text": "Start Your Journey"
+        "cta_text": "Start Your Journey",
+        "background_image": "/images/hero-bg.png"
     },
     "about": {
         "heading": "About",
