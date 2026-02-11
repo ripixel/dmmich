@@ -69,6 +69,8 @@
     "running_club": {
         "heading": "Bingham",
         "heading_accent": "Sunday Running Club",
+        "image": "/images/running-club.png",
+        "image_alt": "Bingham Sunday Running Club",
         "subheading": "Run Together, Eat Together",
         "body": "I founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club</a> — a free, super relaxed running and walking group open to all abilities. We meet every Sunday at 9am at Bingham Market Place, run a lap-based route at whatever pace suits you, then head to Gilt for coffee and a full English. No sign-up, no fees — just good vibes.",
         "time": "Sunday 9AM",

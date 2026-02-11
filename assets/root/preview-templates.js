@@ -132,7 +132,7 @@ var HomePreview = createClass({
                     SectionHeading(f(entry, 'running_club.heading'), f(entry, 'running_club.heading_accent')),
                     h('div', { className: 'running-club' },
                         h('div', { className: 'running-club__image' },
-                            h('img', { src: '/images/running-club.png', alt: 'Bingham Sunday Running Club' })
+                            h('img', { src: f(entry, 'running_club.image', '/images/running-club.png'), alt: f(entry, 'running_club.image_alt', 'Bingham Sunday Running Club') })
                         ),
                         h('div', { className: 'running-club__info' },
                             h('h3', {}, f(entry, 'running_club.subheading')),
@@ -333,7 +333,7 @@ var RunningClubPreview = createClass({
                 h('div', { className: 'container' },
                     h('div', { className: 'running-club' },
                         h('div', { className: 'running-club__image' },
-                            h('img', { src: '/images/running-club.png', alt: 'Bingham Sunday Running Club' })
+                            h('img', { src: f(entry, 'intro.image', '/images/running-club.png'), alt: f(entry, 'intro.image_alt', 'Bingham Sunday Running Club') })
                         ),
                         h('div', { className: 'running-club__info' },
                             h('h3', {}, f(entry, 'intro.subheading')),

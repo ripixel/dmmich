@@ -125,6 +125,8 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Heading Accent", name: "heading_accent", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
               - { label: "Subheading", name: "subheading", widget: "string" }
               - { label: "Body", name: "body", widget: "text" }
               - { label: "Time", name: "time", widget: "string" }
@@ -292,6 +294,8 @@ collections:
             name: "intro"
             widget: "object"
             fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
               - { label: "Subheading", name: "subheading", widget: "string" }
               - { label: "Body", name: "body", widget: "text" }
               - { label: "Body 2", name: "body_2", widget: "text" }
