@@ -1,50 +1,50 @@
 {
-    "header": {
-        "heading": "Bingham",
-        "heading_accent": "Sunday Running Club",
-        "subtitle": "A free, friendly running and walking group I founded for all abilities. Every Sunday morning at 9am from Bingham Market Place."
-    },
-    "intro": {
-        "image": "/images/running-club.png",
-        "image_alt": "Bingham Sunday Running Club",
-        "subheading": "Everyone's Welcome",
-        "body": "I founded the Bingham Sunday Running Club to get more people moving, socialising, and enjoying the outdoors. Whether you're a seasoned runner or just starting out, you'll fit right in. We're a group of friends who just happen to run together — no memberships, no bib numbers, just good vibes.",
-        "body_2": "Our route is lap-based, so you can do as many or as few laps as you like — there's absolutely no minimum distance. After the run, we head to Gilt for coffee and a full English breakfast. Honestly, it's the real reason most of us turn up.",
-        "time": "Sunday 9AM",
-        "time_detail": "Every week, rain or shine",
-        "location": "Bingham Market Place",
-        "location_detail": "Nottinghamshire",
-        "cost": "Free",
-        "cost_detail": "Always",
-        "website_url": "https://binghamsundayrunningclub.co.uk"
-    },
-    "what_to_expect": {
-        "heading": "What to Expect",
-        "body": "We meet every Sunday morning at 9am at Bingham Market Place. We do a gentle warm-up jog to the start of the loops, and then you pick your distance — small, medium, or long loop. There's always a mix of paces, so nobody gets left behind.",
-        "body_2": "No sign-up needed — just turn up, say hello, and join in. After the run, we walk back together and head to Gilt café for coffee, breakfast, and a good natter. It's super relaxed."
-    },
-    "abilities": {
-        "heading": "For All Abilities",
-        "items": [
-            "Complete beginners and walkers welcome",
-            "Mixed pace groups — nobody gets left behind",
-            "Super relaxed, social atmosphere",
-            "No pressure, no judgement, no sign-up required",
-            "Kids, dogs (on leads), and prams all welcome",
-            "Post-run coffee and breakfast at Gilt"
-        ]
-    },
-    "social": {
-        "heading": "Stay Connected",
-        "body": "Follow us on Instagram for route updates, photos, and weekly recaps. We also share tips for new runners and celebrate milestones together. Check out the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club website</a> for full results, runner stats, upcoming events, and more.",
-        "instagram_text": "Follow @sundayrunclub_bingham",
-        "instagram_url": "https://www.instagram.com/sundayrunclub_bingham/",
-        "website_text": "Visit Our Website",
-        "website_url": "https://binghamsundayrunningclub.co.uk"
-    },
-    "cta": {
-        "heading": "See You Sunday!",
-        "body": "9am, Bingham Market Place. Just turn up and say hello — no sign-up, no fees, just good company and fresh air. And breakfast afterwards.",
-        "cta_text": "Ask Me a Question"
-    }
+  "header": {
+    "heading": "Bingham",
+    "heading_accent": "Sunday Running Club",
+    "subtitle": "A free, friendly running and walking group I founded for all abilities. Every Sunday morning at 9am from Bingham Market Place."
+  },
+  "intro": {
+    "body": "I founded the Bingham Sunday Running Club to get more people moving, socialising, and enjoying the outdoors. Whether you're a seasoned runner or just starting out, you'll fit right in. We're a group of friends who just happen to run together — no memberships, no bib numbers, just good vibes.",
+    "subheading": "Everyone's Welcome",
+    "cost_detail": "Always",
+    "time_detail": "Every week, rain or shine",
+    "image_alt": "Bingham Sunday Running Club",
+    "website_url": "https://binghamsundayrunningclub.co.uk",
+    "time": "Sunday 9AM",
+    "cost": "Free",
+    "body_2": "Our route is lap-based, so you can do as many or as few laps as you like — there's absolutely no minimum distance. After the run, we head to Gilt for coffee and a full English breakfast. Honestly, it's the real reason most of us turn up.",
+    "location": "Bingham Market Place",
+    "location_detail": "Nottinghamshire",
+    "image": "/images/img-20260201-wa0004.jpg"
+  },
+  "what_to_expect": {
+    "heading": "What to Expect",
+    "body": "We meet every Sunday morning at 9am at Bingham Market Place. We do a gentle warm-up jog to the start of the loops, and then you pick your distance — small, medium, or long loop. There's always a mix of paces, so nobody gets left behind.",
+    "body_2": "No sign-up needed — just turn up, say hello, and join in. After the run, we walk back together and head to Gilt café for coffee, breakfast, and a good natter. It's super relaxed."
+  },
+  "abilities": {
+    "heading": "For All Abilities",
+    "items": [
+      "Complete beginners and walkers welcome",
+      "Mixed pace groups — nobody gets left behind",
+      "Super relaxed, social atmosphere",
+      "No pressure, no judgement, no sign-up required",
+      "Kids, dogs (on leads), and prams all welcome",
+      "Post-run coffee and breakfast at Gilt"
+    ]
+  },
+  "social": {
+    "heading": "Stay Connected",
+    "body": "Follow us on Instagram for route updates, photos, and weekly recaps. We also share tips for new runners and celebrate milestones together. Check out the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club website</a> for full results, runner stats, upcoming events, and more.",
+    "instagram_text": "Follow @sundayrunclub_bingham",
+    "instagram_url": "https://www.instagram.com/sundayrunclub_bingham/",
+    "website_text": "Visit Our Website",
+    "website_url": "https://binghamsundayrunningclub.co.uk"
+  },
+  "cta": {
+    "heading": "See You Sunday!",
+    "body": "9am, Bingham Market Place. Just turn up and say hello — no sign-up, no fees, just good company and fresh air. And breakfast afterwards.",
+    "cta_text": "Ask Me a Question"
+  }
 }
