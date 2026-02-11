@@ -1,132 +1,132 @@
 {
-    "hero": {
-        "title_line1": "TRAIN. PROGRESS.",
-        "title_line2": "SUCCEED.",
-        "subtitle": "Functional Fitness Coach 🤘",
-        "cta_text": "Start Your Journey",
-        "background_image": "/images/hero-bg.png"
-    },
-    "about": {
-        "heading": "About",
-        "heading_accent": "Me",
-        "intro": "I'm Dean — a Level 3 qualified Personal Trainer with a passion for functional fitness, real-world strength, and helping people feel genuinely better in their day-to-day lives.",
-        "body": "I'm based in Bingham, Nottinghamshire, and I work with clients of all backgrounds and abilities. Whether you're picking up a barbell for the first time or looking to take your training to the next level, I'll help you get there with an approachable, no-nonsense coaching style.",
-        "pullquote": "Not chasing aesthetics, but health.",
-        "running_club_note": "I also founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Bingham Sunday Running Club</strong></a> — a free, super relaxed running and walking group that meets every Sunday at 9am. All paces welcome, and we always finish with coffee and a full English.",
-        "cta_text": "Read More"
-    },
-    "testimonials": {
-        "heading": "What",
-        "heading_accent": "Clients Say",
-        "items": [
-            {
-                "stars": "★★★★★",
-                "quote": "I've never felt stronger or more confident. Dean makes every session challenging but achievable — and actually enjoyable.",
-                "name": "Sarah T."
-            },
-            {
-                "stars": "★★★★★",
-                "quote": "After years of dreading the gym, I finally look forward to training. Dean's focus on health over aesthetics changed my whole mindset.",
-                "name": "Mark R."
-            },
-            {
-                "stars": "★★★★★",
-                "quote": "The Hevy app tracking is brilliant — I can see my progress week by week. Dean's programming is smart and sustainable.",
-                "name": "Jess P."
-            }
-        ]
-    },
-    "services": {
-        "heading": "What",
-        "heading_accent": "I Offer",
-        "cards": [
-            {
-                "title": "Personal Training",
-                "desc": "One-to-one or small group sessions at your chosen location. I'll build you a tailored programme focused on functional movement, strength, and sustainable progress.",
-                "price": "From £30 / session",
-                "features": [
-                    "Bespoke training plan",
-                    "Hevy Pro app included",
-                    "Flexible locations",
-                    "All abilities welcome"
-                ],
-                "cta_text": "Find Out More"
-            },
-            {
-                "title": "Online Coaching",
-                "desc": "Can't train in person? No problem. I'll build you a structured plan with video demos and ongoing support — all delivered through the Hevy app.",
-                "price": "From £60 / month",
-                "features": [
-                    "Custom programming",
-                    "Hevy Pro app included",
-                    "Weekly check-ins",
-                    "Video exercise demos"
-                ],
-                "cta_text": "Find Out More"
-            }
-        ]
-    },
-    "running_club": {
-        "heading": "Bingham",
-        "heading_accent": "Sunday Running Club",
-        "image": "/images/running-club.png",
-        "image_alt": "Bingham Sunday Running Club",
-        "subheading": "Run Together, Eat Together",
-        "body": "I founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club</a> — a free, super relaxed running and walking group open to all abilities. We meet every Sunday at 9am at Bingham Market Place, run a lap-based route at whatever pace suits you, then head to Gilt for coffee and a full English. No sign-up, no fees — just good vibes.",
-        "time": "Sunday 9AM",
-        "time_detail": "Every week, rain or shine",
-        "location": "Bingham Market Place",
-        "location_detail": "Nottinghamshire",
-        "cta_text": "Find Out More"
-    },
-    "transformations": {
-        "heading": "Client",
-        "heading_accent": "Transformations",
-        "items": [
-            {
-                "name": "Claire D.",
-                "story": "Claire came to me having never set foot in a gym. Within 16 weeks, she completed her first parkrun in under 30 minutes. \"Dean showed me that fitness isn't about punishment — it's about progress.\""
-            },
-            {
-                "name": "Tom W.",
-                "story": "Tom struggled with back pain for years. After 12 weeks of functional training with me, he's pain-free and deadlifting more than he ever thought possible."
-            },
-            {
-                "name": "Rachel M.",
-                "story": "Rachel lost 2 stone over 6 months — but more importantly, gained confidence, energy, and a love for training she never expected to find."
-            }
+  "transformations": {
+    "heading": "Client",
+    "heading_accent": "Transformations",
+    "items": [
+      {
+        "name": "Claire D.",
+        "story": "Claire came to me having never set foot in a gym. Within 16 weeks, she completed her first parkrun in under 30 minutes. \"Dean showed me that fitness isn't about punishment — it's about progress.\""
+      },
+      {
+        "name": "Tom W.",
+        "story": "Tom struggled with back pain for years. After 12 weeks of functional training with me, he's pain-free and deadlifting more than he ever thought possible."
+      },
+      {
+        "name": "Rachel M.",
+        "story": "Rachel lost 2 stone over 6 months — but more importantly, gained confidence, energy, and a love for training she never expected to find."
+      }
+    ],
+    "cta_text": "See All Transformations"
+  },
+  "about": {
+    "heading": "About",
+    "heading_accent": "Me",
+    "intro": "I'm Dean — a Level 3 qualified Personal Trainer with a passion for functional fitness, real-world strength, and helping people feel genuinely better in their day-to-day lives.",
+    "body": "I'm based in Bingham, Nottinghamshire, and I work with clients of all backgrounds and abilities. Whether you're picking up a barbell for the first time or looking to take your training to the next level, I'll help you get there with an approachable, no-nonsense coaching style.",
+    "pullquote": "Not chasing aesthetics, but health.",
+    "running_club_note": "I also founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Bingham Sunday Running Club</strong></a> — a free, super relaxed running and walking group that meets every Sunday at 9am. All paces welcome, and we always finish with coffee and a full English.",
+    "cta_text": "Read More"
+  },
+  "cta": {
+    "heading": "Ready to Start Your Journey?",
+    "body": "Get in touch today and let's take the first step together.",
+    "cta_text": "Contact Me"
+  },
+  "gallery": {
+    "heading_accent": "Gallery",
+    "instagram_cta": "Follow Me on Instagram",
+    "items": [
+      {
+        "src": "/images/training-session.png",
+        "alt": "Personal training session"
+      },
+      {
+        "src": "/images/gallery-group.png",
+        "alt": "Group training session"
+      },
+      {
+        "src": "/images/gallery-weights.png",
+        "alt": "Strength training"
+      },
+      {
+        "src": "/images/running-club.png",
+        "alt": "Bingham Sunday Running Club"
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What",
+    "heading_accent": "Clients Say",
+    "items": [
+      {
+        "stars": "★★★★★",
+        "quote": "I've never felt stronger or more confident. Dean makes every session challenging but achievable — and actually enjoyable.",
+        "name": "Sarah T."
+      },
+      {
+        "stars": "★★★★★",
+        "quote": "After years of dreading the gym, I finally look forward to training. Dean's focus on health over aesthetics changed my whole mindset.",
+        "name": "Mark R."
+      },
+      {
+        "stars": "★★★★★",
+        "quote": "The Hevy app tracking is brilliant — I can see my progress week by week. Dean's programming is smart and sustainable.",
+        "name": "Jess P."
+      }
+    ]
+  },
+  "running_club": {
+    "body": "I founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club</a> — a free, super relaxed running and walking group open to all abilities. We meet every Sunday at 9am at Bingham Market Place, run a lap-based route at whatever pace suits you, then head to Gilt for coffee and a full English. No sign-up, no fees — just good vibes.",
+    "heading": "Bingham",
+    "subheading": "Run Together, Eat Together",
+    "time_detail": "Every week, rain or shine",
+    "image_alt": "Bingham Sunday Running Club",
+    "heading_accent": "Sunday Running Club",
+    "time": "Sunday 9AM",
+    "location": "Bingham Market Place",
+    "location_detail": "Nottinghamshire",
+    "image": "/images/img-20260201-wa0004.jpg",
+    "cta_text": "Find Out More"
+  },
+  "hero": {
+    "title_line1": "TRAIN. PROGRESS.",
+    "title_line2": "SUCCEED.",
+    "subtitle": "Functional Fitness Coach 🤘",
+    "cta_text": "Start Your Journey",
+    "background_image": "/images/hero-bg.png"
+  },
+  "services": {
+    "heading": "What",
+    "heading_accent": "I Offer",
+    "cards": [
+      {
+        "title": "Personal Training",
+        "desc": "One-to-one or small group sessions at your chosen location. I'll build you a tailored programme focused on functional movement, strength, and sustainable progress.",
+        "price": "From £30 / session",
+        "features": [
+          "Bespoke training plan",
+          "Hevy Pro app included",
+          "Flexible locations",
+          "All abilities welcome"
         ],
-        "cta_text": "See All Transformations"
-    },
-    "locations": {
-        "heading": "Where",
-        "heading_accent": "I Train"
-    },
-    "gallery": {
-        "heading_accent": "Gallery",
-        "instagram_cta": "Follow Me on Instagram",
-        "items": [
-            {
-                "src": "/images/training-session.png",
-                "alt": "Personal training session"
-            },
-            {
-                "src": "/images/gallery-group.png",
-                "alt": "Group training session"
-            },
-            {
-                "src": "/images/gallery-weights.png",
-                "alt": "Strength training"
-            },
-            {
-                "src": "/images/running-club.png",
-                "alt": "Bingham Sunday Running Club"
-            }
-        ]
-    },
-    "cta": {
-        "heading": "Ready to Start Your Journey?",
-        "body": "Get in touch today and let's take the first step together.",
-        "cta_text": "Contact Me"
-    }
+        "cta_text": "Find Out More"
+      },
+      {
+        "title": "Online Coaching",
+        "desc": "Can't train in person? No problem. I'll build you a structured plan with video demos and ongoing support — all delivered through the Hevy app.",
+        "price": "From £60 / month",
+        "features": [
+          "Custom programming",
+          "Hevy Pro app included",
+          "Weekly check-ins",
+          "Video exercise demos"
+        ],
+        "cta_text": "Find Out More"
+      }
+    ]
+  },
+  "locations": {
+    "heading": "Where",
+    "heading_accent": "I Train"
+  }
 }
