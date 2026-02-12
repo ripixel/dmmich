@@ -87,7 +87,8 @@
                 </h2>
                 <div class="running-club">
                     <div class="running-club__image">
-                        <img src="{{content.running_club.image}}" alt="{{content.running_club.image_alt}}" loading="lazy" />
+                        <img src="{{content.running_club.image}}" alt="{{content.running_club.image_alt}}"
+                            loading="lazy" />
                     </div>
                     <div class="running-club__info">
                         <h3>{{content.running_club.subheading}}</h3>
@@ -161,7 +162,7 @@
                 <h2 class="section__heading"><span>{{content.gallery.heading_accent}}</span></h2>
                 <div class="gallery-grid">
                     {{#each content.gallery.items}}
-                    <div class="gallery-item" onclick="openLightbox('{{this.src}}', '{{this.alt}}')">
+                    <div class="gallery-item" data-lightbox-src="{{this.src}}" data-lightbox-alt="{{this.alt}}">
                         <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
                         <div class="gallery-item__overlay">
                             <span class="gallery-item__icon">&#x1F50D;</span>
@@ -182,30 +183,88 @@
             </div>
 
             <!-- Lightbox -->
-            <div class="lightbox" id="galleryLightbox" onclick="closeLightbox(event)">
+            <div class="lightbox" id="galleryLightbox">
                 <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
                 <img class="lightbox__img" id="lightboxImg" src="" alt="" />
             </div>
         </section>
 
         <script>
-            function openLightbox(src, alt) {
+            (function () {
                 var lb = document.getElementById('galleryLightbox');
                 var img = document.getElementById('lightboxImg');
-                img.src = src;
-                img.alt = alt;
-                lb.classList.add('lightbox--open');
-                document.body.style.overflow = 'hidden';
-            }
-            function closeLightbox(e) {
-                if (e && e.target !== e.currentTarget && !e.target.classList.contains('lightbox__close')) return;
-                var lb = document.getElementById('galleryLightbox');
-                lb.classList.remove('lightbox--open');
-                document.body.style.overflow = '';
-            }
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape') closeLightbox();
-            });
+                var closeBtn = lb.querySelector('.lightbox__close');
+                var touchStartY = 0;
+                var touchDeltaY = 0;
+
+                function lockScroll() {
+                    document.documentElement.style.overflow = 'hidden';
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function unlockScroll() {
+                    document.documentElement.style.overflow = '';
+                    document.body.style.overflow = '';
+                }
+
+                function openLightbox(src, alt) {
+                    img.src = src;
+                    img.alt = alt;
+                    lb.classList.add('lightbox--open');
+                    lockScroll();
+                }
+
+                function closeLightbox() {
+                    lb.classList.remove('lightbox--open');
+                    img.style.transform = '';
+                    img.style.opacity = '';
+                    unlockScroll();
+                }
+
+                // Open: attach to each gallery item
+                document.querySelectorAll('.gallery-item[data-lightbox-src]').forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        openLightbox(item.getAttribute('data-lightbox-src'), item.getAttribute('data-lightbox-alt'));
+                    });
+                });
+
+                // Close: click on backdrop
+                lb.addEventListener('click', function (e) {
+                    if (e.target === lb) closeLightbox();
+                });
+
+                // Close: button
+                closeBtn.addEventListener('click', closeLightbox);
+
+                // Close: Escape key
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') closeLightbox();
+                });
+
+                // Swipe-to-dismiss on mobile
+                lb.addEventListener('touchstart', function (e) {
+                    touchStartY = e.touches[0].clientY;
+                    touchDeltaY = 0;
+                }, { passive: true });
+
+                lb.addEventListener('touchmove', function (e) {
+                    touchDeltaY = e.touches[0].clientY - touchStartY;
+                    var abs = Math.abs(touchDeltaY);
+                    if (abs > 10) {
+                        img.style.transform = 'translateY(' + touchDeltaY + 'px)';
+                        img.style.opacity = Math.max(0.2, 1 - abs / 300);
+                    }
+                }, { passive: true });
+
+                lb.addEventListener('touchend', function () {
+                    if (Math.abs(touchDeltaY) > 80) {
+                        closeLightbox();
+                    } else {
+                        img.style.transform = '';
+                        img.style.opacity = '';
+                    }
+                });
+            })();
         </script>
 
         <!-- ===== CTA BANNER ===== -->

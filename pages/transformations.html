@@ -67,26 +67,70 @@
             var overlay = document.getElementById('lightbox');
             var content = document.getElementById('lightbox-content');
             var closeBtn = document.getElementById('lightbox-close');
+            var touchStartY = 0;
+            var touchDeltaY = 0;
 
+            function lockScroll() {
+                document.documentElement.style.overflow = 'hidden';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function unlockScroll() {
+                document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
+            }
+
+            function closeLightbox() {
+                overlay.classList.remove('active');
+                content.style.transform = '';
+                content.style.opacity = '';
+                unlockScroll();
+            }
+
+            // Open: attach to each transformation card
             document.querySelectorAll('.transformations-grid .transformation-card').forEach(function (card) {
                 card.addEventListener('click', function () {
                     content.innerHTML = card.innerHTML;
                     overlay.classList.add('active');
-                    document.body.style.overflow = 'hidden';
+                    lockScroll();
                 });
             });
 
-            function closeLightbox() {
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-
+            // Close: button
             closeBtn.addEventListener('click', closeLightbox);
+
+            // Close: tap on backdrop (not on content)
             overlay.addEventListener('click', function (e) {
                 if (e.target === overlay) closeLightbox();
             });
+
+            // Close: Escape key
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') closeLightbox();
+            });
+
+            // Swipe-to-dismiss on mobile
+            overlay.addEventListener('touchstart', function (e) {
+                touchStartY = e.touches[0].clientY;
+                touchDeltaY = 0;
+            }, { passive: true });
+
+            overlay.addEventListener('touchmove', function (e) {
+                touchDeltaY = e.touches[0].clientY - touchStartY;
+                var abs = Math.abs(touchDeltaY);
+                if (abs > 10) {
+                    content.style.transform = 'translateY(' + touchDeltaY + 'px)';
+                    content.style.opacity = Math.max(0.2, 1 - abs / 300);
+                }
+            }, { passive: true });
+
+            overlay.addEventListener('touchend', function () {
+                if (Math.abs(touchDeltaY) > 80) {
+                    closeLightbox();
+                } else {
+                    content.style.transform = '';
+                    content.style.opacity = '';
+                }
             });
         })();
     </script>
