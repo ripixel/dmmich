@@ -258,15 +258,15 @@ function MMHome() {
       <MMStatusBar />
       <MMHeader />
 
-      <section style={{position:'relative'}}>
-        <div className="mm-photo gym" style={{aspectRatio:'10/13'}}>
+      <section style={{ position: 'relative' }}>
+        <div className="mm-photo gym" style={{ aspectRatio: '10/13' }}>
           <span className="overlay-tag">Now booking 2026</span>
           <span className="ph-label">[ photo · IronHQ floor, low red light ]</span>
         </div>
-        <div style={{padding:'24px 18px 8px'}}>
+        <div style={{ padding: '24px 18px 8px' }}>
           <span className="mm-eyebrow">L3 PT · Bingham NG13</span>
-          <h1 className="mm-h" style={{fontSize:'52px',marginTop:14}}>TRAIN.<br/><span className="red">PROGRESS.</span><br/><span className="outline">SUCCEED.</span></h1>
-          <p className="mm-sub" style={{marginTop:14}}>Functional fitness, programmed around real lives. 1-to-1 PT at IronHQ, Thursday bootcamp, free Sunday running club. Built in Bingham.</p>
+          <h1 className="mm-h" style={{ fontSize: '52px', marginTop: 14 }}>TRAIN.<br /><span className="red">PROGRESS.</span><br /><span className="outline">SUCCEED.</span></h1>
+          <p className="mm-sub" style={{ marginTop: 14 }}>Functional fitness, programmed around real lives. 1-to-1 PT at IronHQ, Thursday bootcamp, free Sunday running club. Built in Bingham.</p>
         </div>
       </section>
 
@@ -282,13 +282,13 @@ function MMHome() {
 
       <section className="mm-section">
         <div className="mm-h-eyebrow"><span className="mm-eyebrow">[ § 01 ] Services</span></div>
-        <h2 className="mm-h">Four ways<br/>to <span className="red">get to work.</span></h2>
+        <h2 className="mm-h">Four ways<br />to <span className="red">get to work.</span></h2>
 
-        <div className="mm-svc-stack" style={{marginTop:24}}>
+        <div className="mm-svc-stack" style={{ marginTop: 24 }}>
           <div className="mm-svc">
             <div>
               <div className="mm-svc-num">01 / FLAGSHIP</div>
-              <h3>1-to-1<br/>Personal Training</h3>
+              <h3>1-to-1<br />Personal Training</h3>
             </div>
             <p>Programmed for you. Coached in person at IronHQ — racks, sleds, plates, the lot. Hevy Pro app included so progress isn't a vibe, it's a number.</p>
             <div className="mm-svc-foot"><span>IRONHQ · BINGHAM</span><strong>FROM £30 →</strong></div>
@@ -296,7 +296,7 @@ function MMHome() {
           <div className="mm-svc">
             <div>
               <div className="mm-svc-num">02 / GROUP</div>
-              <h3>Thursday<br/>Bootcamp</h3>
+              <h3>Thursday<br />Bootcamp</h3>
             </div>
             <p>Mixed-ability circuits at Bingham RUFC. 60 minutes of proper graft. Cash or card on the door, no membership, no commitment.</p>
             <div className="mm-svc-foot"><span>BRUFC · THU 17:30</span><strong>£10 →</strong></div>
@@ -304,7 +304,7 @@ function MMHome() {
           <div className="mm-svc">
             <div>
               <div className="mm-svc-num">03 / SKILL</div>
-              <h3>Learning<br/>Sessions</h3>
+              <h3>Learning<br />Sessions</h3>
             </div>
             <p>Technique-focused workshops at IronHQ. Deadlift, bench, kettlebell, running form. Walk out knowing the move cold.</p>
             <div className="mm-svc-foot"><span>IRONHQ · MONTHLY</span><strong>BY TOPIC →</strong></div>
@@ -312,7 +312,7 @@ function MMHome() {
           <div className="mm-svc">
             <div>
               <div className="mm-svc-num">04 / FREE</div>
-              <h3>Sunday<br/>Run Club</h3>
+              <h3>Sunday<br />Run Club</h3>
             </div>
             <p>Bingham Market Place, 9am, every week. Lap-based for all paces. Breakfast at Gilt after — the real reason most of us turn up.</p>
             <div className="mm-svc-foot"><span>MARKET PL. · SUN 09:00</span><strong>FREE →</strong></div>
@@ -322,15 +322,15 @@ function MMHome() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ § 02 ] About the coach</span>
-        <h2 className="mm-h" style={{marginTop:12}}>BUILT IN<br/><span className="red">BINGHAM.</span></h2>
-        <div className="mm-about-portrait" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>BUILT IN<br /><span className="red">BINGHAM.</span></h2>
+        <div className="mm-about-portrait" style={{ marginTop: 18 }}>
           <span className="tag">Hi, I'm Dean</span>
           <span className="signature">— Dean</span>
           <span className="ph-label">[ photo · Dean portrait ]</span>
         </div>
-        <p className="mm-sub" style={{marginTop:18}}>I'm <strong style={{color:'white'}}>Dean Michniew</strong> — Bingham-born, Bingham-based, and the bloke at the front of the Sunday Run Club every week. Level 3 qualified PT and functional-fitness coach.</p>
-        <p className="mm-sub" style={{marginTop:12}}>I came to coaching after years of training myself out of a desk-bound life. Now I do this full time — and I still compete, because if I'm asking you to push your limits I'd better be pushing mine.</p>
-        <div style={{marginTop:20,display:'flex',flexDirection:'column',gap:1,background:'var(--line)',border:'1px solid var(--line)'}}>
+        <p className="mm-sub" style={{ marginTop: 18 }}>I'm <strong style={{ color: 'white' }}>Dean Michniew</strong> — Bingham-born, Bingham-based, and the bloke at the front of the Sunday Run Club every week. Level 3 qualified PT and functional-fitness coach.</p>
+        <p className="mm-sub" style={{ marginTop: 12 }}>I came to coaching after years of training myself out of a desk-bound life. Now I do this full time — and I still compete, because if I'm asking you to push your limits I'd better be pushing mine.</p>
+        <div style={{ marginTop: 20, display: 'flex', flexDirection: 'column', gap: 1, background: 'var(--line)', border: '1px solid var(--line)' }}>
           <div className="mm-about-meta-col">
             <h4>Qualifications</h4>
             <ul>
@@ -352,117 +352,117 @@ function MMHome() {
             </ul>
           </div>
         </div>
-        <a className="mm-btn" style={{marginTop:18}}>Train with me →</a>
+        <a className="mm-btn" style={{ marginTop: 18 }}>Train with me →</a>
       </section>
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ § 03 ] Home base</span>
-        <h2 className="mm-h" style={{marginTop:12}}>IRON<span className="red">HQ.</span><br/>BINGHAM.</h2>
-        <div className="mm-photo gym" style={{margin:'18px 0',aspectRatio:'16/10'}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>IRON<span className="red">HQ.</span><br />BINGHAM.</h2>
+        <div className="mm-photo gym" style={{ margin: '18px 0', aspectRatio: '16/10' }}>
           <span className="ph-label">[ photo · IronHQ rig &amp; weights floor ]</span>
         </div>
         <p className="mm-sub">A purpose-built strength &amp; conditioning facility. Top-spec racks, sleds, kettlebells, conditioning kit. The whole place is set up for the way I program — no queues, no nonsense.</p>
-        <div style={{marginTop:18}}>
+        <div style={{ marginTop: 18 }}>
           <div className="mm-spec"><span className="k">Address</span><span className="v">Unit 1, Ranch House</span></div>
           <div className="mm-spec"><span className="k">Postcode</span><span className="v">NG13 8GF</span></div>
           <div className="mm-spec"><span className="k">Access</span><span className="v">Members &amp; PT clients</span></div>
         </div>
-        <a className="mm-btn" style={{marginTop:18}}>See the gym →</a>
+        <a className="mm-btn" style={{ marginTop: 18 }}>See the gym →</a>
       </section>
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ § 04 ] Community</span>
-        <h2 className="mm-h" style={{marginTop:12}}>SUNDAY<br/>RUNNING <span className="red">CLUB.</span></h2>
-        <div className="mm-photo outdoor" style={{margin:'18px 0',aspectRatio:'16/11'}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>SUNDAY<br />RUNNING <span className="red">CLUB.</span></h2>
+        <div className="mm-photo outdoor" style={{ margin: '18px 0', aspectRatio: '16/11' }}>
           <span className="overlay-tag">Free · All abilities</span>
           <span className="ph-label">[ photo · group shot at Bingham Market Place ]</span>
         </div>
         <p className="mm-sub">A free, friendly running &amp; walking group I founded for all abilities. 9am every Sunday, lap-based so nobody gets left behind, breakfast at Gilt after.</p>
-        <div className="mm-stats" style={{marginTop:18}}>
-          <div className="mm-stat"><div className="v">SUN<br/><span className="red">09:00</span></div><div className="l">Every week</div></div>
+        <div className="mm-stats" style={{ marginTop: 18 }}>
+          <div className="mm-stat"><div className="v">SUN<br /><span className="red">09:00</span></div><div className="l">Every week</div></div>
           <div className="mm-stat"><div className="v">£<span className="red">0</span></div><div className="l">Always free</div></div>
           <div className="mm-stat"><div className="v">ALL</div><div className="l">Paces &amp; ages</div></div>
         </div>
-        <a className="mm-btn ghost" style={{marginTop:18}}>See you Sunday →</a>
+        <a className="mm-btn ghost" style={{ marginTop: 18 }}>See you Sunday →</a>
       </section>
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ § 05 ] Group training</span>
-        <h2 className="mm-h" style={{marginTop:12}}>BINGHAM<br/>BOOT<span className="red">CAMP.</span></h2>
-        <div className="mm-photo" style={{margin:'18px 0',aspectRatio:'16/11',background:'linear-gradient(180deg, rgba(10,10,10,0.3), rgba(10,10,10,0.75)), radial-gradient(circle at 70% 70%, rgba(224,36,31,0.28), transparent 60%), repeating-linear-gradient(135deg, #2a3032 0 14px, #1a2022 14px 28px)'}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>BINGHAM<br />BOOT<span className="red">CAMP.</span></h2>
+        <div className="mm-photo" style={{ margin: '18px 0', aspectRatio: '16/11', background: 'linear-gradient(180deg, rgba(10,10,10,0.3), rgba(10,10,10,0.75)), radial-gradient(circle at 70% 70%, rgba(224,36,31,0.28), transparent 60%), repeating-linear-gradient(135deg, #2a3032 0 14px, #1a2022 14px 28px)' }}>
           <span className="overlay-tag">Thursdays · 5:30pm</span>
           <span className="ph-label">[ photo · bootcamp sled push at BRUFC ]</span>
         </div>
         <p className="mm-sub">An hour of proper graft at Bingham RUFC every Thursday. Mixed-ability circuits — sleds, KBs, suspension trainers, sprints. Designed so a first-timer and a seasoned lifter both leave wiped out and smiling.</p>
-        <p className="mm-sub" style={{marginTop:10}}>No membership, no commitment — cash or card on the door.</p>
-        <div className="mm-stats" style={{marginTop:18}}>
-          <div className="mm-stat"><div className="v">THU<br/><span className="red">17:30</span></div><div className="l">Every week</div></div>
+        <p className="mm-sub" style={{ marginTop: 10 }}>No membership, no commitment — cash or card on the door.</p>
+        <div className="mm-stats" style={{ marginTop: 18 }}>
+          <div className="mm-stat"><div className="v">THU<br /><span className="red">17:30</span></div><div className="l">Every week</div></div>
           <div className="mm-stat"><div className="v">£<span className="red">10</span></div><div className="l">Drop-in</div></div>
           <div className="mm-stat"><div className="v">ALL</div><div className="l">Abilities</div></div>
         </div>
-        <a className="mm-btn" style={{marginTop:18}}>See you Thursday →</a>
+        <a className="mm-btn" style={{ marginTop: 18 }}>See you Thursday →</a>
       </section>
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ § 06 ] Prices</span>
-        <h2 className="mm-h" style={{marginTop:12}}>NO HIDDEN<br/><span className="red">EXTRAS.</span></h2>
-        <p className="mm-sub" style={{marginTop:8}}>Pay-as-you-go for groups, blocks for PT. First chat is always free.</p>
-        <div className="mm-svc-stack" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>NO HIDDEN<br /><span className="red">EXTRAS.</span></h2>
+        <p className="mm-sub" style={{ marginTop: 8 }}>Pay-as-you-go for groups, blocks for PT. First chat is always free.</p>
+        <div className="mm-svc-stack" style={{ marginTop: 18 }}>
           <div className="mm-price">
             <div className="mm-price-tag">— FLAGSHIP</div>
             <h3>1-to-1 Personal Training</h3>
-            <div className="amt">£30 <span className="unit">FROM<br/>/ SESSION</span></div>
+            <div className="amt">£30 <span className="unit">FROM<br />/ SESSION</span></div>
             <ul>
               <li>Bespoke programming, weekly</li>
               <li>Hevy Pro app included</li>
               <li>Nutritional guidance</li>
               <li>Block discounts at 10 / 20</li>
             </ul>
-            <div className="mm-price-foot"><span>IRONHQ · BINGHAM</span><span style={{color:'var(--red)'}}>→</span></div>
+            <div className="mm-price-foot"><span>IRONHQ · BINGHAM</span><span style={{ color: 'var(--red)' }}>→</span></div>
           </div>
           <div className="mm-price">
             <div className="mm-price-tag">— GROUP</div>
             <h3>Thursday Bootcamp</h3>
-            <div className="amt">£10 <span className="unit">DROP-IN<br/>/ SESSION</span></div>
+            <div className="amt">£10 <span className="unit">DROP-IN<br />/ SESSION</span></div>
             <ul>
               <li>60 min mixed-ability circuit</li>
               <li>Cash or card on the door</li>
               <li>Bring a mate · 2 for £15</li>
               <li>4-week block: £35</li>
             </ul>
-            <div className="mm-price-foot"><span>BRUFC · THU 17:30</span><span style={{color:'var(--red)'}}>→</span></div>
+            <div className="mm-price-foot"><span>BRUFC · THU 17:30</span><span style={{ color: 'var(--red)' }}>→</span></div>
           </div>
           <div className="mm-price">
             <div className="mm-price-tag">— SKILL</div>
             <h3>Learning Sessions</h3>
-            <div className="amt">£25 <span className="unit">PER<br/>WORKSHOP</span></div>
+            <div className="amt">£25 <span className="unit">PER<br />WORKSHOP</span></div>
             <ul>
               <li>2-hour technique workshops</li>
               <li>Small groups · 4–6 people</li>
               <li>Deadlift · KB · running form</li>
               <li>Take-home plan included</li>
             </ul>
-            <div className="mm-price-foot"><span>IRONHQ · MONTHLY</span><span style={{color:'var(--red)'}}>→</span></div>
+            <div className="mm-price-foot"><span>IRONHQ · MONTHLY</span><span style={{ color: 'var(--red)' }}>→</span></div>
           </div>
           <div className="mm-price free">
             <div className="mm-price-tag">— ALWAYS FREE</div>
             <h3>Sunday Running Club</h3>
-            <div className="amt">£0 <span className="unit">FOREVER<br/>/ EVERYONE</span></div>
+            <div className="amt">£0 <span className="unit">FOREVER<br />/ EVERYONE</span></div>
             <ul>
               <li>Lap-based · all paces fit</li>
               <li>Walkers · prams · dogs welcome</li>
               <li>Breakfast at Gilt after</li>
               <li>No sign-up · just turn up</li>
             </ul>
-            <div className="mm-price-foot"><span>SUN 09:00 · MARKET PL.</span><span style={{color:'black'}}>→</span></div>
+            <div className="mm-price-foot"><span>SUN 09:00 · MARKET PL.</span><span style={{ color: 'black' }}>→</span></div>
           </div>
         </div>
       </section>
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ § 07 ] Results</span>
-        <h2 className="mm-h" style={{marginTop:12}}>RESULTS<br/><span className="red">SPEAK LOUDER.</span></h2>
-        <div className="mm-svc-stack" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>RESULTS<br /><span className="red">SPEAK LOUDER.</span></h2>
+        <div className="mm-svc-stack" style={{ marginTop: 18 }}>
           <div className="mm-test">
             <div className="mm-tr">
               <div className="mm-tr-cell before"><span className="lbl">— Before</span><span className="ph">[ photo · day 1 ]</span></div>
@@ -495,21 +495,21 @@ function MMHome() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ § 08 ] Get in touch</span>
-        <h2 className="mm-h" style={{marginTop:12}}>LET'S<br/><span className="red">WORK.</span></h2>
-        <p className="mm-sub" style={{marginTop:10}}>Ready to start — or just have a question? Drop me a line. Quickest reply is on Instagram, but pick whatever's easiest.</p>
-        <div className="mm-svc-stack" style={{marginTop:20}}>
+        <h2 className="mm-h" style={{ marginTop: 12 }}>LET'S<br /><span className="red">WORK.</span></h2>
+        <p className="mm-sub" style={{ marginTop: 10 }}>Ready to start — or just have a question? Drop me a line. Quickest reply is on Instagram, but pick whatever's easiest.</p>
+        <div className="mm-svc-stack" style={{ marginTop: 20 }}>
           {[
-            ['IG','INSTAGRAM','@dmmich.the_coach','Fastest · DM me anything'],
-            ['✉','EMAIL','dean@dmmichthecoach.co.uk','Within 24 hours'],
-            ['☎','PHONE','+44 78 8191 8142','For bootcamp questions'],
-            ['▸','IN PERSON','Sun 9am · Market Place','Just turn up'],
-          ].map(([icon,k,v,d],i)=>(
+            ['IG', 'INSTAGRAM', '@dmmich.the_coach', 'Fastest · DM me anything'],
+            ['✉', 'EMAIL', 'dmmich90@outlook.com', 'Within 24 hours'],
+            ['☎', 'PHONE', '+44 78 8191 8142', 'For bootcamp questions'],
+            ['▸', 'IN PERSON', 'Sun 9am · Market Place', 'Just turn up'],
+          ].map(([icon, k, v, d], i) => (
             <div key={i} className="mm-channel">
               <div className="icon">{icon}</div>
               <div>
                 <div className="clab">{k}</div>
                 <div className="cval">{v}</div>
-                <div className="mm-sub" style={{fontSize:11,marginTop:3,color:'var(--steel)'}}>{d}</div>
+                <div className="mm-sub" style={{ fontSize: 11, marginTop: 3, color: 'var(--steel)' }}>{d}</div>
               </div>
               <span className="ar">→</span>
             </div>
@@ -538,30 +538,30 @@ function MMRunClub() {
       <MMHeader />
 
       <section>
-        <div className="mm-photo outdoor" style={{aspectRatio:'10/11'}}>
+        <div className="mm-photo outdoor" style={{ aspectRatio: '10/11' }}>
           <span className="overlay-tag">Free · Every Sunday</span>
           <span className="ph-label">[ photo · big run-club group, Market Place ]</span>
         </div>
-        <div style={{padding:'24px 18px 8px'}}>
+        <div style={{ padding: '24px 18px 8px' }}>
           <span className="mm-eyebrow">[ Bingham Sunday Run Club ]</span>
-          <h1 className="mm-h" style={{fontSize:'46px',marginTop:14}}>RUN<br/>WITH <span className="red">US.</span><br/>EAT WITH US.</h1>
-          <p className="mm-sub" style={{marginTop:14}}>A free, friendly group I founded to get more of Bingham moving, talking and laughing on a Sunday morning. Seasoned runners, complete beginners, walkers, dogs &amp; prams — all of you.</p>
+          <h1 className="mm-h" style={{ fontSize: '46px', marginTop: 14 }}>RUN<br />WITH <span className="red">US.</span><br />EAT WITH US.</h1>
+          <p className="mm-sub" style={{ marginTop: 14 }}>A free, friendly group I founded to get more of Bingham moving, talking and laughing on a Sunday morning. Seasoned runners, complete beginners, walkers, dogs &amp; prams — all of you.</p>
         </div>
       </section>
 
       <div className="mm-stats">
-        <div className="mm-stat"><div className="v">SUN<br/><span className="red">09:00</span></div><div className="l">Every week</div></div>
+        <div className="mm-stat"><div className="v">SUN<br /><span className="red">09:00</span></div><div className="l">Every week</div></div>
         <div className="mm-stat"><div className="v">£<span className="red">0</span></div><div className="l">Always free</div></div>
         <div className="mm-stat"><div className="v">40<span className="red">+</span></div><div className="l">Regulars</div></div>
       </div>
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 01 ] What to expect</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'36px'}}>NO PRESSURE.<br/><span className="red">NO JUDGEMENT.</span></h2>
-        <p className="mm-sub" style={{marginTop:14}}>We meet at Bingham Market Place at 9am. A gentle warm-up jog to the route, then loops — small, medium or long — pick your distance. There's always a mix of paces; nobody gets left behind.</p>
-        <p className="mm-sub" style={{marginTop:12}}>After the run, we walk back to Gilt café for coffee &amp; a full English. Honestly, that's the real reason most of us turn up.</p>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '36px' }}>NO PRESSURE.<br /><span className="red">NO JUDGEMENT.</span></h2>
+        <p className="mm-sub" style={{ marginTop: 14 }}>We meet at Bingham Market Place at 9am. A gentle warm-up jog to the route, then loops — small, medium or long — pick your distance. There's always a mix of paces; nobody gets left behind.</p>
+        <p className="mm-sub" style={{ marginTop: 12 }}>After the run, we walk back to Gilt café for coffee &amp; a full English. Honestly, that's the real reason most of us turn up.</p>
 
-        <div style={{marginTop:22}}>
+        <div style={{ marginTop: 22 }}>
           <div className="mm-spec"><span className="k">Meet</span><span className="v">Bingham Market Place</span></div>
           <div className="mm-spec"><span className="k">Time</span><span className="v red">Sun · 09:00</span></div>
           <div className="mm-spec"><span className="k">Distance</span><span className="v">Pick your lap</span></div>
@@ -572,20 +572,20 @@ function MMRunClub() {
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 02 ] Who's welcome</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'36px'}}>EVERYONE.<br/><span className="red">FULL STOP.</span></h2>
-        <div style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '36px' }}>EVERYONE.<br /><span className="red">FULL STOP.</span></h2>
+        <div style={{ marginTop: 18 }}>
           {[
-            ['Complete beginners','You will not be the slowest.'],
-            ['Walkers','Loops are walkable. Promise.'],
-            ['Returning runners','Easing back in is the goal.'],
-            ['Kids · Dogs · Prams','All welcome, all the time.'],
-            ['Seasoned runners','Mix paces, push if you want.'],
-          ].map(([k,v],i)=>(
-            <div key={i} style={{display:'grid',gridTemplateColumns:'auto 1fr',gap:14,padding:'14px 0',borderBottom:i<4?'1px solid var(--line)':'0'}}>
-              <span style={{fontFamily:'IBM Plex Mono, monospace',fontSize:11,color:'var(--red)',letterSpacing:'0.16em',width:24}}>0{i+1}</span>
+            ['Complete beginners', 'You will not be the slowest.'],
+            ['Walkers', 'Loops are walkable. Promise.'],
+            ['Returning runners', 'Easing back in is the goal.'],
+            ['Kids · Dogs · Prams', 'All welcome, all the time.'],
+            ['Seasoned runners', 'Mix paces, push if you want.'],
+          ].map(([k, v], i) => (
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 14, padding: '14px 0', borderBottom: i < 4 ? '1px solid var(--line)' : '0' }}>
+              <span style={{ fontFamily: 'IBM Plex Mono, monospace', fontSize: 11, color: 'var(--red)', letterSpacing: '0.16em', width: 24 }}>0{i + 1}</span>
               <div>
-                <div className="cond" style={{fontSize:20,fontWeight:800,letterSpacing:'0.01em'}}>{k}</div>
-                <div className="mm-sub" style={{fontSize:13,marginTop:4}}>{v}</div>
+                <div className="cond" style={{ fontSize: 20, fontWeight: 800, letterSpacing: '0.01em' }}>{k}</div>
+                <div className="mm-sub" style={{ fontSize: 13, marginTop: 4 }}>{v}</div>
               </div>
             </div>
           ))}
@@ -594,8 +594,8 @@ function MMRunClub() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 03 ] Gallery</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>FROM THE <span className="red">CLUB.</span></h2>
-        <div className="mm-gal" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>FROM THE <span className="red">CLUB.</span></h2>
+        <div className="mm-gal" style={{ marginTop: 18 }}>
           <div className="mm-gal-cell r2"><span className="lab">[ Sun Jul 14 · finish ]</span></div>
           <div className="mm-gal-cell r3"><span className="lab">[ Sun Jul 21 · arch ]</span></div>
           <div className="mm-gal-cell r4"><span className="lab">[ Sun Aug 04 · loop ]</span></div>
@@ -610,11 +610,11 @@ function MMRunClub() {
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 04 ] Find us</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'32px'}}>BINGHAM<br/><span className="red">MARKET PLACE.</span></h2>
-        <div className="mm-photo" style={{marginTop:14,aspectRatio:'16/10',background:'linear-gradient(180deg, rgba(10,10,10,0.4), rgba(10,10,10,0.7)), repeating-linear-gradient(135deg, #4a5a4a 0 12px, #3a463a 12px 24px)'}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '32px' }}>BINGHAM<br /><span className="red">MARKET PLACE.</span></h2>
+        <div className="mm-photo" style={{ marginTop: 14, aspectRatio: '16/10', background: 'linear-gradient(180deg, rgba(10,10,10,0.4), rgba(10,10,10,0.7)), repeating-linear-gradient(135deg, #4a5a4a 0 12px, #3a463a 12px 24px)' }}>
           <span className="ph-label">[ map · Bingham Market Place, NG13 ]</span>
         </div>
-        <a className="mm-btn" style={{marginTop:18}}>Open in maps →</a>
+        <a className="mm-btn" style={{ marginTop: 18 }}>Open in maps →</a>
       </section>
 
       <MMFooter />
@@ -638,14 +638,14 @@ function MMServices() {
       <MMHeader />
 
       <section>
-        <div className="mm-photo gym" style={{aspectRatio:'10/11'}}>
+        <div className="mm-photo gym" style={{ aspectRatio: '10/11' }}>
           <span className="overlay-tag">Flagship · IronHQ</span>
           <span className="ph-label">[ photo · Dean coaching client at rack ]</span>
         </div>
-        <div style={{padding:'24px 18px 8px'}}>
+        <div style={{ padding: '24px 18px 8px' }}>
           <span className="mm-eyebrow">[ 1-to-1 Personal Training ]</span>
-          <h1 className="mm-h" style={{fontSize:'48px',marginTop:14}}>BESPOKE.<br/>COACHED.<br/><span className="red">UNNEGOTIABLE.</span></h1>
-          <p className="mm-sub" style={{marginTop:14}}>An hour with me at IronHQ — assessed, programmed and coached around your body and your week. No cookie-cutter plans, no app-only nonsense. Real coaching, in person.</p>
+          <h1 className="mm-h" style={{ fontSize: '48px', marginTop: 14 }}>BESPOKE.<br />COACHED.<br /><span className="red">UNNEGOTIABLE.</span></h1>
+          <p className="mm-sub" style={{ marginTop: 14 }}>An hour with me at IronHQ — assessed, programmed and coached around your body and your week. No cookie-cutter plans, no app-only nonsense. Real coaching, in person.</p>
         </div>
       </section>
 
@@ -657,23 +657,23 @@ function MMServices() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 01 ] What's included</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>EVERYTHING<br/><span className="red">YOU NEED.</span></h2>
-        <div className="mm-svc-stack" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>EVERYTHING<br /><span className="red">YOU NEED.</span></h2>
+        <div className="mm-svc-stack" style={{ marginTop: 18 }}>
           {[
-            ['Bespoke programming','Built around your goals, body &amp; week.'],
-            ['Hevy Pro app','Log every rep, track every PR — included.'],
-            ['Nutritional guidance','Sustainable, not punishing.'],
-            ['In-person coaching','At IronHQ — top-spec everything.'],
-            ['Flexible scheduling','Early mornings, evenings, Saturdays.'],
-            ['Progress reviews','Monthly. Numbers, not vibes.'],
-          ].map(([k,v],i)=>(
-            <div key={i} style={{display:'grid',gridTemplateColumns:'auto 1fr auto',gap:14,padding:'14px 0',borderBottom:i<5?'1px solid var(--line)':'0',alignItems:'center'}}>
-              <span style={{color:'var(--red)',fontSize:20,fontWeight:700}}>▸</span>
+            ['Bespoke programming', 'Built around your goals, body &amp; week.'],
+            ['Hevy Pro app', 'Log every rep, track every PR — included.'],
+            ['Nutritional guidance', 'Sustainable, not punishing.'],
+            ['In-person coaching', 'At IronHQ — top-spec everything.'],
+            ['Flexible scheduling', 'Early mornings, evenings, Saturdays.'],
+            ['Progress reviews', 'Monthly. Numbers, not vibes.'],
+          ].map(([k, v], i) => (
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, padding: '14px 0', borderBottom: i < 5 ? '1px solid var(--line)' : '0', alignItems: 'center' }}>
+              <span style={{ color: 'var(--red)', fontSize: 20, fontWeight: 700 }}>▸</span>
               <div>
-                <div className="cond" style={{fontSize:18,fontWeight:700,letterSpacing:'0.01em'}}>{k}</div>
-                <div className="mm-sub" style={{fontSize:12.5,marginTop:3}} dangerouslySetInnerHTML={{__html:v}}></div>
+                <div className="cond" style={{ fontSize: 18, fontWeight: 700, letterSpacing: '0.01em' }}>{k}</div>
+                <div className="mm-sub" style={{ fontSize: 12.5, marginTop: 3 }} dangerouslySetInnerHTML={{ __html: v }}></div>
               </div>
-              <span style={{color:'var(--steel)',fontSize:11,fontFamily:'IBM Plex Mono, monospace'}}>0{i+1}</span>
+              <span style={{ color: 'var(--steel)', fontSize: 11, fontFamily: 'IBM Plex Mono, monospace' }}>0{i + 1}</span>
             </div>
           ))}
         </div>
@@ -681,21 +681,21 @@ function MMServices() {
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 02 ] How it works</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>THREE<br/><span className="red">STEPS.</span></h2>
-        <div className="mm-svc-stack" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>THREE<br /><span className="red">STEPS.</span></h2>
+        <div className="mm-svc-stack" style={{ marginTop: 18 }}>
           <div className="mm-svc flat">
-            <div className="mm-svc-top"><div className="mm-svc-num">STEP 01</div><span style={{color:'var(--steel)',fontFamily:'IBM Plex Mono, monospace',fontSize:11}}>~15 MIN</span></div>
-            <h3 style={{fontSize:22}}>Free intro call</h3>
+            <div className="mm-svc-top"><div className="mm-svc-num">STEP 01</div><span style={{ color: 'var(--steel)', fontFamily: 'IBM Plex Mono, monospace', fontSize: 11 }}>~15 MIN</span></div>
+            <h3 style={{ fontSize: 22 }}>Free intro call</h3>
             <p>15 minutes, no commitment. Tell me where you're at and what you want.</p>
           </div>
           <div className="mm-svc flat">
-            <div className="mm-svc-top"><div className="mm-svc-num">STEP 02</div><span style={{color:'var(--steel)',fontFamily:'IBM Plex Mono, monospace',fontSize:11}}>~60 MIN</span></div>
-            <h3 style={{fontSize:22}}>Assessment session</h3>
+            <div className="mm-svc-top"><div className="mm-svc-num">STEP 02</div><span style={{ color: 'var(--steel)', fontFamily: 'IBM Plex Mono, monospace', fontSize: 11 }}>~60 MIN</span></div>
+            <h3 style={{ fontSize: 22 }}>Assessment session</h3>
             <p>Movement screen, baseline numbers, the first proper workout. I write your plan from this.</p>
           </div>
           <div className="mm-svc flat">
-            <div className="mm-svc-top"><div className="mm-svc-num">STEP 03</div><span style={{color:'var(--steel)',fontFamily:'IBM Plex Mono, monospace',fontSize:11}}>WEEKLY</span></div>
-            <h3 style={{fontSize:22}}>Train. Progress.</h3>
+            <div className="mm-svc-top"><div className="mm-svc-num">STEP 03</div><span style={{ color: 'var(--steel)', fontFamily: 'IBM Plex Mono, monospace', fontSize: 11 }}>WEEKLY</span></div>
+            <h3 style={{ fontSize: 22 }}>Train. Progress.</h3>
             <p>1–3 sessions a week, programmed, logged, reviewed. We adjust as you change.</p>
           </div>
         </div>
@@ -703,8 +703,8 @@ function MMServices() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 03 ] Also available</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>SMALL GROUP <span className="red">&amp;</span><br/>LEARNING.</h2>
-        <div className="mm-svc-stack" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>SMALL GROUP <span className="red">&amp;</span><br />LEARNING.</h2>
+        <div className="mm-svc-stack" style={{ marginTop: 18 }}>
           <div className="mm-svc">
             <div>
               <div className="mm-svc-num">SMALL GROUP · 2–3 PEOPLE</div>
@@ -726,20 +726,20 @@ function MMServices() {
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 04 ] FAQ</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>STRAIGHT<br/><span className="red">ANSWERS.</span></h2>
-        <div style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>STRAIGHT<br /><span className="red">ANSWERS.</span></h2>
+        <div style={{ marginTop: 18 }}>
           {[
-            ['Do I need to be fit to start?','Absolutely not. I work with every level — from "haven\'t exercised in a decade" to "running my next half".'],
-            ['How often should I train?','2–3× a week is the sweet spot for most. I\'ll work with what your week actually looks like.'],
-            ['Can I bring a friend?','Yes. Small-group sessions (2–3) are available at a reduced per-person rate.'],
-            ['Do you offer online coaching?','No. In-person only — coaching is the bit you\'re paying for.'],
-          ].map(([q,a],i)=>(
-            <details key={i} style={{padding:'14px 0',borderBottom:i<3?'1px solid var(--line)':'0'}}>
-              <summary style={{display:'flex',justifyContent:'space-between',alignItems:'center',cursor:'pointer',listStyle:'none'}}>
-                <span className="cond" style={{fontSize:17,fontWeight:700,letterSpacing:'0.005em'}}>{q}</span>
-                <span style={{color:'var(--red)',fontSize:20,fontWeight:700}}>+</span>
+            ['Do I need to be fit to start?', 'Absolutely not. I work with every level — from "haven\'t exercised in a decade" to "running my next half".'],
+            ['How often should I train?', '2–3× a week is the sweet spot for most. I\'ll work with what your week actually looks like.'],
+            ['Can I bring a friend?', 'Yes. Small-group sessions (2–3) are available at a reduced per-person rate.'],
+            ['Do you offer online coaching?', 'No. In-person only — coaching is the bit you\'re paying for.'],
+          ].map(([q, a], i) => (
+            <details key={i} style={{ padding: '14px 0', borderBottom: i < 3 ? '1px solid var(--line)' : '0' }}>
+              <summary style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', listStyle: 'none' }}>
+                <span className="cond" style={{ fontSize: 17, fontWeight: 700, letterSpacing: '0.005em' }}>{q}</span>
+                <span style={{ color: 'var(--red)', fontSize: 20, fontWeight: 700 }}>+</span>
               </summary>
-              <p className="mm-sub" style={{fontSize:13,marginTop:10}}>{a}</p>
+              <p className="mm-sub" style={{ fontSize: 13, marginTop: 10 }}>{a}</p>
             </details>
           ))}
         </div>
@@ -766,41 +766,41 @@ function MMIronHQ() {
       <MMHeader />
 
       <section>
-        <div className="mm-photo gym" style={{aspectRatio:'10/11'}}>
+        <div className="mm-photo gym" style={{ aspectRatio: '10/11' }}>
           <span className="overlay-tag">Home base</span>
           <span className="ph-label">[ photo · IronHQ rig, wide angle ]</span>
         </div>
-        <div style={{padding:'24px 18px 8px'}}>
+        <div style={{ padding: '24px 18px 8px' }}>
           <span className="mm-eyebrow">[ Where I train ]</span>
-          <h1 className="mm-h" style={{fontSize:'72px',marginTop:14,lineHeight:0.85}}>IRON<br/><span className="red">HQ.</span></h1>
-          <p className="mm-sub" style={{marginTop:14}}>A big, brand-new lifting &amp; conditioning facility in Bingham. Purpose-built for serious training — top-of-the-line equipment and plenty of space to move. The only address you need.</p>
+          <h1 className="mm-h" style={{ fontSize: '72px', marginTop: 14, lineHeight: 0.85 }}>IRON<br /><span className="red">HQ.</span></h1>
+          <p className="mm-sub" style={{ marginTop: 14 }}>A big, brand-new lifting &amp; conditioning facility in Bingham. Purpose-built for serious training — top-of-the-line equipment and plenty of space to move. The only address you need.</p>
         </div>
       </section>
 
       <div className="mm-stats">
-        <div className="mm-stat"><div className="v">NG13<br/><span className="red">8GF</span></div><div className="l">Bingham</div></div>
+        <div className="mm-stat"><div className="v">NG13<br /><span className="red">8GF</span></div><div className="l">Bingham</div></div>
         <div className="mm-stat"><div className="v">2,400<span className="red">ft²</span></div><div className="l">Training floor</div></div>
         <div className="mm-stat"><div className="v">2024</div><div className="l">New build</div></div>
       </div>
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 01 ] Kit list</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>EVERYTHING<br/>YOU'D <span className="red">EVER NEED.</span></h2>
-        <div className="mm-gal" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>EVERYTHING<br />YOU'D <span className="red">EVER NEED.</span></h2>
+        <div className="mm-gal" style={{ marginTop: 18 }}>
           <div className="mm-gal-cell r1"><span className="lab">[ racks ]</span></div>
           <div className="mm-gal-cell r2"><span className="lab">[ plates ]</span></div>
           <div className="mm-gal-cell r3"><span className="lab">[ sleds ]</span></div>
           <div className="mm-gal-cell r4"><span className="lab">[ rig ]</span></div>
         </div>
-        <div style={{marginTop:20}}>
+        <div style={{ marginTop: 20 }}>
           {[
-            ['Power racks','×4 · Eleiko bars'],
-            ['Calibrated plates','To 25kg'],
-            ['Dumbbells','2 → 50kg'],
-            ['Kettlebells','Full set, 8 → 48kg'],
-            ['Hyrox / functional rig','Sled, ski-erg, assault bike'],
-            ['Conditioning','Rower, runner, bike, plyo boxes'],
-          ].map(([k,v],i)=>(
+            ['Power racks', '×4 · Eleiko bars'],
+            ['Calibrated plates', 'To 25kg'],
+            ['Dumbbells', '2 → 50kg'],
+            ['Kettlebells', 'Full set, 8 → 48kg'],
+            ['Hyrox / functional rig', 'Sled, ski-erg, assault bike'],
+            ['Conditioning', 'Rower, runner, bike, plyo boxes'],
+          ].map(([k, v], i) => (
             <div key={i} className="mm-spec">
               <span className="k">{k}</span>
               <span className="v">{v}</span>
@@ -811,18 +811,18 @@ function MMIronHQ() {
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 02 ] Why train here</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>NO QUEUES.<br/><span className="red">NO NONSENSE.</span></h2>
-        <p className="mm-sub" style={{marginTop:14}}>IronHQ runs on a small-membership model — so the racks are always free, the kit isn't beaten up, and the floor isn't full of people filming for Instagram. The whole place is set up for the way I program.</p>
-        <p className="mm-sub" style={{marginTop:12}}>Access is for members and my 1-to-1 clients. If you train with me, you train here. Simple.</p>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>NO QUEUES.<br /><span className="red">NO NONSENSE.</span></h2>
+        <p className="mm-sub" style={{ marginTop: 14 }}>IronHQ runs on a small-membership model — so the racks are always free, the kit isn't beaten up, and the floor isn't full of people filming for Instagram. The whole place is set up for the way I program.</p>
+        <p className="mm-sub" style={{ marginTop: 12 }}>Access is for members and my 1-to-1 clients. If you train with me, you train here. Simple.</p>
       </section>
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 03 ] Address</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'34px'}}>FIND <span className="red">US.</span></h2>
-        <div className="mm-photo" style={{marginTop:14,aspectRatio:'16/10',background:'linear-gradient(180deg, rgba(10,10,10,0.4), rgba(10,10,10,0.7)), repeating-linear-gradient(135deg, #3a3a3a 0 12px, #2a2a2a 12px 24px)'}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '34px' }}>FIND <span className="red">US.</span></h2>
+        <div className="mm-photo" style={{ marginTop: 14, aspectRatio: '16/10', background: 'linear-gradient(180deg, rgba(10,10,10,0.4), rgba(10,10,10,0.7)), repeating-linear-gradient(135deg, #3a3a3a 0 12px, #2a2a2a 12px 24px)' }}>
           <span className="ph-label">[ map · IronHQ, Unit 1 Ranch House, NG13 8GF ]</span>
         </div>
-        <div style={{marginTop:18}}>
+        <div style={{ marginTop: 18 }}>
           <div className="mm-spec"><span className="k">Building</span><span className="v">Unit 1, Ranch House</span></div>
           <div className="mm-spec"><span className="k">Town</span><span className="v">Bingham</span></div>
           <div className="mm-spec"><span className="k">Postcode</span><span className="v">NG13 8GF</span></div>
@@ -852,28 +852,28 @@ function MMContact() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ Get in touch ]</span>
-        <h1 className="mm-h" style={{marginTop:12,fontSize:'56px'}}>LET'S<br/><span className="red">WORK.</span></h1>
-        <p className="mm-sub" style={{marginTop:14}}>Ready to start — or just have a question? Drop me a line. Quickest reply is on Instagram, but pick whatever's easiest for you.</p>
+        <h1 className="mm-h" style={{ marginTop: 12, fontSize: '56px' }}>LET'S<br /><span className="red">WORK.</span></h1>
+        <p className="mm-sub" style={{ marginTop: 14 }}>Ready to start — or just have a question? Drop me a line. Quickest reply is on Instagram, but pick whatever's easiest for you.</p>
       </section>
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 01 ] Channels</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'30px'}}>FOUR<br/>WAYS <span className="red">IN.</span></h2>
-        <div className="mm-svc-stack" style={{marginTop:18}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '30px' }}>FOUR<br />WAYS <span className="red">IN.</span></h2>
+        <div className="mm-svc-stack" style={{ marginTop: 18 }}>
           {[
-            ['INSTAGRAM','@dmmich.the_coach','Fastest. DM me anything.','📷'],
-            ['EMAIL','dean@dmmichthecoach.co.uk','Within 24 hours.','✉'],
-            ['PHONE','+44 (0)78 8191 8142','Bootcamp questions, on-the-day.','☎'],
-            ['IN PERSON','Sunday Run Club · 9am','Just turn up at the Market Place.','▸'],
-          ].map(([k,v,d,i],ix)=>(
-            <div key={ix} className="mm-svc flat" style={{display:'grid',gridTemplateColumns:'auto 1fr auto',gap:14,alignItems:'center',padding:'18px 16px'}}>
-              <div style={{width:44,height:44,background:'var(--red)',color:'white',display:'flex',alignItems:'center',justifyContent:'center',fontSize:18,clipPath:'polygon(0 0, 100% 0, 85% 100%, 0 100%)'}}>{i}</div>
+            ['INSTAGRAM', '@dmmich.the_coach', 'Fastest. DM me anything.', '📷'],
+            ['EMAIL', 'dmmich90@outlook.com', 'Within 24 hours.', '✉'],
+            ['PHONE', '+44 (0)78 8191 8142', 'Bootcamp questions, on-the-day.', '☎'],
+            ['IN PERSON', 'Sunday Run Club · 9am', 'Just turn up at the Market Place.', '▸'],
+          ].map(([k, v, d, i], ix) => (
+            <div key={ix} className="mm-svc flat" style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center', padding: '18px 16px' }}>
+              <div style={{ width: 44, height: 44, background: 'var(--red)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0 100%)' }}>{i}</div>
               <div>
                 <div className="mm-svc-num">{k}</div>
-                <div className="cond" style={{fontSize:18,fontWeight:700,marginTop:4,letterSpacing:'0.005em'}}>{v}</div>
-                <div className="mm-sub" style={{fontSize:12,marginTop:3}}>{d}</div>
+                <div className="cond" style={{ fontSize: 18, fontWeight: 700, marginTop: 4, letterSpacing: '0.005em' }}>{v}</div>
+                <div className="mm-sub" style={{ fontSize: 12, marginTop: 3 }}>{d}</div>
               </div>
-              <span style={{color:'var(--red)',fontSize:20}}>→</span>
+              <span style={{ color: 'var(--red)', fontSize: 20 }}>→</span>
             </div>
           ))}
         </div>
@@ -881,12 +881,12 @@ function MMContact() {
 
       <section className="mm-section">
         <span className="mm-eyebrow">[ 02 ] Where I train</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'30px'}}>HOME<br/><span className="red">BASE.</span></h2>
-        <div className="mm-photo gym" style={{marginTop:14,aspectRatio:'16/10'}}>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '30px' }}>HOME<br /><span className="red">BASE.</span></h2>
+        <div className="mm-photo gym" style={{ marginTop: 14, aspectRatio: '16/10' }}>
           <span className="overlay-tag">IronHQ</span>
           <span className="ph-label">[ photo · IronHQ exterior ]</span>
         </div>
-        <div style={{marginTop:16}}>
+        <div style={{ marginTop: 16 }}>
           <div className="mm-spec"><span className="k">IronHQ</span><span className="v">Unit 1, Ranch House</span></div>
           <div className="mm-spec"><span className="k">Bingham</span><span className="v">NG13 8GF</span></div>
         </div>
@@ -899,12 +899,12 @@ function MMContact() {
 
       <section className="mm-section dark">
         <span className="mm-eyebrow">[ 03 ] Quick form</span>
-        <h2 className="mm-h" style={{marginTop:12,fontSize:'28px'}}>OR<br/><span className="red">DROP A NOTE.</span></h2>
-        <div style={{marginTop:18,display:'flex',flexDirection:'column',gap:12}}>
-          <div style={{padding:'14px 16px',border:'1px solid var(--line)',color:'var(--steel)',fontFamily:'IBM Plex Mono, monospace',fontSize:13,letterSpacing:'0.04em'}}>Your name</div>
-          <div style={{padding:'14px 16px',border:'1px solid var(--line)',color:'var(--steel)',fontFamily:'IBM Plex Mono, monospace',fontSize:13,letterSpacing:'0.04em'}}>Your email or phone</div>
-          <div style={{padding:'14px 16px',border:'1px solid var(--line)',color:'var(--steel)',fontFamily:'IBM Plex Mono, monospace',fontSize:13,letterSpacing:'0.04em',height:100,display:'flex',alignItems:'flex-start'}}>Tell me where you're at &amp; what you want…</div>
-          <a className="mm-btn" style={{justifyContent:'center'}}>Send it →</a>
+        <h2 className="mm-h" style={{ marginTop: 12, fontSize: '28px' }}>OR<br /><span className="red">DROP A NOTE.</span></h2>
+        <div style={{ marginTop: 18, display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div style={{ padding: '14px 16px', border: '1px solid var(--line)', color: 'var(--steel)', fontFamily: 'IBM Plex Mono, monospace', fontSize: 13, letterSpacing: '0.04em' }}>Your name</div>
+          <div style={{ padding: '14px 16px', border: '1px solid var(--line)', color: 'var(--steel)', fontFamily: 'IBM Plex Mono, monospace', fontSize: 13, letterSpacing: '0.04em' }}>Your email or phone</div>
+          <div style={{ padding: '14px 16px', border: '1px solid var(--line)', color: 'var(--steel)', fontFamily: 'IBM Plex Mono, monospace', fontSize: 13, letterSpacing: '0.04em', height: 100, display: 'flex', alignItems: 'flex-start' }}>Tell me where you're at &amp; what you want…</div>
+          <a className="mm-btn" style={{ justifyContent: 'center' }}>Send it →</a>
         </div>
       </section>
 

@@ -497,7 +497,7 @@ var ContactPreview = createClass({
                                 }
                             }, f(entry, 'get_in_touch.heading')),
                             h('ul', { className: 'contact-methods' },
-                                h('li', {}, h('strong', {}, 'Email'), ' dean@dmmichthecoach.co.uk'),
+                                h('li', {}, h('strong', {}, 'Email'), ' dmmich90@outlook.com'),
                                 h('li', {}, h('strong', {}, 'Instagram'), ' @DMMichTheCoach'),
                             ),
                             h('h2', {

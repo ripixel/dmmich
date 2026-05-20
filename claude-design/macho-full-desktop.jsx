@@ -325,7 +325,7 @@ function MachoFullDesign() {
         <div className="df-hero-inner">
           <div>
             <span className="df-eyebrow">L3 Functional Fitness Coach · Bingham NG13</span>
-            <h1>TRAIN.<br/><span className="red">PROGRESS.</span><br/><span className="outline">SUCCEED.</span></h1>
+            <h1>TRAIN.<br /><span className="red">PROGRESS.</span><br /><span className="outline">SUCCEED.</span></h1>
           </div>
           <div className="df-hero-foot">
             <p>No gimmicks. No quick fixes. Real strength, real fitness, built rep by rep at IronHQ in Bingham — the only address you need.</p>
@@ -345,16 +345,16 @@ function MachoFullDesign() {
 
       <section className="df-services">
         <div className="df-sec-head">
-          <div className="num">§ 01<br/>SERVICES</div>
-          <h2>THREE WAYS<br/>TO <span className="red">GET TO WORK.</span></h2>
+          <div className="num">§ 01<br />SERVICES</div>
+          <h2>THREE WAYS<br />TO <span className="red">GET TO WORK.</span></h2>
           <div className="right">PT is the main thing I do — the place you'll progress fastest. Bootcamp and the run club are how a lot of people start.</div>
         </div>
         <div className="df-cards">
           <div className="df-card hero">
             <div className="df-card-hero-left">
               <div>
-                <div className="df-card-tag" style={{marginTop:18}}>01 / FLAGSHIP — 1-to-1</div>
-                <h3>PERSONAL<br/>TRAINING.</h3>
+                <div className="df-card-tag" style={{ marginTop: 18 }}>01 / FLAGSHIP — 1-to-1</div>
+                <h3>PERSONAL<br />TRAINING.</h3>
                 <p>An hour with me at IronHQ. Programmed around your body, your goals and your week — and coached in person, no app-only nonsense. Whether you've never trained before or you're chasing a PB, the plan is built around exactly where you are.</p>
               </div>
               <ul className="df-card-features">
@@ -378,7 +378,7 @@ function MachoFullDesign() {
           <div className="df-card">
             <div>
               <div className="df-card-tag">02 / GROUP</div>
-              <h3>Thursday<br/>Bootcamp</h3>
+              <h3>Thursday<br />Bootcamp</h3>
               <p>Mixed-ability circuits at Bingham RUFC. 60 minutes of proper graft, every Thursday at 5:30. Cash or card, drop-in, no membership.</p>
               <div className="df-pricing">£10 / DROP-IN</div>
             </div>
@@ -387,7 +387,7 @@ function MachoFullDesign() {
           <div className="df-card dark">
             <div>
               <div className="df-card-tag">03 / FREE</div>
-              <h3>Sunday<br/>Run Club</h3>
+              <h3>Sunday<br />Run Club</h3>
               <p>Bingham Market Place, 9am, every week — rain, snow or shine. Lap-based so all paces fit. Breakfast at Gilt after.</p>
               <div className="df-pricing">FREE · ALWAYS</div>
             </div>
@@ -404,7 +404,7 @@ function MachoFullDesign() {
         </div>
         <div className="df-about-body">
           <span className="df-eyebrow">§ 02 · About the coach</span>
-          <h2>BUILT IN<br/><span className="red">BINGHAM.</span><br/>BY <span className="outline">CHOICE.</span></h2>
+          <h2>BUILT IN<br /><span className="red">BINGHAM.</span><br />BY <span className="outline">CHOICE.</span></h2>
           <p>I'm <strong>Dean Michniew</strong> — Bingham-born, Bingham-based, and the bloke at the front of the Sunday Run Club every week, rain or shine. <strong>Level 3 qualified Personal Trainer</strong> and functional-fitness coach.</p>
           <p>I came to coaching after years on the other side of the conversation — desk job, slow drift, then the realisation that being strong and capable changed everything else in my life. Now I do this full time, and I get to watch other people find their own version of that change.</p>
           <p>I still compete. Hyrox, races, lifting events. If I'm asking you to push your limits, I'd better be pushing mine.</p>
@@ -441,7 +441,7 @@ function MachoFullDesign() {
           </div>
           <div className="df-ironhq-body">
             <span className="df-eyebrow">§ 03 · HOME BASE</span>
-            <h2>IRONHQ.<br/>BINGHAM.</h2>
+            <h2>IRONHQ.<br />BINGHAM.</h2>
             <p>Purpose-built for serious strength training. Top-of-the-line racks, sleds, dumbbells, conditioning kit. The whole place is set up for the way I program. No queues, no nonsense.</p>
             <ul className="df-ironhq-list">
               <li>Unit 1, Ranch House · NG13 8GF</li>
@@ -461,7 +461,7 @@ function MachoFullDesign() {
         </div>
         <div className="df-runclub-body">
           <span className="df-eyebrow">§ 04 · COMMUNITY</span>
-          <h2>SUNDAY<br/>RUNNING <span className="red">CLUB.</span></h2>
+          <h2>SUNDAY<br />RUNNING <span className="red">CLUB.</span></h2>
           <p>A free, friendly running &amp; walking group I founded to get more of Bingham moving on a Sunday morning. Lap-based route, mixed paces, complete beginners welcome — followed by coffee &amp; breakfast at Gilt.</p>
           <p>This is the most important thing I do. It's where most clients start, where friendships form, and where you'll see what showing up looks like.</p>
           <div className="df-runclub-stats">
@@ -479,7 +479,7 @@ function MachoFullDesign() {
       <section className="df-bootcamp">
         <div className="df-bootcamp-body">
           <span className="df-eyebrow">§ 05 · GROUP TRAINING</span>
-          <h2>BINGHAM<br/>BOOT<span className="red">CAMP.</span></h2>
+          <h2>BINGHAM<br />BOOT<span className="red">CAMP.</span></h2>
           <p>An hour of proper graft at Bingham RUFC every Thursday at 5:30pm. Mixed-ability circuits — sleds, kettlebells, suspension trainers, sprints. Designed so a first-timer and a seasoned lifter can both leave wiped out and smiling.</p>
           <p>No membership, no commitment — cash or card on the door. The friendliest bunch you'll sweat with this week.</p>
           <div className="df-bootcamp-stats">
@@ -500,15 +500,15 @@ function MachoFullDesign() {
 
       <section className="df-prices">
         <div className="df-sec-head">
-          <div className="num">§ 06<br/>PRICES</div>
-          <h2>NO HIDDEN<br/><span className="red">EXTRAS.</span></h2>
+          <div className="num">§ 06<br />PRICES</div>
+          <h2>NO HIDDEN<br /><span className="red">EXTRAS.</span></h2>
           <div className="right">Pay-as-you-go for groups, blocks for PT. First chat is always free.</div>
         </div>
         <div className="df-prices-grid">
           <div className="df-price feat">
             <div className="df-price-tag">— THE MAIN THING</div>
-            <h3>1-to-1<br/>Personal Training</h3>
-            <div className="amount">£30 <span className="unit">FROM<br/>/ SESSION</span></div>
+            <h3>1-to-1<br />Personal Training</h3>
+            <div className="amount">£30 <span className="unit">FROM<br />/ SESSION</span></div>
             <ul>
               <li>Bespoke weekly programming, written for you</li>
               <li>Hevy Pro app included — log every rep</li>
@@ -521,8 +521,8 @@ function MachoFullDesign() {
           </div>
           <div className="df-price">
             <div className="df-price-tag">— GROUP</div>
-            <h3>Thursday<br/>Bootcamp</h3>
-            <div className="amount">£10 <span className="unit">DROP-IN<br/>/ SESSION</span></div>
+            <h3>Thursday<br />Bootcamp</h3>
+            <div className="amount">£10 <span className="unit">DROP-IN<br />/ SESSION</span></div>
             <ul>
               <li>60 minute mixed-ability circuit</li>
               <li>Cash or card on the door</li>
@@ -534,8 +534,8 @@ function MachoFullDesign() {
           </div>
           <div className="df-price free">
             <div className="df-price-tag">— ALWAYS FREE</div>
-            <h3>Sunday<br/>Running Club</h3>
-            <div className="amount">£0 <span className="unit">FOREVER<br/>/ EVERYONE</span></div>
+            <h3>Sunday<br />Running Club</h3>
+            <div className="amount">£0 <span className="unit">FOREVER<br />/ EVERYONE</span></div>
             <ul>
               <li>Lap-based · all paces fit</li>
               <li>Walkers · prams · dogs welcome</li>
@@ -581,7 +581,7 @@ function MachoFullDesign() {
       </section>
 
       <section className="df-testimonials">
-        <h2>RESULTS<br/><span className="red">SPEAK LOUDER.</span></h2>
+        <h2>RESULTS<br /><span className="red">SPEAK LOUDER.</span></h2>
         <div className="sub">§ 08 · 18 months of clients · 5★ across the board · transformations below</div>
         <div className="df-test-grid">
           <div className="df-test feat">
@@ -623,14 +623,14 @@ function MachoFullDesign() {
       <section className="df-contact">
         <div className="df-contact-inner">
           <div>
-            <h2>READY?<br/><span className="out">LET'S WORK.</span></h2>
+            <h2>READY?<br /><span className="out">LET'S WORK.</span></h2>
             <p className="sub">No commitment, no pressure — just a chat about where you're at and the smallest brave step. Reply within 24 hours, usually faster on Instagram.</p>
           </div>
           <div className="df-contact-card">
             <div className="lab">— Get in touch</div>
-            <h3>DEAN<br/>MICHNIEW</h3>
+            <h3>DEAN<br />MICHNIEW</h3>
             <div className="df-contact-row"><span className="k">Instagram</span><span className="v">@dmmich.the_coach</span></div>
-            <div className="df-contact-row"><span className="k">Email</span><span className="v">dean@dmmichthecoach.co.uk</span></div>
+            <div className="df-contact-row"><span className="k">Email</span><span className="v">dmmich90@outlook.com</span></div>
             <div className="df-contact-row"><span className="k">Phone</span><span className="v">+44 78 8191 8142</span></div>
             <div className="df-contact-row"><span className="k">In person</span><span className="v">Sun 9am · Market Place</span></div>
             <a className="df-btn btn">Email Dean →</a>
@@ -666,7 +666,7 @@ function MachoFullDesign() {
             <ul>
               <li>@dmmich.the_coach</li>
               <li>@sundayrunclub_bingham</li>
-              <li>dean@dmmichthecoach.co.uk</li>
+              <li>dmmich90@outlook.com</li>
               <li>+44 (0)78 8191 8142</li>
             </ul>
           </div>

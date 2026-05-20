@@ -36,9 +36,9 @@
   "about": {
     "portrait": "/images/dean-portrait.jpg",
     "portrait_alt": "Dean Michniew — Personal Trainer",
-    "bio_1": "I'm <strong>Dean Michniew</strong> — Bingham-born, Bingham-based, and the bloke at the front of the Sunday Run Club every week, rain or shine. <strong>Level 3 qualified Personal Trainer</strong> and functional-fitness coach.",
-    "bio_2": "I came to coaching after years on the other side of the conversation — desk job, slow drift, then the realisation that being strong and capable changed everything else in my life. Now I do this full time, and I get to watch other people find their own version of that change.",
-    "bio_3": "I still compete. Hyrox, races, lifting events. If I'm asking you to push your limits, I'd better be pushing mine.",
+    "bio_1": "I'm <strong>Dean Michniew</strong> — <strong>Level 3 Personal Trainer</strong>, functional fitness coach, and the bloke at the front of the Sunday Running Club every week, rain or shine.",
+    "bio_2": "I got into coaching because of what fitness actually gives you — not the extremes, not the aesthetics. Energy, resilience, confidence in your own body. That's what I want for the people I work with. No crash programmes, no punishing regimes. Just well-coached, consistent effort that compounds into something real.",
+    "bio_3": "I'm an avid hybrid athlete — running, lifting, Hyrox racing. Whatever your starting point, I'll meet you there and help you progress.",
     "qualifications": [
       {
         "label": "Personal Trainer",
@@ -85,7 +85,7 @@
     "regulars": "25+"
   },
   "bootcamp": {
-    "image": "",
+    "image": "/images/bootcamp.jpeg",
     "image_alt": "Thursday Bootcamp at Bingham RUFC",
     "body_1": "An hour of proper graft at Bingham RUFC every Thursday at 5:30pm. Mixed-ability circuits — lunges, kettlebells, balance, sprints. Designed so a first-timer and a seasoned lifter can both leave wiped out and smiling.",
     "body_2": "No membership, no commitment — cash or card on the door. The friendliest bunch you'll sweat with this week."
@@ -154,6 +154,7 @@
         "quote": "From no-rox to Hyrox.",
         "name": "Charlotte C.",
         "duration": "pain-free",
+        "before_image": "/images/transformations/charlotte-c-before.jpg",
         "after_image": "/images/transformations/charlotte-c-after.jpg"
       }
     ]
