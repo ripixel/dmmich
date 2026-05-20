@@ -42,8 +42,6 @@ collections:
           - { label: "Phone Number", name: "phone", widget: "string" }
           - { label: "Instagram URL", name: "instagram_url", widget: "string" }
           - { label: "Instagram Handle", name: "instagram_handle", widget: "string" }
-          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
-          - { label: "Facebook Name", name: "facebook_name", widget: "string" }
           - { label: "Qualification", name: "qualification", widget: "string" }
           - { label: "Specialty", name: "specialty", widget: "string" }
           - { label: "Location Base", name: "location_base", widget: "string" }

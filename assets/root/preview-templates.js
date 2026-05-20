@@ -374,7 +374,6 @@ var RunningClubPreview = createClass({
                     h('p', { dangerouslySetInnerHTML: { __html: f(entry, 'social.body') } }),
                     h('div', { style: { marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', gap: '1rem' } },
                         h('a', { href: '#', className: 'btn btn--outline' }, f(entry, 'social.instagram_text')),
-                        h('a', { href: '#', className: 'btn btn--outline' }, f(entry, 'social.facebook_text'))
                     )
                 )
             ),
@@ -500,7 +499,6 @@ var ContactPreview = createClass({
                             h('ul', { className: 'contact-methods' },
                                 h('li', {}, h('strong', {}, 'Email'), ' dean@dmmichthecoach.co.uk'),
                                 h('li', {}, h('strong', {}, 'Instagram'), ' @DMMichTheCoach'),
-                                h('li', {}, h('strong', {}, 'Facebook'), ' DMMichTheCoach')
                             ),
                             h('h2', {
                                 style: {
@@ -550,7 +548,6 @@ var SiteSettingsPreview = createClass({
                 h('ul', { style: { listStyle: 'none', padding: 0 } },
                     h('li', {}, '📧 ', f(entry, 'email')),
                     h('li', {}, '📷 ', f(entry, 'instagram_handle')),
-                    h('li', {}, '📘 ', f(entry, 'facebook_name'))
                 )
             ),
             h('div', { style: { marginTop: '2rem' } },

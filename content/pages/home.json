@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "L3 Functional Fitness Coach · Bingham NG13",
     "background_image": "/images/hero-bg.png",
-    "background_video": "",
+    "background_video": "/images/hero-bg-vid.mp4",
     "blurb": "No gimmicks. No quick fixes. Real strength, real fitness, built rep by rep at IronHQ in Bingham — the only address you need.",
     "stat_bootcamp": "THU 5:30",
     "stat_runclub": "SUN 9:00",
@@ -115,29 +115,19 @@
   "gallery": {
     "items": [
       {
-        "src": "/images/gallery-1.png",
+        "src": "/images/ironhq-train.jpg",
         "alt": "Training at IronHQ",
-        "meta": "Sat · Hyrox London"
+        "meta": "Training at IronHQ"
       },
       {
-        "src": "/images/running-club.png",
+        "src": "/images/runclub.jpg",
         "alt": "Sunday Run Club",
         "meta": "Sun · run club"
       },
       {
-        "src": "/images/gallery-2.png",
-        "alt": "1-to-1 PT session",
-        "meta": "Tue · 1-to-1 PT"
-      },
-      {
-        "src": "/images/training-session.png",
+        "src": "/images/bootcamp.jpg",
         "alt": "Bootcamp at BRUFC",
         "meta": "Thu · bootcamp"
-      },
-      {
-        "src": "/images/gallery-3.png",
-        "alt": "Training session IronHQ",
-        "meta": "Sat · 1-to-1 PT"
       }
     ]
   },
@@ -148,8 +138,8 @@
         "quote": "Going from someone who has never done more than 10 minutes exercise without getting out of breath, to someone who does at least 2hrs of fitness every day is a transformation I could never have dreamed of. Starting small with one group class a week with Dean, then two, then three, then with PT, then two PT, then run club (etc) has been an absolutely magical experience, and Dean has been there supporting and pushing me all the way. He is incredibly receptive to where I was in my fitness journey (ie, nowhere) and grows the plan around you as you change. He has changed my life immeasurably for the better - the new experiences I have done, people I have met, and friendships I have gained are priceless, as is a trust in my body to perform things I could never have dreamed of. If anyone is on the fence about whether a PT is for them, Dean is for you.",
         "name": "James K",
         "duration": "12 months in",
-        "before_image": "/images/transformations/james-k-before.jpg",
-        "after_image": "/images/transformations/james-k-after.jpg"
+        "before_image": "/images/transformations/james-k-before.png",
+        "after_image": "/images/transformations/james-k-after.png"
       },
       {
         "stars": "★ ★ ★ ★ ★",
