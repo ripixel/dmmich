@@ -293,17 +293,10 @@
             </div>
             <div class="gallery-grid">
                 {{#each content.gallery.items}}
-                {{#if @first}}
-                <div class="gallery-cell tall">
-                    <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
-                    <span class="cell-meta">— {{this.meta}}</span>
-                </div>
-                {{else}}
                 <div class="gallery-cell">
                     <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
                     <span class="cell-meta">— {{this.meta}}</span>
                 </div>
-                {{/if}}
                 {{/each}}
             </div>
         </section>
