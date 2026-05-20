@@ -76,7 +76,8 @@ collections:
             widget: "object"
             fields:
               - { label: "Eyebrow text", name: "eyebrow", widget: "string" }
-              - { label: "Background image", name: "background_image", widget: "image" }
+              - { label: "Background image (fallback / poster)", name: "background_image", widget: "image" }
+              - { label: "Background video (MP4, optional — replaces image)", name: "background_video", widget: "file", required: false, allow_multiple: false }
               - { label: "Blurb (under headline)", name: "blurb", widget: "text" }
               - { label: "Bootcamp stat (e.g. THU 5:30)", name: "stat_bootcamp", widget: "string" }
               - { label: "Run Club stat (e.g. SUN 9:00)", name: "stat_runclub", widget: "string" }

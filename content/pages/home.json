@@ -2,10 +2,11 @@
   "hero": {
     "eyebrow": "L3 Functional Fitness Coach · Bingham NG13",
     "background_image": "/images/hero-bg.png",
+    "background_video": "",
     "blurb": "No gimmicks. No quick fixes. Real strength, real fitness, built rep by rep at IronHQ in Bingham — the only address you need.",
     "stat_bootcamp": "THU 5:30",
     "stat_runclub": "SUN 9:00",
-    "stat_clients": "60+"
+    "stat_clients": "20+"
   },
   "services": {
     "pt": {
@@ -35,18 +36,32 @@
     "bio_2": "I came to coaching after years on the other side of the conversation — desk job, slow drift, then the realisation that being strong and capable changed everything else in my life. Now I do this full time, and I get to watch other people find their own version of that change.",
     "bio_3": "I still compete. Hyrox, races, lifting events. If I'm asking you to push your limits, I'd better be pushing mine.",
     "qualifications": [
-      { "label": "Level 3 Personal Trainer", "year": "Active IQ" },
-      { "label": "Functional Fitness Coach", "year": "L2" },
-      { "label": "Hyrox Trainer Certified", "year": "2024" },
-      { "label": "Emergency First Aid at Work", "year": "2024" },
-      { "label": "Public Liability Insured", "year": "£10m" }
+      {
+        "label": "Personal Trainer",
+        "year": "Level 3"
+      },
+      {
+        "label": "Emergency First Aid at Work",
+        "year": "2024"
+      },
+      {
+        "label": "Public Liability Insured",
+        "year": "Covered"
+      }
     ],
     "competing": [
-      { "label": "Hyrox London · Mens Pro", "year": "PB 1:04" },
-      { "label": "Hyrox Birmingham", "year": "2025" },
-      { "label": "Hyrox Nottingham", "year": "2024" },
-      { "label": "Tough Mudder Yorkshire", "year": "2023" },
-      { "label": "Robin Hood Half Marathon", "year": "PB 1:38" }
+      {
+        "label": "Hyrox London Olympia - Men's Open Doubles",
+        "year": "1:04"
+      },
+      {
+        "label": "Hyrox Birmingham - Men's Open Doubles",
+        "year": "1:07"
+      },
+      {
+        "label": "Nottingham 10k",
+        "year": "47:24"
+      }
     ]
   },
   "ironhq": {
@@ -61,10 +76,10 @@
   "run_club": {
     "body_1": "A free, friendly running & walking group I founded to get more of Bingham moving on a Sunday morning. Lap-based route, mixed paces, complete beginners welcome — followed by coffee & breakfast at Gilt.",
     "body_2": "This is the most important thing I do. It's where most clients start, where friendships form, and where you'll see what showing up looks like.",
-    "regulars": "40+"
+    "regulars": "25+"
   },
   "bootcamp": {
-    "body_1": "An hour of proper graft at Bingham RUFC every Thursday at 5:30pm. Mixed-ability circuits — sleds, kettlebells, suspension trainers, sprints. Designed so a first-timer and a seasoned lifter can both leave wiped out and smiling.",
+    "body_1": "An hour of proper graft at Bingham RUFC every Thursday at 5:30pm. Mixed-ability circuits — lunges, kettlebells, balance, sprints. Designed so a first-timer and a seasoned lifter can both leave wiped out and smiling.",
     "body_2": "No membership, no commitment — cash or card on the door. The friendliest bunch you'll sweat with this week."
   },
   "prices": {
@@ -74,9 +89,8 @@
         "Bespoke weekly programming, written for you",
         "Hevy Pro app included — log every rep",
         "Nutritional guidance + monthly reviews",
-        "Block discounts at 10 / 20 sessions",
         "Bring a mate · small-group rate",
-        "Free 15-minute intro chat to begin"
+        "Free intro chat to begin"
       ]
     },
     "bootcamp": {
@@ -85,8 +99,7 @@
         "60 minute mixed-ability circuit",
         "Cash or card on the door",
         "No membership, no commitment",
-        "Bring a mate · 2 for £15",
-        "4-week block: £35"
+        "Bring a mate · 2 for £15"
       ]
     },
     "run_club": {
@@ -101,22 +114,42 @@
   },
   "gallery": {
     "items": [
-      { "src": "/images/gallery-1.png", "alt": "Training at IronHQ", "meta": "Sat · Hyrox London" },
-      { "src": "/images/running-club.png", "alt": "Sunday Run Club", "meta": "Sun · run club" },
-      { "src": "/images/gallery-2.png", "alt": "1-to-1 PT session", "meta": "Tue · 1-to-1 PT" },
-      { "src": "/images/training-session.png", "alt": "Bootcamp at BRUFC", "meta": "Thu · bootcamp" },
-      { "src": "/images/gallery-3.png", "alt": "Training session IronHQ", "meta": "Sat · 1-to-1 PT" }
+      {
+        "src": "/images/gallery-1.png",
+        "alt": "Training at IronHQ",
+        "meta": "Sat · Hyrox London"
+      },
+      {
+        "src": "/images/running-club.png",
+        "alt": "Sunday Run Club",
+        "meta": "Sun · run club"
+      },
+      {
+        "src": "/images/gallery-2.png",
+        "alt": "1-to-1 PT session",
+        "meta": "Tue · 1-to-1 PT"
+      },
+      {
+        "src": "/images/training-session.png",
+        "alt": "Bootcamp at BRUFC",
+        "meta": "Thu · bootcamp"
+      },
+      {
+        "src": "/images/gallery-3.png",
+        "alt": "Training session IronHQ",
+        "meta": "Sat · 1-to-1 PT"
+      }
     ]
   },
   "testimonials": {
     "items": [
       {
         "stars": "★ ★ ★ ★ ★",
-        "quote": "From struggling to do 10 minutes without getting out of breath, to two hours of fitness every day. Starting small with one class a week, then two, then PT, then run club — has been an absolutely magical experience. Dean has been there supporting and pushing me all the way. He has changed my life immeasurably for the better. If anyone is on the fence about whether a PT is for them, Dean is for you.",
-        "name": "Long-term client",
-        "duration": "18 months in",
-        "before_image": "/images/transformations/claire-d-before.jpg",
-        "after_image": "/images/transformations/claire-d-after.jpg"
+        "quote": "Going from someone who has never done more than 10 minutes exercise without getting out of breath, to someone who does at least 2hrs of fitness every day is a transformation I could never have dreamed of. Starting small with one group class a week with Dean, then two, then three, then with PT, then two PT, then run club (etc) has been an absolutely magical experience, and Dean has been there supporting and pushing me all the way. He is incredibly receptive to where I was in my fitness journey (ie, nowhere) and grows the plan around you as you change. He has changed my life immeasurably for the better - the new experiences I have done, people I have met, and friendships I have gained are priceless, as is a trust in my body to perform things I could never have dreamed of. If anyone is on the fence about whether a PT is for them, Dean is for you.",
+        "name": "James K",
+        "duration": "12 months in",
+        "before_image": "/images/transformations/james-k-before.jpg",
+        "after_image": "/images/transformations/james-k-after.jpg"
       },
       {
         "stars": "★ ★ ★ ★ ★",
