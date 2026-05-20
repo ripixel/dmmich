@@ -20,7 +20,9 @@
         "Block discounts at 10 / 20"
       ],
       "price": "FROM £30 / SESSION",
-      "cta": "Book a free intro chat"
+      "cta": "Book a free intro chat",
+      "image": "/images/ironhq.jpg",
+      "image_alt": "Dean coaching a client at IronHQ"
     },
     "bootcamp": {
       "description": "Mixed-ability circuits at Bingham RUFC. 60 minutes of proper graft, every Thursday at 5:30. Cash or card, drop-in, no membership.",
@@ -32,6 +34,8 @@
     }
   },
   "about": {
+    "portrait": "/images/dean-portrait.jpg",
+    "portrait_alt": "Dean Michniew — Personal Trainer",
     "bio_1": "I'm <strong>Dean Michniew</strong> — Bingham-born, Bingham-based, and the bloke at the front of the Sunday Run Club every week, rain or shine. <strong>Level 3 qualified Personal Trainer</strong> and functional-fitness coach.",
     "bio_2": "I came to coaching after years on the other side of the conversation — desk job, slow drift, then the realisation that being strong and capable changed everything else in my life. Now I do this full time, and I get to watch other people find their own version of that change.",
     "bio_3": "I still compete. Hyrox, races, lifting events. If I'm asking you to push your limits, I'd better be pushing mine.",
@@ -74,11 +78,15 @@
     ]
   },
   "run_club": {
+    "image": "/images/runclub.jpg",
+    "image_alt": "Bingham Sunday Running Club",
     "body_1": "A free, friendly running & walking group I founded to get more of Bingham moving on a Sunday morning. Lap-based route, mixed paces, complete beginners welcome — followed by coffee & breakfast at Gilt.",
     "body_2": "This is the most important thing I do. It's where most clients start, where friendships form, and where you'll see what showing up looks like.",
     "regulars": "25+"
   },
   "bootcamp": {
+    "image": "",
+    "image_alt": "Thursday Bootcamp at Bingham RUFC",
     "body_1": "An hour of proper graft at Bingham RUFC every Thursday at 5:30pm. Mixed-ability circuits — lunges, kettlebells, balance, sprints. Designed so a first-timer and a seasoned lifter can both leave wiped out and smiling.",
     "body_2": "No membership, no commitment — cash or card on the door. The friendliest bunch you'll sweat with this week."
   },
@@ -125,7 +133,7 @@
         "meta": "Sun · run club"
       },
       {
-        "src": "/images/bootcamp.jpg",
+        "src": "/images/bootcamp.jpeg",
         "alt": "Bootcamp at BRUFC",
         "meta": "Thu · bootcamp"
       }
@@ -136,26 +144,17 @@
       {
         "stars": "★ ★ ★ ★ ★",
         "quote": "Going from someone who has never done more than 10 minutes exercise without getting out of breath, to someone who does at least 2hrs of fitness every day is a transformation I could never have dreamed of. Starting small with one group class a week with Dean, then two, then three, then with PT, then two PT, then run club (etc) has been an absolutely magical experience, and Dean has been there supporting and pushing me all the way. He is incredibly receptive to where I was in my fitness journey (ie, nowhere) and grows the plan around you as you change. He has changed my life immeasurably for the better - the new experiences I have done, people I have met, and friendships I have gained are priceless, as is a trust in my body to perform things I could never have dreamed of. If anyone is on the fence about whether a PT is for them, Dean is for you.",
-        "name": "James K",
+        "name": "James K.",
         "duration": "12 months in",
         "before_image": "/images/transformations/james-k-before.png",
         "after_image": "/images/transformations/james-k-after.png"
       },
       {
         "stars": "★ ★ ★ ★ ★",
-        "quote": "12 weeks of targeted functional training and the back pain I'd had for years was gone. Deadlifting more than I ever thought possible. Wish I'd started sooner.",
-        "name": "Tom W.",
+        "quote": "From no-rox to Hyrox.",
+        "name": "Charlotte C.",
         "duration": "pain-free",
-        "before_image": "/images/transformations/tom-w-before.jpg",
-        "after_image": "/images/transformations/tom-w-after.jpg"
-      },
-      {
-        "stars": "★ ★ ★ ★ ★",
-        "quote": "The running club got me started. Personal training kept me going. Six months in I ran my first 10K — best decision I've made.",
-        "name": "Dan B.",
-        "duration": "first 10K, 6 months in",
-        "before_image": "/images/transformations/dan-b-before.jpg",
-        "after_image": "/images/transformations/dan-b-after.jpg"
+        "after_image": "/images/transformations/charlotte-c-after.jpg"
       }
     ]
   },

@@ -1,411 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-{{> head}}
+    {{> head}}
 
-<body>
-    {{> header}}
+    <body>
+        {{> header}}
 
-    <main>
+        <main>
 
-        <!-- ===== HERO ===== -->
-        <section class="hero" id="home">
-            <div class="hero-bg" style="background-image: url('{{content.hero.background_image}}');">
-                {{#if content.hero.background_video}}
-                <video class="hero-video" autoplay muted loop playsinline poster="{{content.hero.background_image}}">
-                    <source src="{{content.hero.background_video}}" type="video/mp4" />
-                </video>
-                {{/if}}
-            </div>
-            <div class="hero-inner">
-                <div>
-                    <span class="eyebrow">{{content.hero.eyebrow}}</span>
-                    <h1>TRAIN.<br><span class="red">PROGRESS.</span><br><span class="outline">SUCCEED.</span></h1>
-                </div>
-                <div class="hero-foot">
-                    <p>{{content.hero.blurb}}</p>
-                    <div>
-                        <div class="stat-label">Home gym</div>
-                        <div class="stat-val">IRON<span class="red">HQ</span></div>
-                    </div>
-                    <div>
-                        <div class="stat-label">Bootcamp</div>
-                        <div class="stat-val"><span class="red">{{content.hero.stat_bootcamp}}</span></div>
-                    </div>
-                    <div>
-                        <div class="stat-label">Run club</div>
-                        <div class="stat-val"><span class="red">{{content.hero.stat_runclub}}</span></div>
-                    </div>
-                    <div>
-                        <div class="stat-label">Clients</div>
-                        <div class="stat-val">{{content.hero.stat_clients}}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== STRIP ===== -->
-        <div class="strip" aria-hidden="true">
-            <div class="strip-inner">
-                <span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span></span>
-                <span aria-hidden="true">BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span></span>
-            </div>
-        </div>
-
-        <!-- ===== SERVICES ===== -->
-        <section class="services" id="training">
-            <div class="sec-head">
-                <div class="sec-num">§ 01<br>SERVICES</div>
-                <h2>THREE WAYS<br>TO <span class="red">GET TO WORK.</span></h2>
-            </div>
-            <div class="service-cards">
-
-                <!-- PT flagship -->
-                <div class="card-hero">
-                    <div class="card-hero-left">
-                        <div>
-                            <div class="card-tag" style="margin-top:18px;">01 / FLAGSHIP — 1-to-1</div>
-                            <h3>PERSONAL<br>TRAINING.</h3>
-                            <p>{{content.services.pt.description}}</p>
-                        </div>
-                        <ul class="card-features">
-                            {{#each content.services.pt.features}}
-                            <li>{{this}}</li>
-                            {{/each}}
-                        </ul>
-                        <div class="card-hero-foot">
-                            <div class="pricing-tag" style="font-size:24px; padding: 6px 24px 6px 14px;">{{content.services.pt.price}}</div>
-                            <a href="#contact" class="btn-primary">{{content.services.pt.cta}} →</a>
-                        </div>
-                    </div>
-                    <div class="card-hero-photo">
-                        <img src="/images/ironhq.uk_1765991135_3789730777253306721_75650881251.jpg" alt="Dean coaching a client at IronHQ" />
-                        <span class="overlay-tag">The main thing</span>
-                    </div>
-                </div>
-
-                <!-- Bootcamp -->
-                <div class="card" id="bootcamp-card">
-                    <div>
-                        <div class="card-tag">02 / GROUP</div>
-                        <h3>Thursday<br>Bootcamp</h3>
-                        <p>{{content.services.bootcamp.description}}</p>
-                        <div class="pricing-tag">{{content.services.bootcamp.price}}</div>
-                    </div>
-                    <div class="card-foot">
-                        <span>BINGHAM RUFC · THU 17:30</span>
-                        <a href="#bootcamp" class="arrow">→</a>
-                    </div>
-                </div>
-
-                <!-- Run Club -->
-                <div class="card dark">
-                    <div>
-                        <div class="card-tag">03 / FREE</div>
-                        <h3>Sunday<br>Running Club</h3>
-                        <p>{{content.services.run_club.description}}</p>
-                        <div class="pricing-tag">{{content.services.run_club.price}}</div>
-                    </div>
-                    <div class="card-foot">
-                        <span>MARKET PLACE · SUN 09:00</span>
-                        <a href="#run-club" class="arrow">→</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ===== ABOUT ===== -->
-        <section class="about" id="about">
-            <div class="about-portrait">
-                <img src="/images/dean-portrait.jpg" alt="Dean Michniew — Personal Trainer" loading="lazy" />
-                <span class="portrait-tag">Hi, I'm Dean</span>
-            </div>
-            <div class="about-body">
-                <span class="eyebrow">§ 02 · About the coach</span>
-                <h2>BUILT IN<br><span class="red">BINGHAM.</span><br>JOIN <span class="outline">ME.</span></h2>
-                <p>{{{content.about.bio_1}}}</p>
-                <p>{{content.about.bio_2}}</p>
-                <p>{{content.about.bio_3}}</p>
-                <div class="about-meta">
-                    <div class="about-meta-col">
-                        <h4>Qualifications</h4>
-                        <ul>
-                            {{#each content.about.qualifications}}
-                            <li><span>{{this.label}}</span><span class="year">{{this.year}}</span></li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                    <div class="about-meta-col">
-                        <h4>Competing</h4>
-                        <ul>
-                            {{#each content.about.competing}}
-                            <li><span>{{this.label}}</span><span class="year">{{this.year}}</span></li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-                <a href="#contact" class="btn-primary">Train with me →</a>
-            </div>
-        </section>
-
-        <!-- ===== IRONHQ ===== -->
-        <section class="ironhq" id="ironhq">
-            <div class="ironhq-inner">
-                <div class="ironhq-photo">
-                    <img src="/images/ironhq.uk_1765991135_3789730777253306721_75650881251.jpg" alt="IronHQ training floor" loading="lazy" />
-                    <span class="hq-label">HQ</span>
-                </div>
-                <div class="ironhq-body">
-                    <span class="eyebrow">§ 03 · Home base</span>
-                    <h2>IRONHQ.<br>BINGHAM.</h2>
-                    <p>{{content.ironhq.description}}</p>
-                    <ul class="ironhq-list">
-                        {{#each content.ironhq.facilities}}
-                        <li>{{this}}</li>
-                        {{/each}}
-                    </ul>
-                    <a href="{{site.locations.[0].map_embed}}" target="_blank" rel="noopener noreferrer" class="btn-primary">Get directions →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== RUN CLUB ===== -->
-        <section class="runclub" id="run-club">
-            <div class="runclub-photo">
-                <img src="/images/running-club.png" alt="Bingham Sunday Running Club" loading="lazy" />
-                <span class="overlay-tag">Free · All abilities</span>
-            </div>
-            <div class="runclub-body">
-                <span class="eyebrow">§ 04 · Community</span>
-                <h2>SUNDAY<br>RUNNING <span class="red">CLUB.</span></h2>
-                <p>{{content.run_club.body_1}}</p>
-                <p>{{content.run_club.body_2}}</p>
-                <div class="mini-stats">
-                    <div class="mini-stat">
-                        <div class="v cond">SUN <span class="red">09:00</span></div>
-                        <div class="l mono">Every week · rain or shine</div>
-                    </div>
-                    <div class="mini-stat">
-                        <div class="v cond">£<span class="red">0</span></div>
-                        <div class="l mono">Always free, always</div>
-                    </div>
-                    <div class="mini-stat">
-                        <div class="v cond">{{content.run_club.regulars}}</div>
-                        <div class="l mono">Regulars · all paces</div>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <a href="#contact" class="btn-primary">See you Sunday →</a>
-                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="btn-ghost">Follow @sundayrunclub_bingham</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== BOOTCAMP ===== -->
-        <section class="bootcamp" id="bootcamp">
-            <div class="bootcamp-body">
-                <span class="eyebrow">§ 05 · Group training</span>
-                <h2>THURSDAY<br>BOOT<span class="red">CAMP.</span></h2>
-                <p>{{content.bootcamp.body_1}}</p>
-                <p>{{content.bootcamp.body_2}}</p>
-                <div class="mini-stats">
-                    <div class="mini-stat dark">
-                        <div class="v cond">THU <span class="red">17:30</span></div>
-                        <div class="l mono">Every week · 60 min</div>
-                    </div>
-                    <div class="mini-stat dark">
-                        <div class="v cond">£<span class="red">10</span></div>
-                        <div class="l mono">Drop-in · cash or card</div>
-                    </div>
-                    <div class="mini-stat dark">
-                        <div class="v cond">ALL</div>
-                        <div class="l mono">Abilities, all welcome</div>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <a href="#contact" class="btn-primary">See you Thursday →</a>
-                    <a href="#contact" class="btn-ghost">Bring a mate · 2 for £15</a>
-                </div>
-            </div>
-            <div class="bootcamp-photo">
-                <span class="overlay-tag">Thursdays · 5:30pm</span>
-            </div>
-        </section>
-
-        <!-- ===== PRICES ===== -->
-        <section class="prices" id="prices">
-            <div class="sec-head">
-                <div class="sec-num">§ 06<br>PRICES</div>
-                <h2>NO HIDDEN<br><span class="red">EXTRAS.</span></h2>
-            </div>
-            <div class="prices-grid">
-
-                <!-- PT -->
-                <div class="price-card featured">
-                    <div class="price-tag">— THE MAIN THING</div>
-                    <h3>1-to-1<br>Personal Training</h3>
-                    <div class="price-amount">{{content.prices.pt.price}} <span class="price-unit">FROM<br>/ SESSION</span></div>
-                    <ul class="price-features">
-                        {{#each content.prices.pt.features}}
-                        <li>{{this}}</li>
-                        {{/each}}
-                    </ul>
-                    <div class="price-foot"><span>IRONHQ · BINGHAM</span><a href="#contact" class="arrow">→</a></div>
-                </div>
-
-                <!-- Bootcamp -->
-                <div class="price-card">
-                    <div class="price-tag">— GROUP</div>
-                    <h3>Thursday<br>Bootcamp</h3>
-                    <div class="price-amount">{{content.prices.bootcamp.price}} <span class="price-unit">DROP-IN<br>/ SESSION</span></div>
-                    <ul class="price-features">
-                        {{#each content.prices.bootcamp.features}}
-                        <li>{{this}}</li>
-                        {{/each}}
-                    </ul>
-                    <div class="price-foot"><span>BRUFC · THU 17:30</span><a href="#bootcamp" class="arrow">→</a></div>
-                </div>
-
-                <!-- Run Club -->
-                <div class="price-card free">
-                    <div class="price-tag">— ALWAYS FREE</div>
-                    <h3>Sunday<br>Running Club</h3>
-                    <div class="price-amount">£0 <span class="price-unit">FOREVER<br>/ EVERYONE</span></div>
-                    <ul class="price-features">
-                        {{#each content.prices.run_club.features}}
-                        <li>{{this}}</li>
-                        {{/each}}
-                    </ul>
-                    <div class="price-foot"><span>SUN 09:00 · MARKET PL.</span><a href="#run-club" class="arrow">→</a></div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ===== GALLERY ===== -->
-        <section class="gallery" id="gallery">
-            <div class="gallery-head">
-                <div>
-                    <span class="eyebrow">§ 07 · The grind</span>
-                    <h2>FROM <span class="red">THE FLOOR.</span></h2>
-                </div>
-                <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="btn-ghost">Instagram →</a>
-            </div>
-            <div class="gallery-grid">
-                {{#each content.gallery.items}}
-                <div class="gallery-cell">
-                    <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
-                    <span class="cell-meta">— {{this.meta}}</span>
-                </div>
-                {{/each}}
-            </div>
-        </section>
-
-        <!-- ===== TESTIMONIALS ===== -->
-        <section class="testimonials" id="results">
-            <h2>RESULTS<br><span class="red">SPEAK LOUDER.</span></h2>
-            <p class="sub">§ 08 · Real clients · real change · 5★ across the board</p>
-            <div class="test-grid">
-                {{#each content.testimonials.items}}
-                <div class="test-card{{#if @first}} feat{{/if}}">
-                    {{#if this.before_image}}
-                    <div class="test-images">
-                        <div class="test-img-cell before">
-                            <img src="{{this.before_image}}" alt="Before — {{this.name}}" loading="lazy" />
-                            <span class="img-lbl">— Before</span>
-                        </div>
-                        <div class="test-img-cell after">
-                            <img src="{{this.after_image}}" alt="After — {{this.name}}" loading="lazy" />
-                            <span class="img-lbl">After</span>
-                        </div>
-                    </div>
+            <!-- ===== HERO ===== -->
+            <section class="hero" id="home">
+                <div class="hero-bg" style="background-image: url('{{content.hero.background_image}}');">
+                    {{#if content.hero.background_video}}
+                        <video class="hero-video" autoplay muted loop playsinline
+                            poster="{{content.hero.background_image}}">
+                            <source src="{{content.hero.background_video}}" type="video/mp4" />
+                        </video>
                     {{/if}}
-                    <div class="test-body">
-                        <div class="test-stars">{{this.stars}}</div>
-                        <blockquote>"{{this.quote}}"</blockquote>
-                        <div class="test-author"><strong>{{this.name}}</strong> · {{this.duration}}</div>
+                </div>
+                <div class="hero-inner">
+                    <div>
+                        <span class="eyebrow">{{content.hero.eyebrow}}</span>
+                        <h1>TRAIN.<br><span class="red">PROGRESS.</span><br><span class="outline">SUCCEED.</span></h1>
+                    </div>
+                    <div class="hero-foot">
+                        <p>{{content.hero.blurb}}</p>
+                        <div>
+                            <div class="stat-label">Home gym</div>
+                            <div class="stat-val">IRON<span class="red">HQ</span></div>
+                        </div>
+                        <div>
+                            <div class="stat-label">Bootcamp</div>
+                            <div class="stat-val"><span class="red">{{content.hero.stat_bootcamp}}</span></div>
+                        </div>
+                        <div>
+                            <div class="stat-label">Run club</div>
+                            <div class="stat-val"><span class="red">{{content.hero.stat_runclub}}</span></div>
+                        </div>
+                        <div>
+                            <div class="stat-label">Clients</div>
+                            <div class="stat-val">{{content.hero.stat_clients}}</div>
+                        </div>
                     </div>
                 </div>
-                {{/each}}
-            </div>
-        </section>
+            </section>
 
-        <!-- ===== FAQ ===== -->
-        <section class="faq" id="faq">
-            <div class="faq-side">
-                <span class="eyebrow">§ 09 · Questions</span>
-                <h2>STRAIGHT<br><span class="red">ANSWERS.</span></h2>
-                <p>If something isn't covered here, drop me a message — I reply to everything.</p>
-                <a href="#contact" class="btn-primary" style="margin-top:8px;">Get in touch →</a>
-            </div>
-            <div class="faq-list">
-                {{#each content.faq.items}}
-                <details class="faq-item">
-                    <summary>
-                        <h3>{{this.question}}</h3>
-                        <span class="faq-plus">+</span>
-                    </summary>
-                    <p class="faq-answer">{{this.answer}}</p>
-                </details>
-                {{/each}}
-            </div>
-        </section>
-
-        <!-- ===== CONTACT ===== -->
-        <section class="contact" id="contact">
-            <div class="contact-inner">
-                <div>
-                    <h2>READY?<br><span class="out">LET'S WORK.</span></h2>
-                    <p class="contact-sub">{{content.contact.blurb}}</p>
-                </div>
-                <div class="contact-card">
-                    <div class="card-lab">— Get in touch</div>
-                    <h3>DEAN<br>MICHNIEW</h3>
-                    <div class="contact-row">
-                        <span class="k">Instagram</span>
-                        <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="v">{{site.instagram_handle}}</a>
-                    </div>
-                    <div class="contact-row">
-                        <span class="k">Email</span>
-                        <a href="mailto:{{site.email}}" class="v">{{site.email}}</a>
-                    </div>
-                    <div class="contact-row">
-                        <span class="k">In person</span>
-                        <span class="v">Sun 9am · Market Place</span>
-                    </div>
-                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="btn-primary">Message on Instagram →</a>
+            <!-- ===== STRIP ===== -->
+            <div class="strip" aria-hidden="true">
+                <div class="strip-inner">
+                    <span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span
+                            class="x">✕</span>RUN CLUB<span class="x">✕</span>BUILT IN BINGHAM<span
+                            class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span
+                            class="x">✕</span>RUN CLUB<span class="x">✕</span></span>
+                    <span aria-hidden="true">BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span
+                            class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span>BUILT IN
+                        BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span
+                            class="x">✕</span>RUN CLUB<span class="x">✕</span></span>
                 </div>
             </div>
-        </section>
 
-    </main>
+            <!-- ===== SERVICES ===== -->
+            <section class="services" id="training">
+                <div class="sec-head">
+                    <div class="sec-num">§ 01<br>SERVICES</div>
+                    <h2>THREE WAYS<br>TO <span class="red">GET TO WORK.</span></h2>
+                </div>
+                <div class="service-cards">
 
-    {{> footer}}
+                    <!-- PT flagship -->
+                    <div class="card-hero">
+                        <div class="card-hero-left">
+                            <div>
+                                <div class="card-tag" style="margin-top:18px;">01 / FLAGSHIP — 1-to-1</div>
+                                <h3>PERSONAL<br>TRAINING.</h3>
+                                <p>{{content.services.pt.description}}</p>
+                            </div>
+                            <ul class="card-features">
+                                {{#each content.services.pt.features}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                            <div class="card-hero-foot">
+                                <div class="pricing-tag" style="font-size:24px; padding: 6px 24px 6px 14px;">
+                                    {{content.services.pt.price}}</div>
+                                <a href="#contact" class="btn-primary">{{content.services.pt.cta}} →</a>
+                            </div>
+                        </div>
+                        <div class="card-hero-photo">
+                            <img src="{{content.services.pt.image}}" alt="{{content.services.pt.image_alt}}" />
+                            <span class="overlay-tag">The main thing</span>
+                        </div>
+                    </div>
 
-    <script>
-    (function () {
-        // Mobile nav toggle
-        var toggle = document.getElementById('navToggle');
-        var wrapper = document.getElementById('navLinksWrapper');
-        if (toggle && wrapper) {
-            toggle.addEventListener('click', function () {
-                wrapper.classList.toggle('open');
-                toggle.setAttribute('aria-expanded', wrapper.classList.contains('open'));
-            });
-            // Close on anchor click
-            wrapper.querySelectorAll('a').forEach(function (a) {
-                a.addEventListener('click', function () {
-                    wrapper.classList.remove('open');
-                    toggle.setAttribute('aria-expanded', 'false');
-                });
-            });
-        }
+                    <!-- Bootcamp -->
+                    <div class="card" id="bootcamp-card">
+                        <div>
+                            <div class="card-tag">02 / GROUP</div>
+                            <h3>Thursday<br>Bootcamp</h3>
+                            <p>{{content.services.bootcamp.description}}</p>
+                            <div class="pricing-tag">{{content.services.bootcamp.price}}</div>
+                        </div>
+                        <div class="card-foot">
+                            <span>BINGHAM RUFC · THU 17:30</span>
+                            <a href="#bootcamp" class="arrow">→</a>
+                        </div>
+                    </div>
 
-        // FAQ plus/minus rotation via CSS — details open attr handles it
-    })();
-    </script>
+                    <!-- Run Club -->
+                    <div class="card dark">
+                        <div>
+                            <div class="card-tag">03 / FREE</div>
+                            <h3>Sunday<br>Running Club</h3>
+                            <p>{{content.services.run_club.description}}</p>
+                            <div class="pricing-tag">{{content.services.run_club.price}}</div>
+                        </div>
+                        <div class="card-foot">
+                            <span>MARKET PLACE · SUN 09:00</span>
+                            <a href="#run-club" class="arrow">→</a>
+                        </div>
+                    </div>
 
-    {{> structured-data}}
-</body>
+                </div>
+            </section>
+
+            <!-- ===== ABOUT ===== -->
+            <section class="about" id="about">
+                <div class="about-portrait">
+                    <img src="{{content.about.portrait}}" alt="{{content.about.portrait_alt}}" loading="lazy" />
+                    <span class="portrait-tag">Hi, I'm Dean</span>
+                </div>
+                <div class="about-body">
+                    <span class="eyebrow">§ 02 · About the coach</span>
+                    <h2>BUILT IN<br><span class="red">BINGHAM.</span><br>JOIN <span class="outline">ME.</span></h2>
+                    <p>{{{content.about.bio_1}}}</p>
+                    <p>{{content.about.bio_2}}</p>
+                    <p>{{content.about.bio_3}}</p>
+                    <div class="about-meta">
+                        <div class="about-meta-col">
+                            <h4>Qualifications</h4>
+                            <ul>
+                                {{#each content.about.qualifications}}
+                                    <li><span>{{this.label}}</span><span class="year">{{this.year}}</span></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="about-meta-col">
+                            <h4>Competing</h4>
+                            <ul>
+                                {{#each content.about.competing}}
+                                    <li><span>{{this.label}}</span><span class="year">{{this.year}}</span></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Train with me →</a>
+                </div>
+            </section>
+
+            <!-- ===== IRONHQ ===== -->
+            <section class="ironhq" id="ironhq">
+                <div class="ironhq-inner">
+                    <div class="ironhq-photo">
+                        <img src="{{site.locations.[0].image}}" alt="{{site.locations.[0].image_alt}}" loading="lazy" />
+                        <span class="hq-label">HQ</span>
+                    </div>
+                    <div class="ironhq-body">
+                        <span class="eyebrow">§ 03 · Home base</span>
+                        <h2>IRONHQ.<br>BINGHAM.</h2>
+                        <p>{{content.ironhq.description}}</p>
+                        <ul class="ironhq-list">
+                            {{#each content.ironhq.facilities}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <a href="{{site.locations.[0].map_embed}}" target="_blank" rel="noopener noreferrer"
+                            class="btn-primary">Get directions →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== RUN CLUB ===== -->
+            <section class="runclub" id="run-club">
+                <div class="runclub-photo">
+                    <img src="{{content.run_club.image}}" alt="{{content.run_club.image_alt}}" loading="lazy" />
+                    <span class="overlay-tag">Free · All abilities</span>
+                </div>
+                <div class="runclub-body">
+                    <span class="eyebrow">§ 04 · Community</span>
+                    <h2>SUNDAY<br>RUNNING <span class="red">CLUB.</span></h2>
+                    <p>{{content.run_club.body_1}}</p>
+                    <p>{{content.run_club.body_2}}</p>
+                    <div class="mini-stats">
+                        <div class="mini-stat">
+                            <div class="v cond">SUN <span class="red">09:00</span></div>
+                            <div class="l mono">Every week · rain or shine</div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="v cond">£<span class="red">0</span></div>
+                            <div class="l mono">Always free, always</div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="v cond">{{content.run_club.regulars}}</div>
+                            <div class="l mono">Regulars · all paces</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn-primary">See you Sunday →</a>
+                        <a href="{{site.run_club_instagram_url}}" target="_blank" rel="noopener noreferrer"
+                            class="btn-ghost">Follow {{site.run_club_instagram_handle}}</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BOOTCAMP ===== -->
+            <section class="bootcamp" id="bootcamp">
+                <div class="bootcamp-body">
+                    <span class="eyebrow">§ 05 · Group training</span>
+                    <h2>THURSDAY<br>BOOT<span class="red">CAMP.</span></h2>
+                    <p>{{content.bootcamp.body_1}}</p>
+                    <p>{{content.bootcamp.body_2}}</p>
+                    <div class="mini-stats">
+                        <div class="mini-stat dark">
+                            <div class="v cond">THU <span class="red">17:30</span></div>
+                            <div class="l mono">Every week · 60 min</div>
+                        </div>
+                        <div class="mini-stat dark">
+                            <div class="v cond">£<span class="red">10</span></div>
+                            <div class="l mono">Drop-in · cash or card</div>
+                        </div>
+                        <div class="mini-stat dark">
+                            <div class="v cond">ALL</div>
+                            <div class="l mono">Abilities, all welcome</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn-primary">See you Thursday →</a>
+                        <a href="#contact" class="btn-ghost">Bring a mate · 2 for £15</a>
+                    </div>
+                </div>
+                <div class="bootcamp-photo">
+                    {{#if content.bootcamp.image}}
+                    <img src="{{content.bootcamp.image}}" alt="{{content.bootcamp.image_alt}}" loading="lazy" />
+                    {{/if}}
+                    <span class="overlay-tag">Thursdays · 5:30pm</span>
+                </div>
+            </section>
+
+            <!-- ===== PRICES ===== -->
+            <section class="prices" id="prices">
+                <div class="sec-head">
+                    <div class="sec-num">§ 06<br>PRICES</div>
+                    <h2>NO HIDDEN<br><span class="red">EXTRAS.</span></h2>
+                </div>
+                <div class="prices-grid">
+
+                    <!-- PT -->
+                    <div class="price-card featured">
+                        <div class="price-tag">— THE MAIN THING</div>
+                        <h3>1-to-1<br>Personal Training</h3>
+                        <div class="price-amount">{{content.prices.pt.price}} <span class="price-unit">FROM<br>/
+                                SESSION</span></div>
+                        <ul class="price-features">
+                            {{#each content.prices.pt.features}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <div class="price-foot"><span>IRONHQ · BINGHAM</span><a href="#contact" class="arrow">→</a>
+                        </div>
+                    </div>
+
+                    <!-- Bootcamp -->
+                    <div class="price-card">
+                        <div class="price-tag">— GROUP</div>
+                        <h3>Thursday<br>Bootcamp</h3>
+                        <div class="price-amount">{{content.prices.bootcamp.price}} <span
+                                class="price-unit">DROP-IN<br>/ SESSION</span></div>
+                        <ul class="price-features">
+                            {{#each content.prices.bootcamp.features}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <div class="price-foot"><span>BRUFC · THU 17:30</span><a href="#bootcamp" class="arrow">→</a>
+                        </div>
+                    </div>
+
+                    <!-- Run Club -->
+                    <div class="price-card free">
+                        <div class="price-tag">— ALWAYS FREE</div>
+                        <h3>Sunday<br>Running Club</h3>
+                        <div class="price-amount">£0 <span class="price-unit">FOREVER<br>/ EVERYONE</span></div>
+                        <ul class="price-features">
+                            {{#each content.prices.run_club.features}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <div class="price-foot"><span>SUN 09:00 · MARKET PL.</span><a href="#run-club"
+                                class="arrow">→</a></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ===== GALLERY ===== -->
+            <section class="gallery" id="gallery">
+                <div class="gallery-head">
+                    <div>
+                        <span class="eyebrow">§ 07 · The grind</span>
+                        <h2>FROM <span class="red">THE FLOOR.</span></h2>
+                    </div>
+                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer"
+                        class="btn-ghost">Instagram →</a>
+                </div>
+                <div class="gallery-grid">
+                    {{#each content.gallery.items}}
+                        <div class="gallery-cell">
+                            <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
+                            <span class="cell-meta">— {{this.meta}}</span>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+
+            <!-- ===== TESTIMONIALS ===== -->
+            <section class="testimonials" id="results">
+                <h2>RESULTS<br><span class="red">SPEAK LOUDER.</span></h2>
+                <p class="sub">§ 08 · Real clients · real change · 5★ across the board</p>
+                <div class="test-grid">
+                    {{#each content.testimonials.items}}
+                        <div class="test-card{{#if @first}} feat{{/if}}">
+                            {{#if this.before_image}}
+                                <div class="test-images">
+                                    <div class="test-img-cell before">
+                                        <img src="{{this.before_image}}" alt="Before — {{this.name}}" loading="lazy" />
+                                        <span class="img-lbl">— Before</span>
+                                    </div>
+                                    <div class="test-img-cell after">
+                                        <img src="{{this.after_image}}" alt="After — {{this.name}}" loading="lazy" />
+                                        <span class="img-lbl">After</span>
+                                    </div>
+                                </div>
+                            {{/if}}
+                            <div class="test-body">
+                                <div class="test-stars">{{this.stars}}</div>
+                                <blockquote>"{{this.quote}}"</blockquote>
+                                <div class="test-author"><strong>{{this.name}}</strong> · {{this.duration}}</div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+
+            <!-- ===== FAQ ===== -->
+            <section class="faq" id="faq">
+                <div class="faq-side">
+                    <span class="eyebrow">§ 09 · Questions</span>
+                    <h2>STRAIGHT<br><span class="red">ANSWERS.</span></h2>
+                    <p>If something isn't covered here, drop me a message — I reply to everything.</p>
+                    <a href="#contact" class="btn-primary" style="margin-top:8px;">Get in touch →</a>
+                </div>
+                <div class="faq-list">
+                    {{#each content.faq.items}}
+                        <details class="faq-item">
+                            <summary>
+                                <h3>{{this.question}}</h3>
+                                <span class="faq-plus">+</span>
+                            </summary>
+                            <p class="faq-answer">{{this.answer}}</p>
+                        </details>
+                    {{/each}}
+                </div>
+            </section>
+
+            <!-- ===== CONTACT ===== -->
+            <section class="contact" id="contact">
+                <div class="contact-inner">
+                    <div>
+                        <h2>READY?<br><span class="out">LET'S WORK.</span></h2>
+                        <p class="contact-sub">{{content.contact.blurb}}</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="card-lab">— Get in touch</div>
+                        <h3>DEAN<br>MICHNIEW</h3>
+                        <div class="contact-row">
+                            <span class="k">Instagram</span>
+                            <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer"
+                                class="v">{{site.instagram_handle}}</a>
+                        </div>
+                        <div class="contact-row">
+                            <span class="k">Email</span>
+                            <a href="mailto:{{site.email}}" class="v">{{site.email}}</a>
+                        </div>
+                        <div class="contact-row">
+                            <span class="k">In person</span>
+                            <span class="v">Sun 9am · Market Place</span>
+                        </div>
+                        <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer"
+                            class="btn-primary">Message on Instagram →</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        {{> footer}}
+
+        <script>
+            (function () {
+                // Mobile nav toggle
+                var toggle = document.getElementById('navToggle');
+                var wrapper = document.getElementById('navLinksWrapper');
+                if (toggle && wrapper) {
+                    toggle.addEventListener('click', function () {
+                        wrapper.classList.toggle('open');
+                        toggle.setAttribute('aria-expanded', wrapper.classList.contains('open'));
+                    });
+                    // Close on anchor click
+                    wrapper.querySelectorAll('a').forEach(function (a) {
+                        a.addEventListener('click', function () {
+                            wrapper.classList.remove('open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                        });
+                    });
+                }
+
+                // FAQ plus/minus rotation via CSS — details open attr handles it
+            })();
+        </script>
+
+        {{> structured-data}}
+    </body>
 
 </html>

@@ -42,6 +42,9 @@ collections:
           - { label: "Phone Number", name: "phone", widget: "string" }
           - { label: "Instagram URL", name: "instagram_url", widget: "string" }
           - { label: "Instagram Handle", name: "instagram_handle", widget: "string" }
+          - { label: "Run Club Instagram URL", name: "run_club_instagram_url", widget: "string" }
+          - { label: "Run Club Instagram Handle", name: "run_club_instagram_handle", widget: "string" }
+          - { label: "Masthead booking text (e.g. NOW BOOKING 2026)", name: "masthead_booking_text", widget: "string" }
           - { label: "Qualification", name: "qualification", widget: "string" }
           - { label: "Specialty", name: "specialty", widget: "string" }
           - { label: "Location Base", name: "location_base", widget: "string" }
@@ -94,6 +97,8 @@ collections:
                   - { label: "Features", name: "features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
                   - { label: "Price tag (e.g. FROM £30 / SESSION)", name: "price", widget: "string" }
                   - { label: "CTA button text", name: "cta", widget: "string" }
+              - { label: "Card photo", name: "image", widget: "image" }
+              - { label: "Card photo alt text", name: "image_alt", widget: "string" }
               - label: "Bootcamp"
                 name: "bootcamp"
                 widget: "object"
@@ -112,6 +117,8 @@ collections:
             name: "about"
             widget: "object"
             fields:
+              - { label: "Portrait photo", name: "portrait", widget: "image" }
+              - { label: "Portrait alt text", name: "portrait_alt", widget: "string" }
               - { label: "Bio paragraph 1 (HTML OK for bold)", name: "bio_1", widget: "text" }
               - { label: "Bio paragraph 2", name: "bio_2", widget: "text" }
               - { label: "Bio paragraph 3", name: "bio_3", widget: "text" }
@@ -141,6 +148,8 @@ collections:
             name: "run_club"
             widget: "object"
             fields:
+              - { label: "Section photo", name: "image", widget: "image" }
+              - { label: "Section photo alt text", name: "image_alt", widget: "string" }
               - { label: "Body paragraph 1", name: "body_1", widget: "text" }
               - { label: "Body paragraph 2", name: "body_2", widget: "text" }
               - { label: "Regulars count (e.g. 40+)", name: "regulars", widget: "string" }
@@ -150,6 +159,8 @@ collections:
             name: "bootcamp"
             widget: "object"
             fields:
+              - { label: "Section photo (optional)", name: "image", widget: "image", required: false }
+              - { label: "Section photo alt text", name: "image_alt", widget: "string" }
               - { label: "Body paragraph 1", name: "body_1", widget: "text" }
               - { label: "Body paragraph 2", name: "body_2", widget: "text" }
 
