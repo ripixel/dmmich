@@ -1,132 +1,162 @@
 {
-  "transformations": {
-    "heading": "Client",
-    "heading_accent": "Transformations",
-    "items": [
-      {
-        "name": "Claire D.",
-        "story": "Claire came to me having never set foot in a gym. Within 16 weeks, she completed her first parkrun in under 30 minutes. \"Dean showed me that fitness isn't about punishment — it's about progress.\""
-      },
-      {
-        "name": "Tom W.",
-        "story": "Tom struggled with back pain for years. After 12 weeks of functional training with me, he's pain-free and deadlifting more than he ever thought possible."
-      },
-      {
-        "name": "Rachel M.",
-        "story": "Rachel lost 2 stone over 6 months — but more importantly, gained confidence, energy, and a love for training she never expected to find."
-      }
-    ],
-    "cta_text": "See All Transformations"
+  "hero": {
+    "eyebrow": "L3 Functional Fitness Coach · Bingham NG13",
+    "background_image": "/images/hero-bg.png",
+    "blurb": "No gimmicks. No quick fixes. Real strength, real fitness, built rep by rep at IronHQ in Bingham — the only address you need.",
+    "stat_bootcamp": "THU 5:30",
+    "stat_runclub": "SUN 9:00",
+    "stat_clients": "60+"
+  },
+  "services": {
+    "pt": {
+      "description": "An hour with me at IronHQ. Programmed around your body, your goals and your week — and coached in person, no app-only nonsense. Whether you've never trained before or you're chasing a PB, the plan is built around exactly where you are.",
+      "features": [
+        "Bespoke weekly programming",
+        "Hevy Pro app · log every rep",
+        "Nutritional guidance",
+        "Monthly reviews · real numbers",
+        "Small-group rate · bring a mate",
+        "Block discounts at 10 / 20"
+      ],
+      "price": "FROM £30 / SESSION",
+      "cta": "Book a free intro chat"
+    },
+    "bootcamp": {
+      "description": "Mixed-ability circuits at Bingham RUFC. 60 minutes of proper graft, every Thursday at 5:30. Cash or card, drop-in, no membership.",
+      "price": "£10 / DROP-IN"
+    },
+    "run_club": {
+      "description": "Bingham Market Place, 9am, every week — rain, snow or shine. Lap-based so all paces fit. Breakfast at Gilt after.",
+      "price": "FREE · ALWAYS"
+    }
   },
   "about": {
-    "heading": "About",
-    "heading_accent": "Me",
-    "intro": "I'm Dean — a Level 3 qualified Personal Trainer with a passion for functional fitness, real-world strength, and helping people feel genuinely better in their day-to-day lives.",
-    "body": "I'm based in Bingham, Nottinghamshire, and I work with clients of all backgrounds and abilities. Whether you're picking up a barbell for the first time or looking to take your training to the next level, I'll help you get there with an approachable, no-nonsense coaching style.",
-    "pullquote": "Not chasing aesthetics, but health.",
-    "running_club_note": "I also founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Bingham Sunday Running Club</strong></a> — a free, super relaxed running and walking group that meets every Sunday at 9am. All paces welcome, and we always finish with coffee and a full English.",
-    "cta_text": "Read More"
+    "bio_1": "I'm <strong>Dean Michniew</strong> — Bingham-born, Bingham-based, and the bloke at the front of the Sunday Run Club every week, rain or shine. <strong>Level 3 qualified Personal Trainer</strong> and functional-fitness coach.",
+    "bio_2": "I came to coaching after years on the other side of the conversation — desk job, slow drift, then the realisation that being strong and capable changed everything else in my life. Now I do this full time, and I get to watch other people find their own version of that change.",
+    "bio_3": "I still compete. Hyrox, races, lifting events. If I'm asking you to push your limits, I'd better be pushing mine.",
+    "qualifications": [
+      { "label": "Level 3 Personal Trainer", "year": "Active IQ" },
+      { "label": "Functional Fitness Coach", "year": "L2" },
+      { "label": "Hyrox Trainer Certified", "year": "2024" },
+      { "label": "Emergency First Aid at Work", "year": "2024" },
+      { "label": "Public Liability Insured", "year": "£10m" }
+    ],
+    "competing": [
+      { "label": "Hyrox London · Mens Pro", "year": "PB 1:04" },
+      { "label": "Hyrox Birmingham", "year": "2025" },
+      { "label": "Hyrox Nottingham", "year": "2024" },
+      { "label": "Tough Mudder Yorkshire", "year": "2023" },
+      { "label": "Robin Hood Half Marathon", "year": "PB 1:38" }
+    ]
   },
-  "cta": {
-    "heading": "Ready to Start Your Journey?",
-    "body": "Get in touch today and let's take the first step together.",
-    "cta_text": "Contact Me"
+  "ironhq": {
+    "description": "Purpose-built for serious strength training. Top-of-the-line racks, sleds, dumbbells, conditioning kit. The whole place is set up for the way I program. No queues, no nonsense.",
+    "facilities": [
+      "Unit 1, Ranch House · NG13 8GF",
+      "Full strength & conditioning floor",
+      "Hyrox / functional rig — sled, ski, runner, bike",
+      "Members & PT clients only · on-site parking"
+    ]
+  },
+  "run_club": {
+    "body_1": "A free, friendly running & walking group I founded to get more of Bingham moving on a Sunday morning. Lap-based route, mixed paces, complete beginners welcome — followed by coffee & breakfast at Gilt.",
+    "body_2": "This is the most important thing I do. It's where most clients start, where friendships form, and where you'll see what showing up looks like.",
+    "regulars": "40+"
+  },
+  "bootcamp": {
+    "body_1": "An hour of proper graft at Bingham RUFC every Thursday at 5:30pm. Mixed-ability circuits — sleds, kettlebells, suspension trainers, sprints. Designed so a first-timer and a seasoned lifter can both leave wiped out and smiling.",
+    "body_2": "No membership, no commitment — cash or card on the door. The friendliest bunch you'll sweat with this week."
+  },
+  "prices": {
+    "pt": {
+      "price": "£30",
+      "features": [
+        "Bespoke weekly programming, written for you",
+        "Hevy Pro app included — log every rep",
+        "Nutritional guidance + monthly reviews",
+        "Block discounts at 10 / 20 sessions",
+        "Bring a mate · small-group rate",
+        "Free 15-minute intro chat to begin"
+      ]
+    },
+    "bootcamp": {
+      "price": "£10",
+      "features": [
+        "60 minute mixed-ability circuit",
+        "Cash or card on the door",
+        "No membership, no commitment",
+        "Bring a mate · 2 for £15",
+        "4-week block: £35"
+      ]
+    },
+    "run_club": {
+      "features": [
+        "Lap-based · all paces fit",
+        "Walkers · prams · dogs welcome",
+        "Breakfast at Gilt after",
+        "No sign-up · just turn up",
+        "Friendliest hour of your week"
+      ]
+    }
   },
   "gallery": {
-    "heading_accent": "Gallery",
-    "instagram_cta": "Follow Me on Instagram",
     "items": [
-      {
-        "src": "/images/training-session.png",
-        "alt": "Personal training session"
-      },
-      {
-        "src": "/images/gallery-group.png",
-        "alt": "Group training session"
-      },
-      {
-        "src": "/images/gallery-weights.png",
-        "alt": "Strength training"
-      },
-      {
-        "src": "/images/running-club.png",
-        "alt": "Bingham Sunday Running Club"
-      }
+      { "src": "/images/gallery-1.png", "alt": "Training at IronHQ", "meta": "Sat · Hyrox London" },
+      { "src": "/images/running-club.png", "alt": "Sunday Run Club", "meta": "Sun · run club" },
+      { "src": "/images/gallery-2.png", "alt": "1-to-1 PT session", "meta": "Tue · 1-to-1 PT" },
+      { "src": "/images/training-session.png", "alt": "Bootcamp at BRUFC", "meta": "Thu · bootcamp" },
+      { "src": "/images/gallery-3.png", "alt": "Training session IronHQ", "meta": "Sat · 1-to-1 PT" }
     ]
   },
   "testimonials": {
-    "heading": "What",
-    "heading_accent": "Clients Say",
     "items": [
       {
-        "stars": "★★★★★",
-        "quote": "I've never felt stronger or more confident. Dean makes every session challenging but achievable — and actually enjoyable.",
-        "name": "Sarah T."
+        "stars": "★ ★ ★ ★ ★",
+        "quote": "From struggling to do 10 minutes without getting out of breath, to two hours of fitness every day. Starting small with one class a week, then two, then PT, then run club — has been an absolutely magical experience. Dean has been there supporting and pushing me all the way. He has changed my life immeasurably for the better. If anyone is on the fence about whether a PT is for them, Dean is for you.",
+        "name": "Long-term client",
+        "duration": "18 months in",
+        "before_image": "/images/transformations/claire-d-before.jpg",
+        "after_image": "/images/transformations/claire-d-after.jpg"
       },
       {
-        "stars": "★★★★★",
-        "quote": "After years of dreading the gym, I finally look forward to training. Dean's focus on health over aesthetics changed my whole mindset.",
-        "name": "Mark R."
+        "stars": "★ ★ ★ ★ ★",
+        "quote": "12 weeks of targeted functional training and the back pain I'd had for years was gone. Deadlifting more than I ever thought possible. Wish I'd started sooner.",
+        "name": "Tom W.",
+        "duration": "pain-free",
+        "before_image": "/images/transformations/tom-w-before.jpg",
+        "after_image": "/images/transformations/tom-w-after.jpg"
       },
       {
-        "stars": "★★★★★",
-        "quote": "The Hevy app tracking is brilliant — I can see my progress week by week. Dean's programming is smart and sustainable.",
-        "name": "Jess P."
+        "stars": "★ ★ ★ ★ ★",
+        "quote": "The running club got me started. Personal training kept me going. Six months in I ran my first 10K — best decision I've made.",
+        "name": "Dan B.",
+        "duration": "first 10K, 6 months in",
+        "before_image": "/images/transformations/dan-b-before.jpg",
+        "after_image": "/images/transformations/dan-b-after.jpg"
       }
     ]
   },
-  "running_club": {
-    "body": "I founded the <a href=\"https://binghamsundayrunningclub.co.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Bingham Sunday Running Club</a> — a free, super relaxed running and walking group open to all abilities. We meet every Sunday at 9am at Bingham Market Place, run a lap-based route at whatever pace suits you, then head to Gilt for coffee and a full English. No sign-up, no fees — just good vibes.",
-    "heading": "Bingham",
-    "subheading": "Run Together, Eat Together",
-    "time_detail": "Every week, rain or shine",
-    "image_alt": "Bingham Sunday Running Club",
-    "heading_accent": "Sunday Running Club",
-    "time": "Sunday 9AM",
-    "location": "Bingham Market Place",
-    "location_detail": "Nottinghamshire",
-    "image": "/images/img-20260201-wa0004.jpg",
-    "cta_text": "Find Out More"
-  },
-  "hero": {
-    "title_line1": "TRAIN. PROGRESS.",
-    "title_line2": "SUCCEED.",
-    "subtitle": "Functional Fitness Coach 🤘",
-    "cta_text": "Start Your Journey",
-    "background_image": "/images/hero-bg.png"
-  },
-  "services": {
-    "heading": "What",
-    "heading_accent": "I Offer",
-    "cards": [
+  "faq": {
+    "items": [
       {
-        "title": "Personal Training",
-        "desc": "One-to-one or small group sessions at your chosen location. I'll build you a tailored programme focused on functional movement, strength, and sustainable progress.",
-        "price": "From £30 / session",
-        "features": [
-          "Bespoke training plan",
-          "Hevy Pro app included",
-          "Flexible locations",
-          "All abilities welcome"
-        ],
-        "cta_text": "Find Out More"
+        "question": "Do I need to be fit to start?",
+        "answer": "Absolutely not. I work with every level — from 'haven't exercised in a decade' to 'running my next half'."
       },
       {
-        "title": "Online Coaching",
-        "desc": "Can't train in person? No problem. I'll build you a structured plan with video demos and ongoing support — all delivered through the Hevy app.",
-        "price": "From £60 / month",
-        "features": [
-          "Custom programming",
-          "Hevy Pro app included",
-          "Weekly check-ins",
-          "Video exercise demos"
-        ],
-        "cta_text": "Find Out More"
+        "question": "How often should I train?",
+        "answer": "2–3× a week is the sweet spot for most. I'll work with what your week actually looks like."
+      },
+      {
+        "question": "Can I bring a friend?",
+        "answer": "Yes. Small-group sessions (2–3) are available at a reduced per-person rate."
+      },
+      {
+        "question": "Do you offer online coaching?",
+        "answer": "No. In-person only — coaching is the bit you're paying for."
       }
     ]
   },
-  "locations": {
-    "heading": "Where",
-    "heading_accent": "I Train"
+  "contact": {
+    "blurb": "No commitment, no pressure — just a chat about where you're at and the smallest brave step. Reply within 24 hours, usually faster on Instagram."
   }
 }

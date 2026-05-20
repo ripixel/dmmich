@@ -16,44 +16,14 @@ const loadPage = (name) => JSON.parse(fs.readFileSync(`./content/pages/${name}.j
 
 const pages = {
     home: loadPage('home'),
-    about: loadPage('about'),
-    services: loadPage('services'),
-    'running-club': loadPage('running-club'),
-    locations: loadPage('locations'),
-    transformations: loadPage('transformations'),
-    contact: loadPage('contact'),
 };
 
-// ── SEO metadata (per page, referencing site.json) ──
+// ── SEO metadata ──
 /** @type {Record<string, {title: string, description: string}>} */
 const pageMeta = {
     index: {
-        title: `${site.name} | Personal Trainer Bingham | Functional Fitness`,
-        description: `I'm Dean — a ${site.qualification} and ${site.specialty} based in ${site.location_base}. ${site.tagline}`,
-    },
-    about: {
-        title: `About Me | ${site.name}`,
-        description: `I'm Dean M Michniew — a ${site.qualification} passionate about functional fitness and sustainable progress. Not chasing aesthetics, but health.`,
-    },
-    services: {
-        title: `My Services | Personal Training & Online Coaching | ${site.name}`,
-        description: `I offer personal training in Bingham and Grantham, plus online coaching. All my clients get Hevy Pro app access. From £30/session.`,
-    },
-    'running-club': {
-        title: `Bingham Sunday Running Club | ${site.name}`,
-        description: `I founded the Bingham Sunday Running Club — a social running and walking group for all abilities. Join us every Sunday morning in Bingham.`,
-    },
-    locations: {
-        title: `Where I Train | ${site.name}`,
-        description: `I train at ${site.locations.map(l => l.name).join(' and ')}. Flexible locations across Nottinghamshire — let's find what works for you.`,
-    },
-    contact: {
-        title: `Contact Me | ${site.name}`,
-        description: `Get in touch to start your fitness journey. I'd love to hear from you — personal training enquiries, running club info, and more.`,
-    },
-    transformations: {
-        title: `Client Transformations | ${site.name}`,
-        description: `Real results from real people. See how my clients have improved their health, fitness, and confidence through functional training with me.`,
+        title: `${site.name} | Personal Training · Bootcamp · Run Club | Bingham`,
+        description: `Dean Michniew — ${site.qualification} & ${site.specialty} based in ${site.location_base}. 1-to-1 PT at IronHQ, Thursday Bootcamp at Bingham RUFC, and the free Sunday Running Club.`,
     },
     404: {
         title: `Page Not Found | ${site.name}`,
@@ -62,7 +32,7 @@ const pageMeta = {
 };
 
 export const tasks = [
-    // Clean & Create output directory
+    // Clean & create output directory
     prepareOutputTask({
         outDir: './public',
     }),
@@ -100,8 +70,7 @@ export const tasks = [
         outDir: './public',
         additionalVarsFn: ({ currentPage }) => {
             const meta = pageMeta[currentPage] || pageMeta['404'];
-            const pageKey = currentPage === 'index' ? 'home' : currentPage;
-            const pageContent = pages[pageKey] || {};
+            const pageContent = pages['home'] || {};
             const slug = currentPage === 'index' ? '' : currentPage;
 
             return {
@@ -116,16 +85,8 @@ export const tasks = [
                 site,
                 // Page-specific content
                 content: pageContent,
-                // Active nav flags
+                // Nav flags (unused now but kept for partials compatibility)
                 isHome: currentPage === 'index',
-                isAbout: currentPage === 'about',
-                isServices: currentPage === 'services',
-                isRunningClub: currentPage === 'running-club',
-                isLocations: currentPage === 'locations',
-                isContact: currentPage === 'contact',
-                isTransformations: currentPage === 'transformations',
-                isTraining: ['services', 'transformations', 'locations'].includes(currentPage),
-                is404: currentPage === '404',
                 year: new Date().getFullYear(),
             };
         },

@@ -4,279 +4,412 @@
 
 <body>
     {{> header}}
+
     <main>
+
         <!-- ===== HERO ===== -->
         <section class="hero" id="home">
-            <div class="hero__bg" style="background-image: url('{{content.hero.background_image}}');"></div>
-            <div class="hero__content">
-                <h1 class="hero__title">
-                    {{content.hero.title_line1}}<br><span class="accent">{{content.hero.title_line2}}</span>
-                </h1>
-                <p class="hero__subtitle">{{content.hero.subtitle}}</p>
-                <a href="/contact" class="btn btn--primary">{{content.hero.cta_text}}</a>
+            <div class="hero-bg" style="background-image: url('{{content.hero.background_image}}');"></div>
+            <div class="hero-inner">
+                <div>
+                    <span class="eyebrow">{{content.hero.eyebrow}}</span>
+                    <h1>TRAIN.<br><span class="red">PROGRESS.</span><br><span class="outline">SUCCEED.</span></h1>
+                </div>
+                <div class="hero-foot">
+                    <p>{{content.hero.blurb}}</p>
+                    <div>
+                        <div class="stat-label">Home gym</div>
+                        <div class="stat-val">IRON<span class="red">HQ</span></div>
+                    </div>
+                    <div>
+                        <div class="stat-label">Bootcamp</div>
+                        <div class="stat-val"><span class="red">{{content.hero.stat_bootcamp}}</span></div>
+                    </div>
+                    <div>
+                        <div class="stat-label">Run club</div>
+                        <div class="stat-val"><span class="red">{{content.hero.stat_runclub}}</span></div>
+                    </div>
+                    <div>
+                        <div class="stat-label">Clients</div>
+                        <div class="stat-val">{{content.hero.stat_clients}}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STRIP ===== -->
+        <div class="strip" aria-hidden="true">
+            <div class="strip-inner">
+                <span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span></span>
+                <span aria-hidden="true">BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span>BUILT IN BINGHAM<span class="x">✕</span>PERSONAL TRAINING<span class="x">✕</span>BOOTCAMP<span class="x">✕</span>RUN CLUB<span class="x">✕</span></span>
+            </div>
+        </div>
+
+        <!-- ===== SERVICES ===== -->
+        <section class="services" id="training">
+            <div class="sec-head">
+                <div class="sec-num">§ 01<br>SERVICES</div>
+                <h2>THREE WAYS<br>TO <span class="red">GET TO WORK.</span></h2>
+            </div>
+            <div class="service-cards">
+
+                <!-- PT flagship -->
+                <div class="card-hero">
+                    <div class="card-hero-left">
+                        <div>
+                            <div class="card-tag" style="margin-top:18px;">01 / FLAGSHIP — 1-to-1</div>
+                            <h3>PERSONAL<br>TRAINING.</h3>
+                            <p>{{content.services.pt.description}}</p>
+                        </div>
+                        <ul class="card-features">
+                            {{#each content.services.pt.features}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <div class="card-hero-foot">
+                            <div class="pricing-tag" style="font-size:24px; padding: 6px 24px 6px 14px;">{{content.services.pt.price}}</div>
+                            <a href="#contact" class="btn-primary">{{content.services.pt.cta}} →</a>
+                        </div>
+                    </div>
+                    <div class="card-hero-photo">
+                        <img src="/images/ironhq.uk_1765991135_3789730777253306721_75650881251.jpg" alt="Dean coaching a client at IronHQ" />
+                        <span class="overlay-tag">The main thing</span>
+                    </div>
+                </div>
+
+                <!-- Bootcamp -->
+                <div class="card" id="bootcamp-card">
+                    <div>
+                        <div class="card-tag">02 / GROUP</div>
+                        <h3>Thursday<br>Bootcamp</h3>
+                        <p>{{content.services.bootcamp.description}}</p>
+                        <div class="pricing-tag">{{content.services.bootcamp.price}}</div>
+                    </div>
+                    <div class="card-foot">
+                        <span>BINGHAM RUFC · THU 17:30</span>
+                        <a href="#bootcamp" class="arrow">→</a>
+                    </div>
+                </div>
+
+                <!-- Run Club -->
+                <div class="card dark">
+                    <div>
+                        <div class="card-tag">03 / FREE</div>
+                        <h3>Sunday<br>Run Club</h3>
+                        <p>{{content.services.run_club.description}}</p>
+                        <div class="pricing-tag">{{content.services.run_club.price}}</div>
+                    </div>
+                    <div class="card-foot">
+                        <span>MARKET PLACE · SUN 09:00</span>
+                        <a href="#run-club" class="arrow">→</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- ===== ABOUT ===== -->
-        <section class="section" id="about">
-            <div class="container">
-                <h2 class="section__heading">{{content.about.heading}} <span>{{content.about.heading_accent}}</span>
-                </h2>
-                <div class="about-grid">
-                    <div class="about-image">
-                        <img src="/images/dean-portrait.jpg" alt="Dean M Michniew — Personal Trainer" loading="lazy" />
-                    </div>
-                    <div class="about-text">
-                        <p>{{content.about.intro}}</p>
-                        <p>{{content.about.body}}</p>
-                        <blockquote class="pullquote">"{{content.about.pullquote}}"</blockquote>
-                        <p>{{{content.about.running_club_note}}}</p>
-                        <a href="/about" class="btn btn--outline">{{content.about.cta_text}}</a>
-                    </div>
-                </div>
+        <section class="about" id="about">
+            <div class="about-portrait">
+                <img src="/images/dean-portrait.jpg" alt="Dean Michniew — Personal Trainer" loading="lazy" />
+                <span class="portrait-tag">Hi, I'm Dean</span>
             </div>
-        </section>
-
-        <!-- ===== TESTIMONIALS ===== -->
-        <section class="section section--alt" id="testimonials">
-            <div class="container">
-                <h2 class="section__heading">{{content.testimonials.heading}}
-                    <span>{{content.testimonials.heading_accent}}</span>
-                </h2>
-                <div class="testimonials-grid">
-                    {{#each content.testimonials.items}}
-                    <div class="testimonial-card">
-                        <div class="testimonial-card__stars">{{this.stars}}</div>
-                        <p class="testimonial-card__quote">{{this.quote}}</p>
-                        <p class="testimonial-card__name">{{this.name}}</p>
-                    </div>
-                    {{/each}}
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== SERVICES ===== -->
-        <section class="section" id="services">
-            <div class="container">
-                <h2 class="section__heading">{{content.services.heading}}
-                    <span>{{content.services.heading_accent}}</span>
-                </h2>
-                <div class="services-grid">
-                    {{#each content.services.cards}}
-                    <div class="service-card">
-                        <h3 class="service-card__title">{{this.title}}</h3>
-                        <p class="service-card__desc">{{this.desc}}</p>
-                        <p class="service-card__price">{{this.price}}</p>
-                        <ul class="service-card__features">
-                            {{#each this.features}}
-                            <li>{{this}}</li>
+            <div class="about-body">
+                <span class="eyebrow">§ 02 · About the coach</span>
+                <h2>BUILT IN<br><span class="red">BINGHAM.</span><br>BY <span class="outline">CHOICE.</span></h2>
+                <p>{{{content.about.bio_1}}}</p>
+                <p>{{content.about.bio_2}}</p>
+                <p>{{content.about.bio_3}}</p>
+                <div class="about-meta">
+                    <div class="about-meta-col">
+                        <h4>Qualifications</h4>
+                        <ul>
+                            {{#each content.about.qualifications}}
+                            <li><span>{{this.label}}</span><span class="year">{{this.year}}</span></li>
                             {{/each}}
                         </ul>
-                        <a href="/services" class="btn btn--outline">{{this.cta_text}}</a>
                     </div>
-                    {{/each}}
+                    <div class="about-meta-col">
+                        <h4>Competing</h4>
+                        <ul>
+                            {{#each content.about.competing}}
+                            <li><span>{{this.label}}</span><span class="year">{{this.year}}</span></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-primary">Train with me →</a>
+            </div>
+        </section>
+
+        <!-- ===== IRONHQ ===== -->
+        <section class="ironhq" id="ironhq">
+            <div class="ironhq-inner">
+                <div class="ironhq-photo">
+                    <img src="/images/ironhq.uk_1765991135_3789730777253306721_75650881251.jpg" alt="IronHQ training floor" loading="lazy" />
+                    <span class="hq-label">HQ</span>
+                </div>
+                <div class="ironhq-body">
+                    <span class="eyebrow">§ 03 · Home base</span>
+                    <h2>IRONHQ.<br>BINGHAM.</h2>
+                    <p>{{content.ironhq.description}}</p>
+                    <ul class="ironhq-list">
+                        {{#each content.ironhq.facilities}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <a href="{{site.locations.[0].map_embed}}" target="_blank" rel="noopener noreferrer" class="btn-primary">Get directions →</a>
                 </div>
             </div>
         </section>
 
-        <!-- ===== RUNNING CLUB ===== -->
-        <section class="section section--alt" id="running-club">
-            <div class="container">
-                <h2 class="section__heading">{{content.running_club.heading}}
-                    <span>{{content.running_club.heading_accent}}</span>
-                </h2>
-                <div class="running-club">
-                    <div class="running-club__image">
-                        <img src="{{content.running_club.image}}" alt="{{content.running_club.image_alt}}"
-                            loading="lazy" />
+        <!-- ===== RUN CLUB ===== -->
+        <section class="runclub" id="run-club">
+            <div class="runclub-photo">
+                <img src="/images/running-club.png" alt="Bingham Sunday Running Club" loading="lazy" />
+                <span class="overlay-tag">Free · All abilities</span>
+            </div>
+            <div class="runclub-body">
+                <span class="eyebrow">§ 04 · Community</span>
+                <h2>SUNDAY<br>RUNNING <span class="red">CLUB.</span></h2>
+                <p>{{content.run_club.body_1}}</p>
+                <p>{{content.run_club.body_2}}</p>
+                <div class="mini-stats">
+                    <div class="mini-stat">
+                        <div class="v cond">SUN <span class="red">09:00</span></div>
+                        <div class="l mono">Every week · rain or shine</div>
                     </div>
-                    <div class="running-club__info">
-                        <h3>{{content.running_club.subheading}}</h3>
-                        <p>{{{content.running_club.body}}}</p>
-                        <div class="running-club__detail">
-                            <div class="running-club__detail-item">
-                                <strong>{{content.running_club.time}}</strong>
-                                {{content.running_club.time_detail}}
-                            </div>
-                            <div class="running-club__detail-item">
-                                <strong>{{content.running_club.location}}</strong>
-                                {{content.running_club.location_detail}}
-                            </div>
-                        </div>
-                        <a href="/running-club" class="btn btn--primary">{{content.running_club.cta_text}}</a>
+                    <div class="mini-stat">
+                        <div class="v cond">£<span class="red">0</span></div>
+                        <div class="l mono">Always free, always</div>
                     </div>
+                    <div class="mini-stat">
+                        <div class="v cond">{{content.run_club.regulars}}</div>
+                        <div class="l mono">Regulars · all paces</div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="#contact" class="btn-primary">See you Sunday →</a>
+                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="btn-ghost">Follow @sundayrunclub_bingham</a>
                 </div>
             </div>
         </section>
 
-        <!-- ===== TRANSFORMATIONS ===== -->
-        <section class="section" id="transformations">
-            <div class="container">
-                <h2 class="section__heading">{{content.transformations.heading}}
-                    <span>{{content.transformations.heading_accent}}</span>
-                </h2>
-                <div class="transformations-grid transformations-grid--stories">
-                    {{#each content.transformations.items}}
-                    <div class="transformation-card">
-                        <div class="transformation-card__body">
-                            <h3 class="transformation-card__name">{{this.name}}</h3>
-                            <p class="transformation-card__story">{{this.story}}</p>
-                        </div>
+        <!-- ===== BOOTCAMP ===== -->
+        <section class="bootcamp" id="bootcamp">
+            <div class="bootcamp-body">
+                <span class="eyebrow">§ 05 · Group training</span>
+                <h2>BINGHAM<br>BOOT<span class="red">CAMP.</span></h2>
+                <p>{{content.bootcamp.body_1}}</p>
+                <p>{{content.bootcamp.body_2}}</p>
+                <div class="mini-stats">
+                    <div class="mini-stat dark">
+                        <div class="v cond">THU <span class="red">17:30</span></div>
+                        <div class="l mono">Every week · 60 min</div>
                     </div>
-                    {{/each}}
+                    <div class="mini-stat dark">
+                        <div class="v cond">£<span class="red">10</span></div>
+                        <div class="l mono">Drop-in · cash or card</div>
+                    </div>
+                    <div class="mini-stat dark">
+                        <div class="v cond">ALL</div>
+                        <div class="l mono">Abilities, all welcome</div>
+                    </div>
                 </div>
-                <div class="text-center" style="margin-top: var(--space-lg);">
-                    <a href="/transformations" class="btn btn--outline">{{content.transformations.cta_text}}</a>
+                <div class="btn-group">
+                    <a href="#contact" class="btn-primary">See you Thursday →</a>
+                    <a href="#contact" class="btn-ghost">Bring a mate · 2 for £15</a>
                 </div>
+            </div>
+            <div class="bootcamp-photo">
+                <span class="overlay-tag">Thursdays · 5:30pm</span>
             </div>
         </section>
 
-        <!-- ===== LOCATIONS ===== -->
-        <section class="section section--alt" id="locations">
-            <div class="container">
-                <h2 class="section__heading">{{content.locations.heading}}
-                    <span>{{content.locations.heading_accent}}</span>
-                </h2>
-                <div class="locations-grid">
-                    {{#each site.locations}}
-                    <div class="location-card">
-                        <div class="location-card__image">
-                            <img src="{{this.image}}" alt="{{this.image_alt}}" loading="lazy" />
-                        </div>
-                        <div class="location-card__info">
-                            <h3 class="location-card__name">{{this.name}}</h3>
-                            <p class="location-card__desc">{{this.description}}</p>
-                            <p class="location-card__address">{{this.address}}</p>
-                        </div>
-                        <iframe class="location-card__map" src="{{this.map_embed}}" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" title="{{this.name}} Map"></iframe>
-                    </div>
-                    {{/each}}
+        <!-- ===== PRICES ===== -->
+        <section class="prices" id="prices">
+            <div class="sec-head">
+                <div class="sec-num">§ 06<br>PRICES</div>
+                <h2>NO HIDDEN<br><span class="red">EXTRAS.</span></h2>
+            </div>
+            <div class="prices-grid">
+
+                <!-- PT -->
+                <div class="price-card featured">
+                    <div class="price-tag">— THE MAIN THING</div>
+                    <h3>1-to-1<br>Personal Training</h3>
+                    <div class="price-amount">{{content.prices.pt.price}} <span class="price-unit">FROM<br>/ SESSION</span></div>
+                    <ul class="price-features">
+                        {{#each content.prices.pt.features}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <div class="price-foot"><span>IRONHQ · BINGHAM</span><a href="#contact" class="arrow">→</a></div>
                 </div>
+
+                <!-- Bootcamp -->
+                <div class="price-card">
+                    <div class="price-tag">— GROUP</div>
+                    <h3>Thursday<br>Bootcamp</h3>
+                    <div class="price-amount">{{content.prices.bootcamp.price}} <span class="price-unit">DROP-IN<br>/ SESSION</span></div>
+                    <ul class="price-features">
+                        {{#each content.prices.bootcamp.features}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <div class="price-foot"><span>BRUFC · THU 17:30</span><a href="#bootcamp" class="arrow">→</a></div>
+                </div>
+
+                <!-- Run Club -->
+                <div class="price-card free">
+                    <div class="price-tag">— ALWAYS FREE</div>
+                    <h3>Sunday<br>Running Club</h3>
+                    <div class="price-amount">£0 <span class="price-unit">FOREVER<br>/ EVERYONE</span></div>
+                    <ul class="price-features">
+                        {{#each content.prices.run_club.features}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <div class="price-foot"><span>SUN 09:00 · MARKET PL.</span><a href="#run-club" class="arrow">→</a></div>
+                </div>
+
             </div>
         </section>
 
         <!-- ===== GALLERY ===== -->
-        <section class="section" id="gallery">
-            <div class="container">
-                <h2 class="section__heading"><span>{{content.gallery.heading_accent}}</span></h2>
-                <div class="gallery-grid">
-                    {{#each content.gallery.items}}
-                    <div class="gallery-item" data-lightbox-src="{{this.src}}" data-lightbox-alt="{{this.alt}}">
-                        <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
-                        <div class="gallery-item__overlay">
-                            <span class="gallery-item__icon">&#x1F50D;</span>
+        <section class="gallery" id="gallery">
+            <div class="gallery-head">
+                <div>
+                    <span class="eyebrow">§ 07 · The grind</span>
+                    <h2>FROM <span class="red">THE FLOOR.</span></h2>
+                </div>
+                <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="btn-ghost">Instagram →</a>
+            </div>
+            <div class="gallery-grid">
+                {{#each content.gallery.items}}
+                {{#if @first}}
+                <div class="gallery-cell tall">
+                    <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
+                    <span class="cell-meta">— {{this.meta}}</span>
+                </div>
+                {{else}}
+                <div class="gallery-cell">
+                    <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" />
+                    <span class="cell-meta">— {{this.meta}}</span>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="testimonials" id="results">
+            <h2>RESULTS<br><span class="red">SPEAK LOUDER.</span></h2>
+            <p class="sub">§ 08 · Real clients · real change · 5★ across the board</p>
+            <div class="test-grid">
+                {{#each content.testimonials.items}}
+                <div class="test-card{{#if @first}} feat{{/if}}">
+                    {{#if this.before_image}}
+                    <div class="test-images">
+                        <div class="test-img-cell before">
+                            <img src="{{this.before_image}}" alt="Before — {{this.name}}" loading="lazy" />
+                            <span class="img-lbl">— Before</span>
+                        </div>
+                        <div class="test-img-cell after">
+                            <img src="{{this.after_image}}" alt="After — {{this.name}}" loading="lazy" />
+                            <span class="img-lbl">After</span>
                         </div>
                     </div>
-                    {{/each}}
-                    <a class="gallery-instagram" href="{{site.instagram_url}}" target="_blank"
-                        rel="noopener noreferrer">
-                        <svg class="gallery-instagram__icon" viewBox="0 0 24 24" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.08 4.08 0 011.47.958c.458.458.78.92.957 1.47.164.46.35 1.26.404 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.404 2.43a4.08 4.08 0 01-.957 1.47 4.08 4.08 0 01-1.47.957c-.46.164-1.26.35-2.43.404-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.404a4.08 4.08 0 01-1.47-.957 4.08 4.08 0 01-.957-1.47c-.164-.46-.35-1.26-.404-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.404-2.43a4.08 4.08 0 01.957-1.47A4.08 4.08 0 015.064 2.293c.46-.164 1.26-.35 2.43-.404C8.76 1.83 9.14 1.818 12 1.818V2.163zM12 0C8.741 0 8.333.014 7.053.072 5.775.131 4.902.333 4.14.63a5.88 5.88 0 00-2.126 1.384A5.88 5.88 0 00.63 4.14C.333 4.902.131 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.059 1.278.261 2.15.558 2.913a5.88 5.88 0 001.384 2.126A5.88 5.88 0 004.14 23.37c.763.297 1.635.5 2.913.558C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.059 2.15-.261 2.913-.558a5.88 5.88 0 002.126-1.384 5.88 5.88 0 001.384-2.126c.297-.763.5-1.635.558-2.913C23.986 15.667 24 15.259 24 12s-.014-3.667-.072-4.947c-.059-1.278-.261-2.15-.558-2.913a5.88 5.88 0 00-1.384-2.126A5.88 5.88 0 0019.86.63C19.097.333 18.225.131 16.947.072 15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
-                        </svg>
-                        <span class="gallery-instagram__label">{{content.gallery.instagram_cta}}</span>
-                        <span class="gallery-instagram__handle">{{site.instagram_handle}}</span>
-                    </a>
+                    {{/if}}
+                    <div class="test-body">
+                        <div class="test-stars">{{this.stars}}</div>
+                        <blockquote>"{{this.quote}}"</blockquote>
+                        <div class="test-author"><strong>{{this.name}}</strong> · {{this.duration}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section class="faq" id="faq">
+            <div class="faq-side">
+                <span class="eyebrow">§ 09 · Questions</span>
+                <h2>STRAIGHT<br><span class="red">ANSWERS.</span></h2>
+                <p>If something isn't covered here, drop me a message — I reply to everything.</p>
+                <a href="#contact" class="btn-primary" style="margin-top:8px;">Get in touch →</a>
+            </div>
+            <div class="faq-list">
+                {{#each content.faq.items}}
+                <details class="faq-item">
+                    <summary>
+                        <h3>{{this.question}}</h3>
+                        <span class="faq-plus">+</span>
+                    </summary>
+                    <p class="faq-answer">{{this.answer}}</p>
+                </details>
+                {{/each}}
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <div>
+                    <h2>READY?<br><span class="out">LET'S WORK.</span></h2>
+                    <p class="contact-sub">{{content.contact.blurb}}</p>
+                </div>
+                <div class="contact-card">
+                    <div class="card-lab">— Get in touch</div>
+                    <h3>DEAN<br>MICHNIEW</h3>
+                    <div class="contact-row">
+                        <span class="k">Instagram</span>
+                        <span class="v">{{site.instagram_handle}}</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="k">Email</span>
+                        <span class="v">{{site.email}}</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="k">Phone</span>
+                        <span class="v">{{site.phone}}</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="k">In person</span>
+                        <span class="v">Sun 9am · Market Place</span>
+                    </div>
+                    <a href="mailto:{{site.email}}" class="btn-primary">Email Dean →</a>
                 </div>
             </div>
-
-            <!-- Lightbox -->
-            <div class="lightbox" id="galleryLightbox">
-                <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
-                <img class="lightbox__img" id="lightboxImg" src="" alt="" />
-            </div>
         </section>
 
-        <script>
-            (function () {
-                var lb = document.getElementById('galleryLightbox');
-                var img = document.getElementById('lightboxImg');
-                var closeBtn = lb.querySelector('.lightbox__close');
-                var touchStartY = 0;
-                var touchDeltaY = 0;
-
-                function lockScroll() {
-                    document.documentElement.style.overflow = 'hidden';
-                    document.body.style.overflow = 'hidden';
-                }
-
-                function unlockScroll() {
-                    document.documentElement.style.overflow = '';
-                    document.body.style.overflow = '';
-                }
-
-                function openLightbox(src, alt) {
-                    img.src = src;
-                    img.alt = alt;
-                    lb.classList.add('lightbox--open');
-                    lockScroll();
-                }
-
-                function closeLightbox() {
-                    lb.classList.remove('lightbox--open');
-                    img.style.transform = '';
-                    img.style.opacity = '';
-                    unlockScroll();
-                }
-
-                // Open: attach to each gallery item
-                document.querySelectorAll('.gallery-item[data-lightbox-src]').forEach(function (item) {
-                    item.addEventListener('click', function () {
-                        openLightbox(item.getAttribute('data-lightbox-src'), item.getAttribute('data-lightbox-alt'));
-                    });
-                });
-
-                // Close: click on backdrop
-                lb.addEventListener('click', function (e) {
-                    if (e.target === lb) closeLightbox();
-                });
-
-                // Close: button
-                closeBtn.addEventListener('click', closeLightbox);
-
-                // Close: Escape key
-                document.addEventListener('keydown', function (e) {
-                    if (e.key === 'Escape') closeLightbox();
-                });
-
-                // Swipe-to-dismiss on mobile
-                lb.addEventListener('touchstart', function (e) {
-                    touchStartY = e.touches[0].clientY;
-                    touchDeltaY = 0;
-                }, { passive: true });
-
-                lb.addEventListener('touchmove', function (e) {
-                    touchDeltaY = e.touches[0].clientY - touchStartY;
-                    var abs = Math.abs(touchDeltaY);
-                    if (abs > 10) {
-                        img.style.transform = 'translateY(' + touchDeltaY + 'px)';
-                        img.style.opacity = Math.max(0.2, 1 - abs / 300);
-                    }
-                }, { passive: true });
-
-                lb.addEventListener('touchend', function () {
-                    if (Math.abs(touchDeltaY) > 80) {
-                        closeLightbox();
-                    } else {
-                        img.style.transform = '';
-                        img.style.opacity = '';
-                    }
-                });
-            })();
-        </script>
-
-        <!-- ===== CTA BANNER ===== -->
-        <section class="cta-banner">
-            <div class="container">
-                <h2>{{content.cta.heading}}</h2>
-                <p>{{content.cta.body}}</p>
-                <a href="/contact" class="btn">{{content.cta.cta_text}}</a>
-            </div>
-        </section>
     </main>
+
     {{> footer}}
+
+    <script>
+    (function () {
+        // Mobile nav toggle
+        var toggle = document.getElementById('navToggle');
+        var wrapper = document.getElementById('navLinksWrapper');
+        if (toggle && wrapper) {
+            toggle.addEventListener('click', function () {
+                wrapper.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', wrapper.classList.contains('open'));
+            });
+            // Close on anchor click
+            wrapper.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    wrapper.classList.remove('open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // FAQ plus/minus rotation via CSS — details open attr handles it
+    })();
+    </script>
+
     {{> structured-data}}
 </body>
 
