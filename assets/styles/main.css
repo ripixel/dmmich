@@ -28,6 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -225,11 +226,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 16px;
   justify-self: end;
-}
-.nav-phone {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  color: var(--steel);
+  align-self: center;
 }
 .nav-cta {
   background: var(--red);
@@ -1290,11 +1287,11 @@ h1, h2, h3, h4 {
   .sec-head { grid-template-columns: 1fr; gap: 12px; }
   .sec-num { align-self: auto; padding-top: 0; }
   .service-cards { grid-template-columns: 1fr; }
-  .card-hero { grid-template-columns: 1fr; }
+  .card-hero { display: flex; flex-direction: column; overflow: hidden; }
   .card-hero::before { display: none; }
   .card-hero-left { padding: 32px 22px 28px; }
   .card-hero-left h3 { font-size: 52px; }
-  .card-hero-photo { min-height: 240px; aspect-ratio: 16/9; }
+  .card-hero-photo { order: -1; min-height: 240px; aspect-ratio: 16/9; width: 100%; }
   .card-features { grid-template-columns: 1fr; }
 
   /* About */

@@ -95,7 +95,7 @@
                 <div class="card dark">
                     <div>
                         <div class="card-tag">03 / FREE</div>
-                        <h3>Sunday<br>Run Club</h3>
+                        <h3>Sunday<br>Running Club</h3>
                         <p>{{content.services.run_club.description}}</p>
                         <div class="pricing-tag">{{content.services.run_club.price}}</div>
                     </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="about-body">
                 <span class="eyebrow">§ 02 · About the coach</span>
-                <h2>BUILT IN<br><span class="red">BINGHAM.</span><br>BY <span class="outline">CHOICE.</span></h2>
+                <h2>BUILT IN<br><span class="red">BINGHAM.</span><br>JOIN <span class="outline">ME.</span></h2>
                 <p>{{{content.about.bio_1}}}</p>
                 <p>{{content.about.bio_2}}</p>
                 <p>{{content.about.bio_3}}</p>
@@ -199,7 +199,7 @@
         <section class="bootcamp" id="bootcamp">
             <div class="bootcamp-body">
                 <span class="eyebrow">§ 05 · Group training</span>
-                <h2>BINGHAM<br>BOOT<span class="red">CAMP.</span></h2>
+                <h2>THURSDAY<br>BOOT<span class="red">CAMP.</span></h2>
                 <p>{{content.bootcamp.body_1}}</p>
                 <p>{{content.bootcamp.body_2}}</p>
                 <div class="mini-stats">
@@ -364,21 +364,17 @@
                     <h3>DEAN<br>MICHNIEW</h3>
                     <div class="contact-row">
                         <span class="k">Instagram</span>
-                        <span class="v">{{site.instagram_handle}}</span>
+                        <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="v">{{site.instagram_handle}}</a>
                     </div>
                     <div class="contact-row">
                         <span class="k">Email</span>
-                        <span class="v">{{site.email}}</span>
-                    </div>
-                    <div class="contact-row">
-                        <span class="k">Phone</span>
-                        <span class="v">{{site.phone}}</span>
+                        <a href="mailto:{{site.email}}" class="v">{{site.email}}</a>
                     </div>
                     <div class="contact-row">
                         <span class="k">In person</span>
                         <span class="v">Sun 9am · Market Place</span>
                     </div>
-                    <a href="mailto:{{site.email}}" class="btn-primary">Email Dean →</a>
+                    <a href="{{site.instagram_url}}" target="_blank" rel="noopener noreferrer" class="btn-primary">Message on Instagram →</a>
                 </div>
             </div>
         </section>
