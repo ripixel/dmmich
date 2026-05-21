@@ -8,6 +8,8 @@ import {
     generateSitemapTask,
 } from 'skier';
 
+const cacheHash = Date.now().toString(36);
+
 // ── Load content from JSON ──
 const site = JSON.parse(fs.readFileSync('./content/settings/site.json', 'utf-8'));
 
@@ -41,7 +43,7 @@ export const tasks = [
     bundleCssTask({
         from: './assets/styles',
         to: './public',
-        output: 'styles.min.css',
+        output: `styles.min.${cacheHash}.css`,
         minify: true,
     }),
 
@@ -82,6 +84,7 @@ export const tasks = [
                 pageSlug: slug,
                 noindex: currentPage === '404',
                 // Site-wide shared values
+                cacheHash,
                 site,
                 // Page-specific content
                 content: pageContent,
