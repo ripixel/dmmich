@@ -338,6 +338,19 @@
                                         <span class="img-lbl">After</span>
                                     </div>
                                 </div>
+                            {{else if this.after_image}}
+                                <div class="test-images">
+                                    <div class="test-img-cell after">
+                                        <img src="{{this.after_image}}" alt="After — {{this.name}}" loading="lazy" />
+                                        <span class="img-lbl">After</span>
+                                    </div>
+                                    {{#if this.after_image_2}}
+                                    <div class="test-img-cell after">
+                                        <img src="{{this.after_image_2}}" alt="After — {{this.name}}" loading="lazy" />
+                                        <span class="img-lbl">After</span>
+                                    </div>
+                                    {{/if}}
+                                </div>
                             {{/if}}
                             <div class="test-body">
                                 <div class="test-stars">{{this.stars}}</div>
